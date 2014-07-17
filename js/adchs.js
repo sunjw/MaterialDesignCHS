@@ -253,15 +253,30 @@ function headerFix() {
 		document.documentElement.scrollTop);
     var windowWidth = $(window).width();
 
+	var body = $("body");
 	var header = $("#header");
-	if (scrollTopPos < 80) {
-		header.addClass("normalHeader");
-        header.removeClass("fixedHeader");
-        header.css("width", "auto");
+	var headerTitle = $("#header a");
+	
+	if (scrollTopPos < 192) {
+		// normal
+		body.addClass("normalHeader");
+        body.removeClass("fixedHeader");
+		header.removeAttr("style");
 	} else {
-        header.removeClass("normalHeader");
-		header.addClass("fixedHeader");
-        header.css("width", windowWidth - 240 + "px");
+		// fixed
+        body.removeClass("normalHeader");
+		body.addClass("fixedHeader");
+		header.css("width", windowWidth - 240 + "px");
+	}
+	
+	if (scrollTopPos < 115) {
+		// normal
+		headerTitle.addClass("normalTitle");
+        headerTitle.removeClass("fixedTitle");
+	} else {
+		// fixed
+        headerTitle.removeClass("normalTitle");
+		headerTitle.addClass("fixedTitle");
 	}
 }
 

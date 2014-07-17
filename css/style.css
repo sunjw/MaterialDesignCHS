@@ -66,28 +66,50 @@ code {
 }
 
 #header {
-    margin-bottom: 20px;
-	font-size: 48px;
-    line-height: 48px;
 	border-bottom: 1px solid #33B5E5;
     background-color: white;
 }
-#header.normalHeader {
-    height: 80px;
+.normalHeader #header {
+	position: relative;
+    height: 256px;
 }
-#header.fixedHeader {
-    position: fixed;
-	height: 120px;
+.fixedHeader #header {
+	position: fixed;
+	height: 64px;
 }
-#header .contentGrid {
-    
+
+.#header .contentGrid {
+    height: 86px;
+	line-height: 86px;
 }
+.normalHeader #header .contentGrid {
+	padding-top: 115px;
+}
+.fixedHeader #header .contentGrid {
+    padding-top: 0;
+}
+
 #header a {
 	color: #333333;
+	text-decoration: none;
     display: block;
+	width: 100%;
+}
+#header a.normalTitle {
     position: relative;
-    text-decoration: none;
     top: 20px;
+	font-size: 56px;
+}
+#header a.normalTitle #subTitle {
+	display: none;
+}
+#header a.fixedTitle {
+    position: fixed;
+    top: 20px;
+	font-size: 24px;
+}
+#header a.fixedTitle #subTitle {
+	display: inline;
 }
 #header .headerChs {
 	color: #33B5E5;
@@ -96,7 +118,7 @@ code {
 	line-height: 16px;
 	position: absolute;
 	right: 10px;
-	bottom: 0;
+	bottom: 10px;
 }
 
 #navWrapper {
@@ -147,8 +169,11 @@ code {
 	background-color: transparent;
 }
 
-#content {
-	
+.normalHeader #content {
+	padding-top: 0;
+}
+.fixedHeader #content {
+	padding-top: 256px;
 }
 #content a {
 	color: #258AAF;
