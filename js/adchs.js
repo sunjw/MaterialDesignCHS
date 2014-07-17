@@ -6,14 +6,17 @@
 
 var curUrl = window.location.href;
 
+var secondLevPath = ["building-blocks/", "material-design/", "patterns/", "style/"];
+var secondLevPathCount = secondLevPath.length;
+
 // Menu Setup
 var menuContent = [
 	[{
 			text : "开始",
-			url : "index.html"
+			url : "material-design/xx"
 		}, {
 			text : "视觉创意",
-			url : "get-started/create-vistion.html"
+			url : "material-design/introduction.html"
 		}, {
 			text : "设计原则",
 			url : "get-started/principles.html"
@@ -174,6 +177,11 @@ function fillMenu() {
 	idx = curPage.indexOf("?");
 	if (idx != -1) {
 		curPage = curPage.substring(0, idx);
+	}
+	for (i = 0; i < secondLevPathCount; ++i) {
+		if (curUrl.search(secondLevPath[i]) != -1) {
+			curPage = secondLevPath[i] + curPage;
+		}
 	}
 
 	var firstLevCount = menuContent.length;

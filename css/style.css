@@ -148,15 +148,24 @@ code {
 #navWrapper {
 	overflow: auto;
     position: fixed; 
-    top: 20px; 
-    left: 0px; 
-    height: 500px;
-    width: 240px;
+    top: 0; 
+    left: 0;
+	width: 240px;
+    height: 100%;
 	background-color: white;
 }
 .drawerNav #navWrapper {
 	display: none;
 	z-index: 1000;
+}
+#navWrapper #navLogo {
+	padding: 14px 4px 13px 24px;
+	margin-right: 20px;
+	border-bottom: 1px solid #e0e0e0;
+}
+#navWrapper #navLogo img {
+	width: 90px;
+	height: 32px;
 }
 #navWrapper a {
 	text-decoration: none;
@@ -165,16 +174,19 @@ code {
 #navWrapper .foldingList {
 	width: 220px;
 }
-#navWrapper .trigger,#navWrapper .foldingContainer li {
-	line-height: 20px;
-	padding: 5px 10px;
-}
 #navWrapper .trigger {
+	line-height: 20px;
+	padding: 15px 0 15px 22px;
 	margin-top: 1px;
 	margin-bottom: 1px;
 }
 #navWrapper .trigger a {
 	color: black;
+	font-weight: bold;
+}
+#navWrapper .foldingContainer li {
+	line-height: 20px;
+	padding: 10px 24px 10px 46px;
 }
 #navWrapper .foldingContainer li a {
 	color: #555555;
@@ -183,19 +195,13 @@ code {
 	color: #7AA1B0;
 }
 #navWrapper a.highlight {
-	color: #0099CC !important;
+	color: #00BCD4 !important;
 }
 #navWrapper .headerShown {
-	background: #ECECEC url('../imgs/folding_up.png') 200px center no-repeat;
-}
-#navWrapper .shown {
-	background-color: #F1F1F1;
+	background: transparent url('../imgs/folding_up.png') 200px center no-repeat;
 }
 #navWrapper .headerHidden {
 	background: transparent url('../imgs/folding_down.png') 200px center no-repeat;
-}
-#navWrapper .hidden {
-	background-color: transparent;
 }
 
 .drawerNav #mask {
