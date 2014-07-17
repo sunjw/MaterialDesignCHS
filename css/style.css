@@ -57,12 +57,14 @@ code {
 	color: #006600;
 }
 
-#header,#content,#footer {
+.normalNav #header,.normalNav #content,.normalNav #footer {
     margin-left: 240px;
 }
+
 #header .contentGrid,#content .contentGrid,#footer .contentGrid {
     width: 1124px;
     margin: 0 auto;
+	overflow: hidden;
 }
 
 #header {
@@ -80,7 +82,6 @@ code {
 
 .#header .contentGrid {
     height: 86px;
-	line-height: 86px;
 }
 .normalHeader #header .contentGrid {
 	padding-top: 115px;
@@ -94,11 +95,17 @@ code {
 	text-decoration: none;
     display: block;
 	width: 100%;
+	left: 72px;
+}
+.normalNav #header a.fixedTitle {
+	margin-left: 240px;
 }
 #header a.normalTitle {
     position: relative;
     top: 20px;
 	font-size: 56px;
+	line-height: 56px;
+	height: 86px;
 }
 #header a.normalTitle #subTitle {
 	display: none;
@@ -107,6 +114,8 @@ code {
     position: fixed;
     top: 20px;
 	font-size: 24px;
+	line-height: 24x;
+	height: 30px;
 }
 #header a.fixedTitle #subTitle {
 	display: inline;
@@ -120,6 +129,21 @@ code {
 	right: 10px;
 	bottom: 10px;
 }
+#header #navButton {
+	width: 24px;
+	height: 24px;
+	padding: 12px;
+	position: fixed;
+	top: 6px;
+	left: 8px;
+	cursor: pointer;
+}
+.normalNav #header #navButton {
+	display: none;
+}
+.drawerNav #header #navButton {
+	display: block;
+}
 
 #navWrapper {
 	overflow: auto;
@@ -127,14 +151,19 @@ code {
     top: 20px; 
     left: 0px; 
     height: 500px;
-    width: 180px;
+    width: 240px;
+	background-color: white;
+}
+.drawerNav #navWrapper {
+	display: none;
+	z-index: 1000;
 }
 #navWrapper a {
 	text-decoration: none;
 }
 
 #navWrapper .foldingList {
-	width: 160px;
+	width: 220px;
 }
 #navWrapper .trigger,#navWrapper .foldingContainer li {
 	line-height: 20px;
@@ -157,18 +186,32 @@ code {
 	color: #0099CC !important;
 }
 #navWrapper .headerShown {
-	background: #ECECEC url('../imgs/folding_up.png') 140px center no-repeat;
+	background: #ECECEC url('../imgs/folding_up.png') 200px center no-repeat;
 }
 #navWrapper .shown {
 	background-color: #F1F1F1;
 }
 #navWrapper .headerHidden {
-	background: transparent url('../imgs/folding_down.png') 140px center no-repeat;
+	background: transparent url('../imgs/folding_down.png') 200px center no-repeat;
 }
 #navWrapper .hidden {
 	background-color: transparent;
 }
 
+.drawerNav #mask {
+	width: 100%;
+	height: 100%;
+	z-index: 500;
+	background-color: black;
+	opacity: 0.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#content {
+	
+}
 .normalHeader #content {
 	padding-top: 0;
 }
