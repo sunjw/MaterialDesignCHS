@@ -233,11 +233,8 @@ function menuFix() {
 	var windowHeight = $(window).height();
 
 	var navWrapper = $("#navWrapper");
-	var backToTop = $("#backToTop");
 	//navWrapper.css("left", (0 - scrollLeftPos) + "px");
 	if (scrollTopPos < 80) {
-	backToTop.hide();
-
 	navWrapper.css("position", "absolute");
 	navWrapper.css("top", "100px");
 	navWrapper.css("left", "0px");
@@ -247,12 +244,25 @@ function menuFix() {
 	navWrapper.css("top", "20px");
 	navWrapper.css("left", "0");
 	navWrapper.css("height", windowHeight - 30 + "px");
-
-	backToTop.css("position", "fixed");
-	backToTop.css("top", "0");
-	backToTop.css("left", "0");
-	backToTop.show();
 	}*/
+}
+
+function headerFix() {
+	var scrollTopPos = (window.pageYOffset ||
+		document.body.scrollTop ||
+		document.documentElement.scrollTop);
+    var windowWidth = $(window).width();
+
+	var header = $("#header");
+	if (scrollTopPos < 80) {
+		header.addClass("normalHeader");
+        header.removeClass("fixedHeader");
+        header.css("width", "auto");
+	} else {
+        header.removeClass("normalHeader");
+		header.addClass("fixedHeader");
+        header.css("width", windowWidth - 240 + "px");
+	}
 }
 
 function initMenu() {
@@ -266,11 +276,14 @@ function initMenu() {
 	// Menu position fix
 	window.onscroll = function () {
 		menuFix();
+        headerFix();
 	}
 	window.onresize = function () {
 		menuFix();
+        headerFix();
 	}
 	menuFix();
+    headerFix();
 }
 
 // Acronym tooltip

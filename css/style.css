@@ -68,11 +68,19 @@ code {
 #header {
     margin-bottom: 20px;
 	font-size: 48px;
+    line-height: 48px;
 	border-bottom: 1px solid #33B5E5;
+    background-color: white;
+}
+#header.normalHeader {
+    height: 80px;
+}
+#header.fixedHeader {
+    position: fixed;
+	height: 120px;
 }
 #header .contentGrid {
-    height: 80px;
-    line-height: 48px;
+    
 }
 #header a {
 	color: #333333;
