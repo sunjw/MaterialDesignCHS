@@ -72,7 +72,7 @@ code {
     background-color: white;
 }
 .normalHeader #header {
-	position: relative;
+    position: relative;
     height: 256px;
 }
 .fixedHeader #header {
