@@ -163,7 +163,7 @@ function replaceAll(str, find, replace) {
 function fillMenu() {
 	var i = 0,
 	j = 0;
-	var menuCont = $("#navWrapper");
+	var menuCont = $("#menuGrid");
 	var curPage = curUrl.split("/");
 	curPage = curPage[curPage.length - 1]; // *.html
 	if (curPage.search(".html") == -1) {
@@ -248,7 +248,7 @@ function menuFix() {
 		// normal
 		body.addClass("normalNav");
 		body.removeClass("drawerNav");
-
+		
 		navWrapper.removeAttr("style");
 		content.removeAttr("style");
 
@@ -285,11 +285,11 @@ function headerFix() {
 		// fixed
 		body.removeClass("normalHeader");
 		body.addClass("fixedHeader");
-        if (body.hasClass("normalNav")) {
-            header.css("width", windowWidth - 240 + "px");
-        } else {
-            header.css("width", windowWidth + "px");
-        }
+		if (body.hasClass("normalNav")) {
+			header.css("width", windowWidth - 240 + "px");
+		} else {
+			header.css("width", windowWidth + "px");
+		}
 	}
 
 	// title
@@ -347,15 +347,15 @@ function initMenu() {
 
 	// Menu position fix
 	window.onscroll = function () {
-		menuFix();
 		headerFix();
+		menuFix();
 	}
 	window.onresize = function () {
-		menuFix();
 		headerFix();
+		menuFix();
 	}
-	menuFix();
 	headerFix();
+	menuFix();
 }
 
 // Acronym tooltip

@@ -166,8 +166,17 @@ code {
 	width: 90px;
 	height: 32px;
 }
+
 #navWrapper a {
 	text-decoration: none;
+}
+
+#navWrapper #navGrid {
+	position: relative;
+	min-height: 100%;
+}
+#navWrapper #navGrid #menuGrid {
+	padding-bottom: 96px;
 }
 
 #navWrapper .foldingList {
@@ -199,6 +208,20 @@ code {
 }
 #navWrapper .headerHidden {
 	background: transparent url('../imgs/folding_down.png') 200px center no-repeat;
+}
+
+#navWrapper #navFooter {
+	position: absolute;
+    bottom: 0;
+    color: #212121;
+    font-size: 13px;
+	width: 220px;
+    height: 95px;
+    line-height: 24px;
+	border-top: 1px solid #e0e0e0;
+}
+#navWrapper #navFooter #navFooterGrid {
+	padding: 22px;
 }
 
 .drawerNav #mask {
