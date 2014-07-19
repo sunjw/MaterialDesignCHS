@@ -13,7 +13,7 @@ var secondLevPathCount = secondLevPath.length;
 var menuContent = [
 	[{
 			text : "开始",
-			url : "material-design/xx"
+			url : ""
 		}, {
 			text : "视觉创意",
 			url : "material-design/introduction.html"
@@ -218,7 +218,7 @@ function fillMenu() {
 				// menu header
 				var listHeader = $("<div/>");
 				listHeader.addClass("trigger");
-				listHeader.append(link);
+				listHeader.html(menuItem.text);
 				foldingList.append(listHeader);
 			} else {
 				var linkCont = $("<li/>");
@@ -466,7 +466,7 @@ $(function () {
 
 	initTooltip();
 
-	fillFooter();
+	//fillFooter();
 });
 
 // Google Analytics

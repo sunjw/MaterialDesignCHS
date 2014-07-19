@@ -68,7 +68,7 @@ code {
 }
 
 #header {
-	border-bottom: 1px solid #33B5E5;
+	
 }
 .normalHeader #header {
     position: relative;
@@ -77,6 +77,7 @@ code {
 .fixedHeader #header {
 	position: fixed;
 	height: 64px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
 .#header .contentGrid {
@@ -150,13 +151,14 @@ code {
 	width: 240px;
     height: 100%;
 	background-color: white;
+	border-right: 1px solid #e0e0e0;
 }
 .drawerNav #navWrapper {
 	display: none;
 	z-index: 1000;
 }
 #navWrapper #navLogo {
-	padding: 14px 4px 13px 24px;
+	padding: 13px 4px 13px 24px;
 	margin-right: 20px;
 	border-bottom: 1px solid #e0e0e0;
 }
@@ -176,8 +178,6 @@ code {
 	padding: 15px 0 15px 22px;
 	margin-top: 1px;
 	margin-bottom: 1px;
-}
-#navWrapper .trigger a {
 	color: black;
 	font-weight: bold;
 }
@@ -188,7 +188,7 @@ code {
 #navWrapper .foldingContainer li a {
 	color: #555555;
 }
-#navWrapper .trigger a:hover,#navWrapper .foldingContainer li a:hover {
+#navWrapper .foldingContainer li a:hover {
 	color: #7AA1B0;
 }
 #navWrapper a.highlight {
