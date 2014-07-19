@@ -234,6 +234,22 @@ function fillMenu() {
 	menuCont.append($("<br/>").addClass("clear"));
 }
 
+function menuFooterFix() {
+	var windowHeight = $(window).height();
+
+	var navGrid = $("#navWrapper #navGrid");
+	var menuGrid = $("#navWrapper #navGrid #menuGrid");
+	var menuGridHeight = menuGrid.height();
+
+	//console.log("menuGridHeight + 160 " + menuGridHeight);
+	//console.log("windowHeight " + windowHeight);
+	if (menuGridHeight + 162 < windowHeight) {
+		navGrid.css("height", windowHeight + "px");
+	} else {
+		navGrid.css("height", menuGridHeight + 162 + "px");
+	}
+}
+
 function menuFix() {
 	var scrollLeftPos = (window.pageXOffset ||
 		document.body.scrollLeft ||
@@ -248,7 +264,7 @@ function menuFix() {
 		// normal
 		body.addClass("normalNav");
 		body.removeClass("drawerNav");
-		
+
 		navWrapper.removeAttr("style");
 		content.removeAttr("style");
 
@@ -263,6 +279,7 @@ function menuFix() {
 
 		content.css("marginLeft", windowWidth - 1124 + "px");
 	}
+
 }
 
 function headerFix() {
@@ -338,7 +355,8 @@ function initMenu() {
 	fillMenu();
 
 	jqFolding.setup({
-		initState : "hide"
+		initState : "hide",
+		toggleCallback : menuFooterFix
 	});
 	jqFolding.init();
 
@@ -353,9 +371,12 @@ function initMenu() {
 	window.onresize = function () {
 		headerFix();
 		menuFix();
+		menuFooterFix();
 	}
+
 	headerFix();
 	menuFix();
+	menuFooterFix();
 }
 
 // Acronym tooltip

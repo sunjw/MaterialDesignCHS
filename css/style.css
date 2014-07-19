@@ -173,7 +173,7 @@ code {
 
 #navWrapper #navGrid {
 	position: relative;
-	min-height: 100%;
+	/*min-height: 100%;*/
 }
 #navWrapper #navGrid #menuGrid {
 	padding-bottom: 96px;
@@ -218,6 +218,7 @@ code {
 	width: 220px;
     height: 95px;
     line-height: 24px;
+	background-color: white;
 	border-top: 1px solid #e0e0e0;
 }
 #navWrapper #navFooter #navFooterGrid {
