@@ -119,14 +119,6 @@ code {
 #header a.fixedTitle #subTitle {
 	display: inline;
 }
-#header .headerChs {
-	font-size: 14px;
-	height: 16px;
-	line-height: 16px;
-	position: absolute;
-	right: 10px;
-	bottom: 10px;
-}
 #header #navButton {
 	width: 24px;
 	height: 24px;
