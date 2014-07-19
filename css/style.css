@@ -71,7 +71,7 @@ code {
 	border-bottom: 1px solid #33B5E5;
 }
 .normalHeader #header {
-	position: relative;
+    position: relative;
     height: 256px;
 }
 .fixedHeader #header {

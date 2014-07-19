@@ -285,7 +285,11 @@ function headerFix() {
 		// fixed
 		body.removeClass("normalHeader");
 		body.addClass("fixedHeader");
-		header.css("width", windowWidth + "px");
+        if (body.hasClass("normalNav")) {
+            header.css("width", windowWidth - 240 + "px");
+        } else {
+            header.css("width", windowWidth + "px");
+        }
 	}
 
 	// title
