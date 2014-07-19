@@ -69,7 +69,6 @@ code {
 
 #header {
 	border-bottom: 1px solid #33B5E5;
-    background-color: white;
 }
 .normalHeader #header {
 	position: relative;
@@ -91,7 +90,6 @@ code {
 }
 
 #header a {
-	color: #333333;
 	text-decoration: none;
     display: block;
 	width: 100%;
@@ -121,7 +119,6 @@ code {
 	display: inline;
 }
 #header .headerChs {
-	color: #33B5E5;
 	font-size: 14px;
 	height: 16px;
 	line-height: 16px;
