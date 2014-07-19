@@ -16,6 +16,12 @@
 	#header .headerChs {
 		color: white;
 	}
+	#footer #pagePrevious {
+		background-color: #9c27b0;
+	}
+	#footer #pageNext {
+		background-color: #009688;
+	}
 	</style>
 	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
@@ -47,8 +53,24 @@
 	</div>
 	<div class="clear"></div>
 	<div id="footer">
-        <div class="contentGrid">
-        </div>
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="#">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>Previous:</span>
+					<div>Meaningful Transitions</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="#">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>Next:</span>
+					<div>Style</div>
+				</a>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

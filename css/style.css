@@ -61,7 +61,7 @@ code {
     margin-left: 240px;
 }
 
-#header .contentGrid,#content .contentGrid,#footer .contentGrid {
+#header .contentGrid,#content .contentGrid {
     width: 1124px;
     margin: 0 auto;
 	overflow: hidden;
@@ -410,12 +410,58 @@ code {
 }
 
 #footer {
-	color: #999999;
+	margin-top: 60px;
+	color: white;
     font-size: 12px;
     line-height: 15px;
-    margin-top: 60px;
-    padding-bottom: 40px;
+    height: 96px;
 }
+
+#footer .pageNav {
+	float: left;
+	width: 50%;
+	height: 96px;
+}
+#footer .pageNav .pageNavContent {
+	width: 560px;
+	height: 96px;
+}
+#footer #pagePrevious .pageNavContent {
+	float: right;
+	text-align: left;
+}
+#footer #pagePrevious .pageNavContent a img {
+	float: left;
+	margin-right: 10px;
+    padding-top: 23px;
+}
+#footer #pageNext .pageNavContent {
+	float: left;
+	text-align: right;
+}
+#footer #pageNext .pageNavContent a img {
+	float: right;
+	margin-left: 10px;
+    padding-top: 23px;
+}
+#footer .pageNav .pageNavContent a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	line-height: 24px;
+	padding-top: 24px;
+}
+#footer .pageNav .pageNavContent a span {
+	font-size: 15px;
+	line-height: 18px;
+	opacity: 0.6;
+}
+#footer .pageNav .pageNavContent a div {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 24px;
+}
+
 #footer .mirrorTitle {
 	float: left;
 	height: 34px;
@@ -459,12 +505,6 @@ code {
 #footer .lastLine {
 	margin-top: 10px;
 	height: 65px;
-}
-#footer a {
-	color: #999999;
-}
-#footer a:hover {
-	color: #7AA1B0;
 }
 
 acronym {
