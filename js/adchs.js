@@ -9,6 +9,8 @@ var curUrl = window.location.href;
 var secondLevPath = ["building-blocks/", "material-design/", "patterns/", "style/"];
 var secondLevPathCount = secondLevPath.length;
 
+var responsibleHeader = true;
+
 // Menu Setup
 var menuContent = [
 	[{
@@ -292,6 +294,17 @@ function headerFix() {
 	var header = $("#header");
 	var headerTitle = $("#header a");
 
+	if (!responsibleHeader) {
+		// Just fix width
+		if (body.hasClass("normalNav")) {
+			header.css("width", windowWidth - 240 + "px");
+		} else {
+			header.css("width", windowWidth + "px");
+		}
+
+		return;
+	}
+
 	// header
 	if (scrollTopPos < 192) {
 		// normal
@@ -362,6 +375,11 @@ function initMenu() {
 
 	var navButton = $("#header #navButton");
 	navButton.click(toggleMenu);
+
+	var body = $("body");
+	if (body.hasClass("fixedHeader")) {
+		responsibleHeader = false;
+	}
 
 	// Menu position fix
 	window.onscroll = function () {
