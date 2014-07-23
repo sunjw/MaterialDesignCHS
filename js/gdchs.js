@@ -1,5 +1,5 @@
 /**
- * Common js for ADCHS
+ * Common js for GDCHS
  * License: GPL 2.0
  * Author: Sun Junwen
  */
