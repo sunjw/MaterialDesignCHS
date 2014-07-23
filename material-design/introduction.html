@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-    <title>Android Design</title>
+    <title>介绍 - Material Design - Google 设计指导</title>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
@@ -12,6 +12,12 @@
 	}
 	#header a {
 		color: white;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #00bcd4;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #00bcd4;
 	}
 	#footer #pagePrevious {
 		background-color: #9c27b0;
@@ -48,14 +54,93 @@
 	</div>
 	<div id="content">
         <div class="contentGrid">
-            <div id="welcomeWrapper">
-                <a href="get-started/create-vistion.html"><img src="../imgs/index_landing_page.png" /></a>
-                <div id="welcomeOverlay">
-                    欢迎来到 <span class="highlight">Android Design</span>，在这里你可以学习到如何设计出优秀的 Android 应用。<br /><br />
-                    想了解 <span class="highlight">Android 4.4 KitKat</span> 在设计上有什么新变化？ 来看看 <a href="patterns/new.html"> Android 新特性 </a> 吧。<br /><br />
-                    <a id="cvLink" href="get-started/create-vistion.html">视觉创意</a>
-                </div>
-            </div>
+            <div class="chapter">
+				<h1 class="chapterTitle">介绍</h1>
+				<div class="chapterContent">
+					<div class="media">
+						<img alt="" src="materialdesign-goals-landingimage_large_mdpi.png" />
+					</div>
+					<div class="chapterIntro">
+						 <p>We challenged ourselves to create a visual language for our users that synthesizes the classic principles of good design with the innovation and possibility of technology and science. This is material design. This spec is a living document that will be updated as we continue to develop the tenets and specifics of material design.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#introductionGoals">设计目标</a>
+							</li>
+							<li>
+								<a href="#introductionPrinciples">设计原则</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="introductionGoals" class="article">
+							<h2>设计目标</h2>
+							<div class="section">
+								<div class="column col6">
+									Create a visual language that synthesizes classic principles of good design with the innovation and possibility of technology and science. 
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="materialdesign-goals-swirlanddot_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									Develop a single underlying system that allows for a unified experience across platforms and device sizes. Mobile precepts are fundamental, but touch, voice, mouse, and keyboard are all ﬁrst-class input methods. 
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="materialdesign-goals-cutrectangles_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div>
+						<div id="introductionPrinciples" class="article lastArticle">
+							<h2>设计原则</h2>
+							<div class="section">
+								<div class="column col6">
+									<div class="media">
+										<img alt="" src="materialdesign-principles-layersquares_large_mdpi.png" />
+									</div>
+									<h4 class="figureTitle">材质化的暗喻</h4>
+									<div class="figureDesc">
+										<p>A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic.</p>
+										<p>Surfaces and edges of the material provide visual cues that are grounded in reality. The use of familiar tactile attributes helps users quickly understand affordances. Yet the flexibility of the material creates new affordances that supercede those in the physical world, without breaking the rules of physics.</p>
+										<p>The fundamentals of light, surface, and movement are key to conveying how objects move, interact, and exist in space in relation to each other. Realistic lighting shows seams, divides space, and indicates moving parts. </p>
+									</div>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img alt="" src="materialdesign-principles-circleplus_large_mdpi.png" />
+									</div>
+									<h4 class="figureTitle">大胆、图形化、国际化</h4>
+									<div class="figureDesc">
+										<p>The foundational elements of print-based design—typography, grids, space, scale, color, and use of imagery—guide visual treatments. These elements do far more than please the eye; they create hierarchy, meaning, and focus. Deliberate color choices, edge-to-edge imagery, large-scale typography, and intentional white space create a bold and graphic interface that immerses the user in the experience.</p>
+										<p>An emphasis on user actions makes core functionality immediately apparent and provides waypoints for the user. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img alt="" src="materialdesign-principles-flyingsquare_large_mdpi.png" />
+									</div>
+									<h4 class="figureTitle">动画的意义</h4>
+									<div class="figureDesc">
+										<p>Motion respects and reinforces the user as the prime mover. Primary user actions are inflection points that initiate motion, transforming the whole design.</p>
+										<p>All action takes place in a single environment. Objects are presented to the user without breaking the continuity of experience even as they transform and reorganize.</p>
+										<p>Motion is meaningful and appropriate, serving to focus attention and maintain continuity. Feedback is subtle yet clear. Transitions are efﬁcient yet coherent. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
 	</div>
 	<div class="clear"></div>

@@ -260,7 +260,6 @@ function menuFix() {
 
 	var body = $("body");
 	var navWrapper = $("#navWrapper");
-	var content = $("#content");
 
 	if (windowWidth >= 1364) {
 		// normal
@@ -268,7 +267,6 @@ function menuFix() {
 		body.removeClass("drawerNav");
 
 		navWrapper.removeAttr("style");
-		content.removeAttr("style");
 
 		var mask = $("#mask");
 		if (mask.length) {
@@ -279,7 +277,6 @@ function menuFix() {
 		body.removeClass("normalNav");
 		body.addClass("drawerNav");
 
-		content.css("marginLeft", windowWidth - 1124 + "px");
 	}
 
 }

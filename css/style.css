@@ -40,7 +40,7 @@
 
 body {
     color: #222222;
-    font: 400 14px/20px Roboto,sans-serif;
+    font: 400 14px/20px Roboto,sans-serif,'Hiragino Sans GB','Microsoft YaHei','微软雅黑','STHeiti','黑体',sans-serif;
 }
 html,body {
 	background-color: #F9F9F9;
@@ -247,6 +247,9 @@ code {
 #content a:active {
 	color: #33B5E5 !important;
 }
+
+
+
 #content .highlight {
 	color: black;
 	font-weight: 600;
@@ -301,76 +304,105 @@ code {
 	padding-left: 15px;
 	background: url('../imgs/disclosure_left.png') left center no-repeat;
 }
-#content a.buttonNext,#content a.buttonPrev {
-	color: #258AAF;
-}
-#mainContent .contentHeaderWraper {
-	border-bottom: 1px solid #CCCCCC;
-}
-.contentHeaderWraper h2 {
-	color: black;
-    font-size: 18px;
-    height: 30px;
-    line-height: 30px;
-    margin-bottom: 10px;
-    padding-right: 10px
-}
-.contentHeaderWraper h2 .originalLink {
-	font-size: 12px;
-	font-weight: normal;
+#content a {
+	text-decoration: none;
 }
 
-#mainContent p,#mainContent ul,#mainContent img,#mainContent h4 {
-	margin: 0 0 10px 0;
+#content .chapter {
+	padding-top: 80px;
 }
-#mainContent ul li p,#mainContent ul li img,#mainContent ul li h4 {
-	margin: 0 0 10px 0;
+#content .chapter h1 {
+	font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 30px;
 }
-#mainContent a {
-	text-decoration: underline;
+#content .chapter h4 {
+	font-weight: 600;
 }
-#mainContent h4 {
-	font-size: 14px;
-	font-weight: 700;
-	font-style: normal;
+#content .chapter .chapterIntro {
+	font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 0;
+    padding: 0 38px 40px 0;
+}
+#content .chapter .chapterToc {
+	border-left: 5px solid;
+    padding-left: 15px;
+}
+#content .chapter .chapterToc h2,#content .chapter .chapterToc ul li {
+	font-size: 16px;
+	line-height: 32px;
+}
+#content .chapter .article {
+	padding-top: 50px;
+	border-bottom: 1px solid #cccccc;
+	color: #212121;
+    font-size: 14px;
+    line-height: 24px;
+	font-weight: 400;
+}
+#content .chapter .lastArticle {
+	border-bottom: 0;
+}
+#content .chapter .article h2 {
+	font-size: 24px;
+	font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+#content .chapter .article .section {
+	padding-bottom: 60px;
+}
+#content .chapter .article .figureTitle {
+	margin-bottom: 20px;
+}
+#content .chapter .article .figureDesc {
+	color: #757575;
 }
 
-#content .nopaddingLeft {
-	padding-left: 0 !important;
-}
 #content .column {
 	float: left;
 	margin-right: 20px;
 }
 #content .col2 {
-	width: 100px;
+	width: 120px;
 }
 #content .col3 {
-	width: 160px;
+	width: 180px;
 }
 #content .col4 {
-	width: 220px;
+	width: 240px;
 }
 #content .col5 {
-	width: 280px;
+	width: 300px;
 }
-#content .col6 {
+#content .col5-3 {
 	width: 340px;
 }
+#content .col6 {
+	width: 360px;
+}
 #content .col7 {
-	width: 400px;
+	width: 420px;
 }
 #content .col8 {
-	width: 460px;
+	width: 480px;
 }
 #content .col9 {
-	width: 520px;
+	width: 540px;
 }
 #content .col10 {
-	width: 580px;
+	width: 600px;
 }
 #content .col11 {
-	width: 640px;
+	width: 660px;
+}
+#content .col12 {
+	width: 720px;
+}
+#content .col12-1 {
+	width: 740px;
 }
 
 #content .noteInfo,#content .noteDev {
