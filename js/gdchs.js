@@ -295,6 +295,12 @@ function headerFix() {
 		} else {
 			header.css("width", windowWidth + "px");
 		}
+		
+		headerTitle.removeClass("normalTitle");
+		headerTitle.addClass("fixedTitle");
+		
+		var content = $("#content");
+		content.css("paddingTop", "64px");
 
 		return;
 	}
