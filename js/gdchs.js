@@ -6,7 +6,7 @@
 
 var curUrl = window.location.href;
 
-var secondLevPath = ["building-blocks/", "material-design/", "patterns/", "style/"];
+var secondLevPath = ["material-design/", "animation/", "style/", "layout/", "components/", "patterns/", "usability"];
 var secondLevPathCount = secondLevPath.length;
 
 var responsibleHeader = true;
@@ -21,7 +21,7 @@ var menuContent = [
 			url : "material-design/introduction.html"
 		}
 	], [{
-			text : "动画",
+			text : "动画效果",
 			url : ""
 		}, {
 			text : "Authentic Motion",

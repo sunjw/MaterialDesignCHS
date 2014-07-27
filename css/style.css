@@ -192,9 +192,6 @@ code {
 #navWrapper .foldingContainer li a:hover {
 	color: #7AA1B0;
 }
-#navWrapper a.highlight {
-	color: #00BCD4 !important;
-}
 #navWrapper .headerShown {
 	background: transparent url('../imgs/folding_up.png') 200px center no-repeat;
 }
@@ -238,7 +235,7 @@ code {
 	padding-top: 256px;
 }
 #content a {
-	color: #258AAF;
+	color: #0277bb;
 	text-decoration: none;
 }
 #content a:hover {
@@ -299,7 +296,7 @@ code {
 }
 
 #content .engLink {
-	padding: 8px 0;
+	padding-top: 10px;
 	color: #555555;
 }
 
@@ -346,6 +343,12 @@ code {
     line-height: 32px;
     margin-bottom: 30px;
 }
+#content .chapter .article h3 {
+	font-size: 16px;
+	font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
 #content .chapter .article .section {
 	padding-bottom: 60px;
 }
@@ -353,6 +356,27 @@ code {
 	margin-bottom: 20px;
 }
 #content .chapter .article .figureDesc {
+	color: #757575;
+}
+#content .chapter .media {
+	margin-bottom: 10px;
+}
+#content .chapter .goodBlock {
+	padding-bottom: 10px;
+	border-bottom: 15px solid #4caf50;
+}
+#content .chapter .goodLabel {
+	color: #4caf50;
+}
+#content .chapter .badBlock {
+	padding-bottom: 10px;
+	border-bottom: 15px solid #f44336;
+}
+#content .chapter .badLabel {
+	color: #f44336;
+}
+#content .chapter .exampleDesc {
+	padding-bottom: 20px;
 	color: #757575;
 }
 

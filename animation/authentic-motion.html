@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>Authentic Motion - 动画效果 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #9c27b0;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #9c27b0 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #9c27b0;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #9c27b0;
+	}
+	#footer #pagePrevious {
+		background-color: #00bcd4;
+	}
+	#footer #pageNext {
+		background-color: #9c27b0;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="normalHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="index.html">Animation
+<span id="subTitle">&nbsp;&gt;&nbsp;Authentic Motion</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/animation/authentic-motion.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">Authentic Motion</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Perceiving an object's tangible form helps us understand how to manipulate it. Observing an object's motion tells us whether it is light or heavy, flexible or rigid, small or large. Motion in the world of material design is not only beautiful, it builds meaning about the spatial relationships, functionality, and intention of the system.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#authenticMotionMassWeight">Mass and Weight</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="authenticMotionMassWeight" class="article lastArticle">
+							<h2>Mass and Weight</h2>
+							<div class="section">
+								<div class="column col12">
+									Physical objects have mass and move only when forces are applied to them. Consequently, objects can’t start or stop instantaneously. Animation with abrupt starts and stops or rapid changes in direction appears unnatural and can be an unexpected and unpleasant disruption for the user. 
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>最佳的实践</h3>
+								<div class="column col6">
+									A critical aspect of motion for material design is to retain the feeling of physicality without sacrificing elegance, simplicity, beauty, and the magic of a seamless user experience. Here are some guidelines to help translate these concepts into animations.
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media goodBlock">
+										<video class="clickPlay" loop="" height="270" width="740">
+											<source src="http://material-design.storage.googleapis.com/videos/animation-authentic-motion-authenticMotion_massAndWeight_ex1_large_xhdpi.webm" type="video/webm"></source>
+											<source src="http://material-design.storage.googleapis.com/videos/animation-authentic-motion-authenticMotion_massAndWeight_ex1_large_xhdpi.mp4" type="video/mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Motion with swift acceleration and gentle deceleration feels natural and delightful.</p>
+									</div>
+									<div class="media badBlock">
+										<video class="clickPlay" loop="" height="270" width="740">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/animation-authentic-motion-authenticMotion_massAndWeight_ex2_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/animation-authentic-motion-authenticMotion_massAndWeight_ex2_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Linear motion feels mechanical. An abrupt change in velocity at both the beginning and end of the animation curve means the object instantaneously starts and stops, which is unrealistic.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>特例: 框架切换</h3>
+								<div class="column col6">
+									When an object enters the frame, ensure it's moving at its peak velocity. This behavior emulates natural movement: a person entering the frame of vision does not begin walking at the edge of the frame but well before it. Similarly, when an object exits the frame, have it maintain its velocity, rather than slowing down as it exits the frame. Easing in when entering and slowing down when exiting draw the user's attention to that motion, which, in most cases, isn't the effect you want.
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media goodBlock">
+										<video class="clickPlay" loop="" height="270" width="740">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/videos-authenticMotion_massAndWeight_ex3_do_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/videos-authenticMotion_massAndWeight_ex3_do_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Enter and exit frame at peak velocity. The ball enters and exits frame at peak velocity, creating a confident transition.</p>
+									</div>
+									<div class="media badBlock">
+										<video class="clickPlay" loop="" height="270" width="740">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/animation-authenticmotion-massandweight-authenticmotion_massandweight_example6_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/animation-authenticmotion-massandweight-authenticmotion_massandweight_example6_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Speed up when entering or slow down when exiting. Don’t distract the user with unnecessary changes in velocity.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>做出调整</h3>
+								<div class="column col12">
+									Not all objects move the same way. Lighter/smaller objects may accelerate or decelerate faster, because they have less mass and require less force to do so. Larger/heavier objects may need more time to reach peak speed and come to rest. Think about how this applies to the various UI elements in your app and consider how their motion should be represented.
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="../material-design/introduction.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>Material Design</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="responsive-interaction.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>Responsive Interaction</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
