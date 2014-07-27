@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>Responsive Interaction - 动画效果 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #9c27b0;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #9c27b0 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #9c27b0;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #9c27b0;
+	}
+	#footer #pagePrevious {
+		background-color: #9c27b0;
+	}
+	#footer #pageNext {
+		background-color: #9c27b0;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="index.html">Animation<span id="subTitle">&nbsp;&gt;&nbsp;Responsive Interaction</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/animation/responsive-interaction.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">Responsive Interaction</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Responsive interaction builds trust with the user and engages them. When a user interacts with an app and beautiful yet perfectly logical things happen, the user feels satisfied—even delighted. It is thoughtful and purposeful, not random, and can be gently whimsical but never distracting. It encourages deeper exploration of an app: what will happen if I touch this? And then this?</p>
+						 <p>In material design, apps are responsive to and eager for user input:</p>
+						 <ul>
+							<li>Touch, voice, mouse and keyboard are all first-class input methods</li>
+							<li>Although UI elements appear tangible, they are locked behind a layer of glass (the computer or device’s screen). Visual and motion cues help bridge that gap by immediately acknowledging input and implying direct manipulation.</li>
+						 </ul>
+						 <p>Responsive interaction elevates an app from something that delivers information to the user upon request to something that communicates with the user in a tangible way.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#examples">Examples</a>
+							</li>
+							<li>
+								<a href="#surfaceReaction">Surface Reaction</a>
+							</li>
+							<li>
+								<a href="#materialResponse">Material Response</a>
+							</li>
+							<li>
+								<a href="#radialAction">Radial Action</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="examples" class="article">
+							<h2>Examples</h2>
+							<div class="section">
+								<div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="405">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/animation-responsiveinteraction-responsiveinteraction-2-celebratetouch-localized-ink-reaction2_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/animation-responsiveinteraction-responsiveinteraction-2-celebratetouch-localized-ink-reaction2_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div>
+										<p>Surface reaction</p>
+									</div>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="405">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/animation-responsiveinteraction-inkreactions-notouchripplepressandrelease_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/animation-responsiveinteraction-inkreactions-notouchripplepressandrelease_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div>
+										<p>Material response</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="405">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/animation-responsive-interation-radialReact-example_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/animation-responsive-interation-radialReact-example_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div>
+										<p>Radial action</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="surfaceReaction" class="article">
+							<h2>Surface Reaction</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>Upon receiving an input event, the system provides an instantaneous visual confirmation at the point of contact: under the pad of a finger for touch, at the mic for voice, or in the appropriate field for a keyboard press. One way to express this acknowledgment is through the ink metaphor, the dynamic display surface that coats every sheet of paper.</p>
+									<p>The core visual mechanism to express this contact is the Touch Ripple. This device articulates the attack and duration of a touch event, as well as dynamic aspects such as the amplitude of voice or the interpreted pressure of a touch. </p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>最佳的实践</h3>
+								<div class="column col6">
+									<p>Input occurs at specific points: at the contact point of a finger or at the mic icon for voice. From this point, make the visual reaction radial. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/animation-responsiveinteraction-inkreactions-touchripplepressandrelease_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/animation-responsiveinteraction-inkreactions-touchripplepressandrelease_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p>Touch ripple - press / release </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/animation-responsiveinteraction-inkreactions-touchrippledragindragout_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/animation-responsiveinteraction-inkreactions-touchrippledragindragout_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p>Touch ripple - drag in/out </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="materialResponse" class="article">
+							<h2>Material Response </h2>
+							<div class="section">
+								<div class="column col12">
+									<p>In addition to ink-like actions on the surface, the material itself can also respond to interaction. The material can lift up when touched or clicked, indicating an active state. The user can generate new or transform existing material upon touch or click, or directly manipulate sheets of material, dragging or flinging them. </p>
+								</div>
+								<br class="clear" />
+							</div>
+							<h3>最佳的实践</h3>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Point of origin</strong></p>
+									<p>When new material is generated as a result of direct user interaction, the motion of surface growth should originate from the point of input.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<video class="clickPlay" loop="" width="360" height="405">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/animation-responsive-surfaceresponse-pointorigin-do_example_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/animation-responsive-surfaceresponse-pointorigin-do_example_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Material appears from touch point, visually tying the element to the point of touch. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<video class="clickPlay" loop="" width="360" height="405">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/animation-responsive-surfaceresponse-pointorigin-dont_example_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/animation-responsive-surfaceresponse-pointorigin-dont_example_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Paper appears from center of screen, breaking relationship with input. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Lift on touch</strong></p>
+									<p>When a card or separable element is activated, the card should lift to indicate an active state.</p>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="405">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/animation-responsiveinteraction-inkreactions-notouchripplepressandrelease_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/animation-responsiveinteraction-inkreactions-notouchripplepressandrelease_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p>Lift upon touch </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="radialAction" class="article lastArticle">
+							<h2>Radial Action</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>All user initiated actions have an epicenter; the place or places where their intent enters the system. Add clarity to user initiated events by creating strong visual connections from user input, whether from fingers on a touch screen or voice through a microphone. State changes across the screen should trigger progressively as their distance to the point of contact increases, creating a ripple of action.</p>
+									<p>Inputs have an epicenter. Touch occurs at the point of contact, voice enters through the mic icon, keyboard through the individual keys.</p>
+									<p>Actions should visually connect to their respective input epicenter. Closer actions occur sooner than more distant ones, creating a ripple of actions (movement occurs from the distance from the epicenter).</p>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="authentic-motion.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>Authentic Motion</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="meaningful-transitions.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>Meaningful Transitions</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
