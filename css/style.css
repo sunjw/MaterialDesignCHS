@@ -248,8 +248,6 @@ code {
 	color: #33B5E5 !important;
 }
 
-
-
 #content .highlight {
 	color: black;
 	font-weight: 600;
@@ -279,14 +277,6 @@ code {
 	line-height: 30px;
 	margin-bottom: 10px;
 }
-.topNav {
-	margin-bottom: 35px;
-}
-.bottomNav {
-	border-top: 1px solid #CCCCCC;
-	border-bottom: none;
-	margin-top: 10px;
-}
 .contentNav .contentHeaderWraper {
 	float: left;
 	width: 520px;
@@ -306,6 +296,11 @@ code {
 }
 #content a {
 	text-decoration: none;
+}
+
+#content .engLink {
+	padding: 8px 0;
+	color: #555555;
 }
 
 #content .chapter {
