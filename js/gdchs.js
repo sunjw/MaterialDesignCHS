@@ -14,146 +14,143 @@ var responsibleHeader = true;
 // Menu Setup
 var menuContent = [
 	[{
-			text : "开始",
+			text : "Material Design",
 			url : ""
 		}, {
-			text : "视觉创意",
+			text : "介绍",
 			url : "material-design/introduction.html"
-		}, {
-			text : "设计原则",
-			url : "get-started/principles.html"
-		}, {
-			text : "UI 概览",
-			url : "get-started/ui-overview.html"
 		}
 	], [{
-			text : "风格",
-			url : "style/index.html"
+			text : "动画",
+			url : ""
 		}, {
-			text : "设备和显示",
-			url : "style/devices-displays.html"
+			text : "Authentic Motion",
+			url : "animation/authentic-motion.html"
 		}, {
-			text : "主题",
-			url : "style/themes.html"
+			text : "Responsive Interaction",
+			url : "animation/responsive-interaction.html"
 		}, {
-			text : "触摸反馈",
-			url : "style/touch-feedback.html"
+			text : "Meaningful Transitions",
+			url : "animation/meaningful-transitions.html"
 		}, {
-			text : "度量单位和网格",
-			url : "style/metrics-grids.html"
+			text : "Delightful Details",
+			url : "animation/delightful-details.html"
+		}
+	], [{
+			text : "样式",
+			url : ""
+		}, {
+			text : "色彩",
+			url : "style/color.html"
 		}, {
 			text : "字体",
 			url : "style/typography.html"
 		}, {
-			text : "颜色",
-			url : "style/color.html"
-		}, {
 			text : "图标",
-			url : "style/iconography.html"
+			url : "style/icons.html"
 		}, {
-			text : "自我标识",
-			url : "style/branding.html"
+			text : "图形化",
+			url : "style/imagery.html"
+		}
+	], [{
+			text : "布局",
+			url : ""
 		}, {
-			text : "写作风格",
-			url : "style/writing.html"
+			text : "设计原则",
+			url : "layout/layout-principles.html"
+		}, {
+			text : "标尺和基线",
+			url : "layout/metrics-and-keylines.html"
+		}, {
+			text : "结构",
+			url : "layout/structure.html"
+		}
+	], [{
+			text : "基本元素",
+			url : ""
+		}, {
+			text : "Bottom Sheets",
+			url : "components/bottom-sheets.html"
+		}, {
+			text : "Buttons",
+			url : "components/buttons.html"
+		}, {
+			text : "Cards",
+			url : "components/cards.html"
+		}, {
+			text : "Chips",
+			url : "components/chips-tokens.html"
+		}, {
+			text : "Dialogs",
+			url : "components/dialogs.html"
+		}, {
+			text : "Dividers",
+			url : "components/dividers.html"
+		}, {
+			text : "Grids",
+			url : "components/grids.html"
+		}, {
+			text : "Lists",
+			url : "components/lists.html"
+		}, {
+			text : "List controls",
+			url : "components/list-controls.html"
+		}, {
+			text : "Menus",
+			url : "components/menus.html"
+		}, {
+			text : "Progress and Activity",
+			url : "components/progress-activity.html"
+		}, {
+			text : "Sliders",
+			url : "components/sliders.html"
+		}, {
+			text : "Snackbars and Toasts",
+			url : "components/snackbars-and-toasts.html"
+		}, {
+			text : "Subheaders",
+			url : "components/subheaders.html"
+		}, {
+			text : "Switches",
+			url : "components/switches.html"
+		}, {
+			text : "Tabs",
+			url : "components/tabs.html"
+		}, {
+			text : "Text fields",
+			url : "components/text-fields.html"
+		}, {
+			text : "Tooltips",
+			url : "components/tooltips.html"
 		}
 	], [{
 			text : "模式",
-			url : "patterns/index.html"
+			url : ""
 		}, {
-			text : "Android 新特性",
-			url : "patterns/new.html"
+			text : "Selection",
+			url : "patterns/color.html"
 		}, {
-			text : "手势",
+			text : "Gestures",
 			url : "patterns/gestures.html"
 		}, {
-			text : "应用结构",
-			url : "patterns/app-structure.html"
+			text : "Promoted Actions",
+			url : "patterns/promoted-actions.html"
 		}, {
-			text : "导航",
-			url : "patterns/navigation.html"
-		}, {
-			text : "操作栏",
-			url : "patterns/actionbar.html"
-		}, {
-			text : "导航抽屉",
-			url : "patterns/navigation-drawer.html"
-		}, {
-			text : "多视图布局",
-			url : "patterns/multi-pane-layouts.html"
-		}, {
-			text : "滑动视图",
-			url : "patterns/swipe-views.html"
-		}, {
-			text : "全屏模式",
-			url : "patterns/fullscreen.html"
-		}, {
-			text : "选择",
-			url : "patterns/selection.html"
-		}, {
-			text : "确认和提示",
-			url : "patterns/confirming-acknowledging.html"
-		}, {
-			text : "通知",
-			url : "patterns/notifications.html"
-		}, {
-			text : "小部件",
-			url : "patterns/widgets.html"
-		}, {
-			text : "设置",
+			text : "Settings",
 			url : "patterns/settings.html"
 		}, {
-			text : "帮助",
-			url : "patterns/help.html"
+			text : "Imagery Treatment",
+			url : "patterns/imagery-treatment.html"
 		}, {
-			text : "兼容性",
-			url : "patterns/compatibility.html"
-		}, {
-			text : "无障碍性",
-			url : "patterns/accessibility.html"
-		}, {
-			text : "纯粹的 Android",
-			url : "patterns/pure-android.html"
+			text : "Search",
+			url : "patterns/search.html"
 		}
 	], [{
-			text : "控件",
-			url : "building-blocks/index.html"
+			text : "可用性",
+			url : ""
 		}, {
-			text : "标签选项卡",
-			url : "building-blocks/tabs.html"
-		}, {
-			text : "列表",
-			url : "building-blocks/lists.html"
-		}, {
-			text : "网格列表",
-			url : "building-blocks/grid-lists.html"
-		}, {
-			text : "滚动容器",
-			url : "building-blocks/scrolling.html"
-		}, {
-			text : "下拉菜单 (Spinners)",
-			url : "building-blocks/spinners.html"
-		}, {
-			text : "按钮",
-			url : "building-blocks/buttons.html"
-		}, {
-			text : "文本框",
-			url : "building-blocks/text-fields.html"
-		}, {
-			text : "滑块",
-			url : "building-blocks/seek-bars.html"
-		}, {
-			text : "进度条和活动指示器",
-			url : "building-blocks/progress.html"
-		}, {
-			text : "开关",
-			url : "building-blocks/switches.html"
-		}, {
-			text : "对话框",
-			url : "building-blocks/dialogs.html"
-		}, {
-			text : "选择器",
-			url : "building-blocks/pickers.html"
+			text : "Accessibility",
+			url : "usability/accessibility.html"
 		}
 	]
 ];
