@@ -452,6 +452,11 @@ code {
     font: 13px/1.5 monospace;
 }
 
+#content #copyright {
+	color: #888888;
+	font-size: 12px;
+}
+
 #footer {
 	margin-top: 60px;
 	color: white;
