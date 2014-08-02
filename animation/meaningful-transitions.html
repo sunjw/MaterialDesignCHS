@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>Meaningful Transitions - 动画效果 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #9c27b0;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #9c27b0 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #9c27b0;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #9c27b0;
+	}
+	#footer #pagePrevious {
+		background-color: #9c27b0;
+	}
+	#footer #pageNext {
+		background-color: #9c27b0;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="index.html">Animation<span id="subTitle">&nbsp;&gt;&nbsp;Meaningful Transitions</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/animation/meaningful-transitions.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">Meaningful Transitions</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>It can sometimes be difficult for a user to know where to focus their attention in an app or how an app element got from point A to point B. Carefully choreographed motion design can effectively guide the user’s attention and focus through multiple steps of a process or procedure; avoid confusion when layouts change or elements are rearranged; and improve the overall beauty of the experience. Motion design should not only be beautiful, but serve a functional purpose. </p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#examples">示例</a>
+							</li>
+							<li>
+								<a href="#visualContinuity">Visual Continuity</a>
+							</li>
+							<li>
+								<a href="#hierarchicalTiming">Hierarchical Timing</a>
+							</li>
+							<li>
+								<a href="#consistentChoreography">Consistent Choreography</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="examples" class="article">
+							<h2>示例</h2>
+							<div class="section">
+								<h3>示例</h3>
+								<div class="column col5-1">
+									<p></p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/animations-meaningfultransitions-hierarchical_transitions_topLevel_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/animations-meaningfultransitions-hierarchical_transitions_topLevel_large_xhdpi.mp4"></source
+										</video>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/animation-meaningfultransitions-view_contact_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/animation-meaningfultransitions-view_contact_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="visualContinuity" class="article">
+							<h2>Visual Continuity</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>Transitioning between two visual states should be smooth, appear effortless, and above all, provide clarity to the user, not confusion. A well-designed transition does the heavy lifting and enables the user to clearly understand where their attention should be focused. A transition has three categories of elements:</p>
+									<ul>
+										<li><strong>Incoming elements.</strong> Whether newly generated or translated into the scene, these items need to be introduced or re-established.</li>
+										<li><strong>Outgoing elements.</strong> Elements that are no longer relevant to the new context must be removed from the scene in an appropriate manner.</li>
+										<li><strong>Shared elements.</strong> Elements that persist from the starting to the ending state of a transition. They can be as subtle as a single icon or as dominant as a gallery image that grows to fit the screen.</li>
+									</ul>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>设计时的思考</h3>
+								<div class="column col12">
+									<p>When you design your animations, consider the following: </p>
+									<ul>
+										<li>Think about how the users attention should be directed. What elements and motions support that goal? How should incoming, outgoing, and shared elements be emphasized or de-emphasized through the transition?</li>
+										<li>Consider transitions when designing screens and find opportunities to create visual connections between transition states through color and persisting elements.</li>
+										<li>Add motion judiciously: consider how moving a certain element adds clarity and delight to a transition.</li>
+									</ul>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>示例</h3>
+								<div class="column col5-1">
+									<p></p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/meaningfultransitions-visualcontinuity2_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/meaningfultransitions-visualcontinuity2_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Use overlapping motion to direct user attention.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/meaningfultransitions-visualcontinuity1_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/meaningfultransitions-visualcontinuity1_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Concurrent timing for all elements provides no indication of what is important. If all elements have equal importance, consider larger-scale motion to introduce them as a group. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="consistentChoreography" class="article lastArticle">
+							<h2>Consistent Choreography</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>As transitioning elements move around the screen, they should behave in a coordinated manner. The paths elements travel along should all make sense and be orderly. Haphazard motion is distracting. A well-choreographed app also provides teachable moments for the user. When transitioning elements are coordinated, the user’s understanding of the app grows. They “get” the app; they don’t feel disoriented by the animation. </p>
+								</div>
+								<br class="clear" />
+							</div>
+							<h3>最佳的实践</h3>
+							<div class="section">
+								<div class="column col12">
+									<ul>
+										<li>Avoid linear spatial paths, except when movement is constrained to an axis or moving towards/away from a specific point in concert with other elements.</li>
+										<li>Make sure that the direction in which elements move is cohesive across the transition. Avoid conflicting movements and overlapping paths.</li>
+										<li>Consider the depth story: what moves under what, and why?</li>
+										<li>If all moving elements traced their paths on screen, would it look beautiful and organized? Does it create a clear picture of where to look?</li>
+										<li>Support spatial relationships through consistent motions for incoming and outgoing elements.</li>
+									</ul>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>示例</h3>
+								<div class="column col5-1">
+									<p></p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<video class="clickPlay" loop="" width="360" height="422">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/meaningfultransitions-consistentchoreography_do1_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/meaningfultransitions-consistentchoreography_do1_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Direct the user's attention with coordinated, orderly motion. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<video class="clickPlay" loop="" width="360" height="422">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/meaningfultransitions-consistentchoreography_dont3_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/meaningfultransitions-consistentchoreography_dont3_large_xhdpi.mp4"></source>
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Avoid confusing users with inconsistent or disorderly motion and objects leaving/entering in seemingly random directions. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="responsive-interaction.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>Responsive Interaction</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="delightful-details.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>Delightful Details</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

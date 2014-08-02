@@ -300,6 +300,11 @@ code {
 	color: #555555;
 }
 
+#content .chapter .chapterIntro ul li,#content .chapter .article ul li {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
 #content .chapter {
 	padding-top: 80px;
 }
@@ -320,10 +325,6 @@ code {
 }
 #content .chapter p,#content .chapter ul {
 	margin-bottom: 8px;
-}
-#content .chapter .chapterIntro ul li {
-	list-style-type: disc;
-	list-style-position: inside;
 }
 #content .chapter .chapterToc {
 	border-left: 5px solid;
@@ -403,7 +404,10 @@ code {
 #content .col5 {
 	width: 300px;
 }
-#content .col5-3 {
+#content .col5-1 {
+	width: 320px;
+}
+#content .col5-2 {
 	width: 340px;
 }
 #content .col6 {
@@ -420,6 +424,12 @@ code {
 }
 #content .col10 {
 	width: 600px;
+}
+#content .col10-1 {
+	width: 620px;
+}
+#content .col10-2 {
+	width: 640px;
 }
 #content .col11 {
 	width: 660px;
