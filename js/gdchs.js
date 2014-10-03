@@ -376,24 +376,19 @@ function initMenu() {
 	var navButton = $("#header #navButton");
 	navButton.click(toggleMenu);
 
-	var body = $("body");
-	if (body.hasClass("fixedHeader")) {
-		responsibleHeader = false;
-	}
-
 	// Menu position fix
 	window.onscroll = function () {
-		headerFix();
 		menuFix();
+		headerFix();
 	}
 	window.onresize = function () {
-		headerFix();
 		menuFix();
+		headerFix();
 		menuFooterFix();
 	}
 
-	headerFix();
 	menuFix();
+	headerFix();
 	menuFooterFix();
 }
 
@@ -495,6 +490,11 @@ function fillFooter() {
 
 // Init
 $(function () {
+	var body = $("body");
+	if (body.hasClass("fixedHeader")) {
+		responsibleHeader = false;
+	}
+
 	initMenu();
 
 	// Auto play video
