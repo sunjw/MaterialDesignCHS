@@ -492,6 +492,24 @@ code {
     font: 13px/1.5 monospace;
 }
 
+#content .download {
+	margin: 40px 0;
+	font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+#content .download img {
+	float: left;
+	width: 24px;
+	height: 24px;
+}
+#content .download .info {
+	margin-left: 40px;
+}
+#content .download .info .subtitle {
+	color: #757575;
+}
+
 #content #copyright {
 	color: #888888;
 	font-size: 12px;
