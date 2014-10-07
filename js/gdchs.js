@@ -49,7 +49,7 @@ var menuContent = [
 			text : "图标",
 			url : "style/icons.html"
 		}, {
-			text : "图形化",
+			text : "图像化",
 			url : "style/imagery.html"
 		}
 	], [{

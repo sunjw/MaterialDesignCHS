@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>图像化 - 样式 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #009688;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #009688 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #009688;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #009688;
+	}
+	#footer #pagePrevious {
+		background-color: #009688;
+	}
+	#footer #pageNext {
+		background-color: #c2185b;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="index.html">样式<span id="subTitle">&nbsp;&gt;&nbsp;图像化</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/style/imagery.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">图像化</h1>
+				<div class="chapterContent">
+					<div class="media">
+						<img alt="" src="style-imagery-style_philosophy_large_mdpi.png" />
+					</div>
+					<div class="chapterIntro">
+						<p>In material design, imagery—whether illustration or photography—is constructed but never contrived, magical but never overproduced. The style is optimistic, delightful and honest. Materiality, texture, depth, unexpected use of color, and appreciation of context are emphasized. The principles of imagery support the goal of purposeful, thoughtful, beautiful UIs. </p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#principles">Principles</a>
+							</li>
+							<li>
+								<a href="#bestPractices">最佳实践</a>
+							</li>
+							<li>
+								<a href="#uiIntegration">UI Integration</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="principles" class="article">
+							<h2>Principles</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>When using illustration and photography to enhance the user experience, choose images that express personal relevance, information and delight. </p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<div class="media">
+										<img src="style-imagery-principles-personal_20relevance_large_mdpi.png" alt="">
+									</div>
+									<h4 class="figureTitle">Personal Relevance</h4>
+									<div class="exampleDesc">
+										<p>Use evocative imagery that establishes an emotional connection with the app. </p>
+									</div>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="style-imagery-principles-information_large_mdpi.png" alt="">
+									</div>
+									<h4 class="figureTitle">Information</h4>
+									<div class="exampleDesc">
+										<p>Convey specific information. Facilitate comprehension to create an experience that feels intelligent. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="style-imagery-principles-delight_large_mdpi.png" alt="">
+									</div>
+									<h4 class="figureTitle">Delight</h4>
+									<div class="exampleDesc">
+										<p>Delight the user with unexpected but relevant imagery to make the experience feel magical. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Appreciation of context</h3>
+								<div class="column col6">
+									<p>Incorporate logic to ensure images are dynamic, context-intelligent, and context-relevant. Predictive visuals display a level of intelligence that substantially improves the user experience. </p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="style-imagery-principles-appreciaton_content_large_mdpi.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Be Immersive</h3>
+								<div class="column col6">
+									<p>Don’t be afraid of obscuring or alluding to integrated heros and thumbnails through color and content overlays. </p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="style-imagery-principles-immersive_20obscure_large_mdpi.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="bestPractices" class="article">
+							<h2>最佳实践</h2>
+							<div class="section">
+								<h3>Use Multiple Mediums</h3>
+								<div class="column col6">
+									<p>Both illustration and photography can live within the same product. Photography automatically implies a degree of specificity and should be used to showcase specific entities and stories. Illustration is effective for representing concepts and metaphors where specific photography might be alienating. </p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-bestpractices-multiple-mediums-a_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>For specific entities, look first to photographic representation. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media goodBlock">
+										<img src="style-imagery-bestpractices-multiple-mediums-b_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>When total specificity is not available or applicable, illustration conveys your app's intelligence while allowing at-a-glance comprehension of content. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-bestpractices-watch_stock-do_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>If you use photography to convey a concept, develop considered, even metaphorical, pieces. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style-imagery-bestpractices-watch-stock-dont_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Don't default to literal stock photography. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Stay away from stock </h3>
+								<div class="column col6">
+									<p>Use imagery to express a distinctive voice and exemplify creative excellence.</p>
+									<p>For specific entities or branded content, use specific imagery. For more abstract content, be interpretive. Photographic stock and clipart is neither specific nor interpretive.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-bestpractices-stock-do_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style-imagery-bestpractices-stock-dont_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Have a point of focus</h3>
+								<div class="column col6">
+									<p>Have an iconic point of focus in your imagery. Focus ranges from a single entity to an overarching composition. Ensure that a clear concept is conveyed to the user in a memorable way.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-bestpractices-point-focus-reminder-do_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style-imagery-bestpractices-point-focus-reminder-dont_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-bestpractices-point-focus-sf-do_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style-imagery-bestpractices-point-focus-sf-dont_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-bestpractices-point-focus-flight-do_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style-imagery-bestpractices-point-focus-flight-dont_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Build narratives</h3>
+								<div class="column col6">
+									<p>Create an immersive story and a sense of context.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-bestpractices-narrative-appointment-do_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style-imagery-bestpractices-narrative-appointment-dont_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-bestpractices-narrative-carseat-do_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style-imagery-bestpractices-narrative-carseat-dont_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Don't Over-Manipulate</h3>
+								<div class="column col6">
+									<p>Maintain the original integrity of the image. Don’t apply heavy filters or gaussian blurs to imagery, especially when trying to hide degradation.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-bestpractices-manipulate-flowers-do_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style-imagery-bestpractices-manipulate-flowers-dont_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-bestpractices-manipulate-lake-do_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style-imagery-bestpractices-manipulate-lake-dont_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="uiIntegration" class="article lastArticle">
+							<h2>UI Integration </h2>
+							<div class="section">
+								<h3>Resolution</h3>
+								<div class="column col6">
+									<p>Make sure your images are appropriately sized for their containers and across platforms. The framework emphasizes large images. Ideally, the assets should not appear pixelated. Test appropriate resolution sizes for specific ratios and devices.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-integration-resolutiona_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Appropriately sized imagery </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style-imagery-integration-resolutionb_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Degraded imagery </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Introduce Scale</h3>
+								<div class="column col6">
+									<p>Introduce alternative scales to create levels of visual importance.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="style-imagery-integration-introduce_scalea_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Within a gallery context, introduce thumbnails of various sizes to convey content hierarchy. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="style-imagery-integration-introduce_scaleb_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Encourage multiple containers living in the same ecosystem. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Text Protection</h3>
+								<div class="column col6">
+									<p>To make typography legible on imagery, add text protection scrims.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-integration-typetreatment1do_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Dark scrims should ideally be between 20%-40% opacity depending on the content. Light scrims should ideally range from 40%-60% opacity depending on the content. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style-imagery-integration-typetreatment1dont_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Don't heavily obscure imagery with text protection scrims.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-integration-typetreatment2do_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>For larger real estate, target specific areas for text protection instead of blanketing the entire image. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style-imagery-integration-typetreatment2dont_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Don’t "over-scrim" large images.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style-imagery-integration-typetreatment3do_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Color overlays are different than text-protection scrims and can be used as a design element. When creating complementary color overlays, color-sample from the juxtaposed content to create a unified palette and show content awareness. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style-imagery-integration-typetreatment3dont_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Avatars and Thumbnails</h3>
+								<div class="column col6">
+									<p>Avatars and thumbnails represent entities or content, either literally through photography or conceptually through illustration. Generally, they are tap targets that lead to a primary view of the entity or content.</p>
+									<p>Avatars can be used to represent people. For personal avatars, offer personalization options. As users may choose not to personalize an avatar, provide delightful defaults. When used with a specific logo, avatars can also be used to represent brand.</p>
+									<p>Thumbnails allude to more information—letting the user peek into content—and assist navigation. Thumbnails let you include imagery in tight spaces.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="style-imagery-integration-imagetypeavatarsa_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Avatars make an app feel more personal—and occupy minimal space. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="style-imagery-integration-imagetypeavatarsb_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>A brand avatar communicates information at a glance, as does the thumbnail image. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Hero Images</h3>
+								<div class="column col6">
+									<p>Hero images are images that are usually anchored in a prominent position, above the fold, such as a banner at the top of the screen. They serve to draw in a user, provide context about the content, or reinforce brand.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="style-imagery-integration-imagetypeheroa_large_mdpi.png" alt="">
+									</div>
+									<h4 class="figureTitle">Feature image</h4>
+									<div class="exampleDesc">
+										<p>A feature image is a bold, primary point of focus within a heterogeneous layout. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="style-imagery-integration-imagetypeherob_large_mdpi.png" alt="">
+									</div>
+									<h4 class="figureTitle">Integrated hero image</h4>
+									<div class="exampleDesc">
+										<p>A feature image is a bold, primary point of focus within a heterogeneous layout. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Gallery</h3>
+								<div class="column col6">
+									<p>Gallery images are bold visual hero images within homogeneous layouts in either a grid or as a single image.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="style-imagery-integration-imagetypegallerya_large_mdpi.png" alt="">
+									</div>
+									<h4 class="figureTitle">Photo grid</h4>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="style-imagery-integration-imagetypegalleryb_large_mdpi.png" alt="">
+									</div>
+									<h4 class="figureTitle">Gallery image</h4>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="icons.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>图标</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="../layout/layout-principles.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>布局</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
