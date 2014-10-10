@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>设计原则 - 布局 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #c2185b;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #c2185b !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #c2185b;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c2185b;
+	}
+	#footer #pagePrevious {
+		background-color: #009688;
+	}
+	#footer #pageNext {
+		background-color: #c2185b;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="normalHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="index.html">布局<span id="subTitle">&nbsp;&gt;&nbsp;设计原则</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/layout/layout-principles.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">Principles</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Material design utilizes fundamental tools that have come from the world of print design, like baseline grids and a common set of structural grids that works across various pages. The layout is designed to scale across different screen sizes and will help facilitate UI development and ultimately help you make scalable apps.</p>
+						 <p>The layout guidelines also encourage apps to have a consistent look and feel by using the same visual elements, structural grids, and general spacing rules across platforms and screen sizes. Structural and visual consistency creates an environment for the user that is recognizable across products, which facilitates usage by providing users with a high level of familiarity and comfort.</p>
+						 <p>Before delving into layout details, consider again what material design is: a design based on the qualities of paper. Understanding the rules of how paper behaves and is crafted is important.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#paperCraft">Paper Craft</a>
+							</li>
+							<li>
+								<a href="#responsivePrinciples">Responsive Principles</a>
+							</li>
+							<li>
+								<a href="#dimensionality">Dimensionality</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="paperCraft" class="article">
+							<h2>Paper Craft</h2>
+							<div class="section">
+								<div class="column col12">
+									<p><strong>In material design, every pixel drawn by an application resides on a sheet of paper.</strong> Paper has a flat background color and can be sized to serve a variety of purposes. A typical layout is composed of multiple sheets of paper.</p>
+									<p>The system may draw pixels for elements such as status or system bars, which don’t reside on paper. It’s helpful to think of such system elements as being printed on the back side of the display’s glass, on a surface that is separate from the app content beneath.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Arranging Paper</h3>
+								<div class="column col6">
+									<p><strong>Seams</strong> are created when two sheets of paper share the full length of a common side. Two sheets of paper joined by a seam will generally move together.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="Layout-principles-papercraft-papercraft-01a_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Steps</strong> are created when two sheets of paper with different z-order positions overlap and thus typically move independently of each other.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="Layout-principles-papercraft-papercraft-03a_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Paper Toolbars</h3>
+								<div class="column col6">
+									<p>A <strong>toolbar</strong> is a strip of paper focused on presenting actions. These actions usually cluster at the left and right edges of the toolbar. Actions related to navigation (a drawer menu, an up arrow) appear at the left, while actions that apply to the current context are at the right.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="layout-principles-papercraft-papercraft-03_MISSINGASSET_large_mdpi.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>The left and right actions in a toolbar are never split by another sheet of paper. However, a toolbar can constrain its width to less than the full length of its paper.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="papercraft-04_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Constrain width to less than the full length of its paper. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="papercraft-04_dont_large_mdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Never allow a sheet of paper to be split by another sheet of paper. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Toolbars frequently form a step above another sheet of paper that displays the content the toolbar’s actions relate to. As that paper scrolls beneath the toolbar, the toolbar clips that paper at the point of entry, preventing it from passing through to the opposite side.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-papercraft-papercraft-05a_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>A toolbar can also be initially presented as seamed with a second paper, but then lift to form a step. This variant of clipping is called <strong>waterfall</strong>.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-papercraft-papercraft-06a_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Alternately, the toolbar can maintain its seam, <strong>pushing</strong> off the screen as the two papers move together.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-papercraft-papercraft-07a_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Finally, the second paper can cover the toolbar as it moves.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-papercraft-papercraft-08a_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Toolbars have a standard height, but can be taller. When taller, the actions can pin to either the top or the bottom of the toolbar.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-papercraft-papercraft-09a_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Toolbars can change height dynamically once they become pinned. When resizing, they snap (thresholding with hysterisis) between their maximum and minimum (standard) heights.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-papercraft-papercraft-10a_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Floating Actions</h3>
+								<div class="column col6">
+									<p>A <strong>floating action</strong> is a circular paper separate from a toolbar.</p>
+									<p>A floating action represents a single promoted action for its context. A floating action can straddle a step if it relates to the content of the paper creating that step.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-papercraft-papercraft-11a_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>A floating action can straddle a seam if it relates to the content of both of the papers creating that seam.</p>
+									<p>Never introduce a decorative seam merely to provide an anchoring point for an action.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-papercraft-papercraft-12a_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="responsivePrinciples" class="article">
+							<h2>Responsive Principles</h2>
+							<div class="section">
+								<div class="column col6">
+									<p>When building layouts across devices, we combine fixed, sticky, and fluid strategies for grid behavior.</p>
+									<p>Here are a few simple guidelines to follow:</p>
+									<ol start="1">								
+										<li>Respect Human Constants.</li>
+										<li>Larger Screen ≠  Larger cognitive capacity.</li>
+										<li>Line lengths should be digestible.</li>
+										<li>Account for angular distance.</li>
+										<li>Pull the furniture off the walls: allow whitespace, and don't restrict yourself to anchored toolbars.</li>
+									</ol>
+									<p>Use strategies at multiple levels of hierarchy, like at screen level and card level.</p>
+									<p>The Desktop Template demonstrates a few responsive screens with all of the grid rules applied.</p>
+									<div class="download">
+										<a href="http://material-design.storage.googleapis.com/downloads/Layout_Desktop_Whiteframe.ai" target="_blank">
+											<img alt="" src="../imgs/download.png">
+											<div class="info">
+												<div class="title">Desktop Template</div>
+												<span class="subtitle">100 MB (.ai)</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-responsive-responsive-01_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="dimensionality" class="article lastArticle">
+							<h2>Dimensionality</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>Depth in is measured in dps, just like the X- and Y-axis. However, it is more useful to think of the priority of elements within Z-space rather than in terms of absolute, fixed positions.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>A conceptual model</h3>
+								<div class="column col6">
+									<p>At a high level, each app can be considered to live in a distinct space or container.</p>
+									<p>This means that pieces of paper in one app do not interleave in z-space with paper in another app.</p>
+									<p>It also means that actions and items are isolated to an app: for example, swiping to dismiss a list item in one app will not cause that list item to traverse the space of another unrelated app.</p>
+									<p>Containers allow multiple apps to be in view simultaneously, for example, in multiple browser tabs.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-dimensionality-dimensionality-01_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Within a specific app, most elements are relatively positioned according to major and minor steps along the Z-axis. For example, a button’s focus state is a minor step, while its pressed state is a major step.</p>
+									<p>Other elements have a fixed priority within the app’s z-space, meaning they always appear above or below other elements, regardless of those items’ relative position along the z-axis. For example, the floating action button always appears above content and toolbars, regardless of how many sheets of paper may be in use by the app.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-dimensionality-dimensionality-02_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>System elements, such as the status bar and system dialogs, exist in a separate system space above and below all app containers.</p>
+									<p>Depending on context, system elements may not be present in an app (for example, in Lights Out mode), but the system space establishes the relative priority of system elements when they do exist. This ensures, for example, that a system dialog box always appears above the current app.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-dimensionality-dimensionality-03_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Layout considerations</h3>
+								<div class="column col6">
+									<p>Depth is not ornament.</p>
+									<p>Think in terms of element priority within z-space, not absolute position.</p>
+									<p>Depth within an app should communicate hierarchy and importance, and help focus users’ attention to the task at hand.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-dimensionality-dimensionality-04_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Shadows</h3>
+								<div class="column col6">
+									<p>Shadows consist of two layers: a top shadow for depth and a bottom shadow for definition.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-dimensionality-shadows-01_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-dimensionality-shadows-02_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-dimensionality-shadows-03_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-dimensionality-shadows-04_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-dimensionality-shadows-05_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-dimensionality-shadows-06_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-dimensionality-shadows-07_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="layout-principles-dimensionality-shadows-08_large_mdpi.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="../style/imagery.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>样式</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="metrics-and-keylines.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>标尺和基线</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
