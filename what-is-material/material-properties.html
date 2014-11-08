@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-    <title>环境 - 什么是质感设计？ - Google 设计指导</title>
+    <title>材质属性 - 什么是质感设计？ - Google 设计指导</title>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
@@ -41,7 +41,7 @@
 	<div id="header">
         <div class="contentGrid">
 			<img id="navButton" src="../imgs/hamburger.png" />
-            <a class="normalTitle" href="index.html">什么是质感设计？<span id="subTitle">&nbsp;&gt;&nbsp;环境</span></a>
+            <a class="normalTitle" href="index.html">什么是质感设计？<span id="subTitle">&nbsp;&gt;&nbsp;材质属性</span></a>
         </div>
 	</div>
 	<div id="navWrapper">
@@ -64,66 +64,304 @@
 				阅读 <a href="http://www.google.com/design/spec/material-design/introduction.html" target="_blank">英文原文</a>
 			</div>
             <div class="chapter">
-				<h1 class="chapterTitle">介绍</h1>
+				<h1 class="chapterTitle">材质属性</h1>
 				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Material has certain immutable characteristics and inherent behaviors. Understanding these qualities will help you manipulate material in a way that’s consistent with the vision of material design.</p>
+					</div>
 					<div class="chapterToc">
 						<h2>目录</h2>
 						<ul>
 							<li>
-								<a href="#3dWorld">3D world</a>
+								<a href="#physicalProperties">Physical properties</a>
 							</li>
 							<li>
-								<a href="#lightAndShadow">Light and shadow</a>
+								<a href="#transformingMaterial">Transforming material</a>
+							</li>
+							<li>
+								<a href="#movementOfMaterial">Movement of material</a>
 							</li>
 						</ul>
 					</div>
 					<div class="chapterArticles">
-						<div id="3dWorld" class="article">
-							<h2>3D world</h2>
+						<div id="physicalProperties" class="article">
+							<h2>Physical properties</h2>
 							<div class="section">
 								<div class="column col6">
-									<p>The material environment is a 3D space, which means all objects have x, y, and z dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the positive z-axis extending towards the viewer. Every sheet of material occupies a single position along the z-axis and has a standard 1dp thickness.</p>
+									<p>Material has <strong>varying x & y dimensions</strong> (measured in dps) and a <strong>uniform thickness</strong> (1dp). Material <strong>never</strong> has a thickness of 0.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img alt="" src="whatismaterial_materialproperties_physicalproperties_thickness_01_yes.png" />
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>The height and width of material can vary.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img alt="" src="whatismaterial_materialproperties_physicalproperties_thickness_02_no.png" />
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Material is always 1dp thick.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Material casts shadows.</p>
+									<p>Shadows result naturally from the relative elevation (z-position) between material elements.</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="whatismaterial_environment_3d.png" />
+									<div class="media goodBlock">
+										<video class="clickPlay" loop="" height="360" width="760">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWSE9IaUpqYzlpSW8/whatismaterial-materialprop-physicalprop-020201_PaperShadow_Do_xhdpi_007.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWRWJfTERvdnM1bGc/whatismaterial-materialprop-physicalprop-020201_PaperShadow_Do_xhdpi_007.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Material casts shadows</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media badBlock">
+										<video class="clickPlay" loop="" height="360" width="760">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWYU5lQ1VXQjA3NnM/whatismaterial-materialprop-physicalprop-020201_PaperShadow_Dont_xhdpi_007.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWM0xqQms4LWRkMVE/whatismaterial-materialprop-physicalprop-020201_PaperShadow_Dont_xhdpi_007.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Do.</label>
+										<p>Shadows are never approximated using material.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Content is displayed on material, in any shape and color. Content does not add thickness to material.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media goodBlock">
+										<video class="clickPlay" loop="" height="360" width="760">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWTG41Rk9fT19qUXc/whatismaterial-materialprop-physicalprop-020201_InkDisplay_xhdpi_005.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWSGQycHdwcTdyRk0/whatismaterial-materialprop-physicalprop-020201_InkDisplay_xhdpi_005.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Material can display any shape and color.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Content behavior can be decoupled from the behavior of material. However, the bounds of the material can limit the display of the content.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media goodBlock">
+										<video class="clickPlay" loop="" height="360" width="760">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWeVBlbExGYjlTeEE/whatismaterial-materialprop-physicalprop-020201_InkBehavior_xhdpi_005.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWVzltT01CSHpaNXM/whatismaterial-materialprop-physicalprop-020201_InkBehavior_xhdpi_005.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Material is solid.</p>
+									<p>Input events cannot pass through material.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img alt="" src="whatismaterial_properties_physical3.png" />
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img alt="" src="whatismaterial_properties_physical4.png" />
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Multiple material elements cannot occupy the same point in space simultaneously.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img alt="" src="whatismaterial_properties_physical5.png" />
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img alt="" src="whatismaterial_properties_physical6.png" />
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Material cannot pass through other material.</p>
+									<p>For example, one sheet of material cannot pass through another sheet of material when changing elevation.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media badBlock">
+										<img alt="" src="whatismaterial_properties_physical7.png" />
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
 						</div> <!-- article ends -->
-						<div id="lightAndShadow" class="article lastArticle">
-							<h2>Light and shadow</h2>
+						<div id="transformingMaterial" class="article">
+							<h2>Transforming material</h2>
 							<div class="section">
-								<div class="column col12">
-									<p>Within the material environment, virtual lights illuminate the scene and allow objects to cast shadows. A key light creates directional shadows, while an ambient light creates consistent, soft shadows from all angles.</p>
-									<p>All shadows in the material environment are cast by these two light sources. Shadows are the absence of light resulting from the occlusion of these light sources by sheets of material at various positions along the z-axis.</p>
+								<div class="column col6">
+									<p>Material can change shape.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" height="360" width="760">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWd2N5R1lqeUFwWkk/whatismaterial-materialprop-transformingmaterial-020202_PaperShape_xhdpi_004.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWSkpqVG1NajV6MjA/whatismaterial-materialprop-transformingmaterial-020202_PaperShape_xhdpi_004.mp4"></source>
+										</video>
+									</div>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
 								<div class="column col6">
-									<div class="media">
-										<img alt="" src="whatismaterial_environment_shadow1.png" />
+									<p>Material grows and shrinks along only its plane.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media goodBlock">
+										<video class="clickPlay" loop="" height="360" width="760">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWWFFOVGp2UFVNZzg/whatismaterial-materialprop-transformingmaterial-020202_PaperShapeLinear_xhdpi_004.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWenFrem90Wlk4MFk/whatismaterial-materialprop-transformingmaterial-020202_PaperShapeLinear_xhdpi_004.mp4"></source>
+										</video>
 									</div>
 									<div class="exampleDesc">
-										<p>Shadow cast by key light</p>
+										<label class="goodLabel">Do.</label>
 									</div>
 								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
 								<div class="column col6">
-									<div class="media">
-										<img alt="" src="whatismaterial_environment_shadow2.png" />
+									<p>Material never bends or folds.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media badBlock">
+										<video class="clickPlay" loop="" height="480" width="760">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWNktzeE04V0ZGNzg/whatismaterial-materialprop-transformingmaterial-020202_PaperBendFold_xhdpi_005.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWUHg1YkxJMXJXZ2s/whatismaterial-materialprop-transformingmaterial-020202_PaperBendFold_xhdpi_005.mp4"></source>
+										</video>
 									</div>
 									<div class="exampleDesc">
-										<p>Shadow cast by ambient light</p>
+										<label class="badLabel">Don't.</label>
 									</div>
 								</div>
-								<div class="column col6 nomarginRight">
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Sheets of material can join together to become a single sheet of material.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
 									<div class="media">
-										<img alt="" src="whatismaterial_environment_shadow3.png" />
+										<video class="clickPlay" loop="" height="480" width="760">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWbE1WWExWSURmTDg/whatismaterial-materialprop-transformingmaterial-020202_PaperHeal_xhdpi_003.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWeUNMSk02cnYtc1k/whatismaterial-materialprop-transformingmaterial-020202_PaperHeal_xhdpi_003.mp4"></source>
+										</video>
 									</div>
-									<div class="exampleDesc">
-										<p>Combined shadow from key and ambient lights</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>When split, material can heal. For example, if you remove a portion of material from a sheet of material, the sheet of material will become a whole sheet again.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" height="480" width="760">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWX0dIVXh2QzlwcVU/whatismaterial-materialprop-transformingmaterial-020202_PaperSplitHeal_xhdpi_004.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWc2Y2QTRmbUFLLUE/whatismaterial-materialprop-transformingmaterial-020202_PaperSplitHeal_xhdpi_004.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="movementOfMaterial" class="article lastArticle">
+							<h2>Movement of material</h2>
+							<div class="section">
+								<div class="column col6">
+									<p>Material can be spontaneously generated or destroyed anywhere in the environment.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" height="350" width="760">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWWWhMRFVudjl4bTQ/whatismaterial-materialprop-movementmaterial-020203_PaperPointExpand_xhdpi_004.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWQml4UFAxREJEQVE/whatismaterial-materialprop-movementmaterial-020203_PaperPointExpand_xhdpi_004.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Material can move along any axis.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" height="480" width="760">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B2wX4iIvu8L6Y2Z1NUlzMWczaHc/whatismaterial-materialprop-movementmaterial-020203_PaperMove_xhdpi_007.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B2wX4iIvu8L6eDRlc0E2MWd0SlU/whatismaterial-materialprop-movementmaterial-020203_PaperMove_xhdpi_007.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Z-axis motion is typically a result of user interaction with material.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" height="350" width="760">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWNW5xUERVcEd1bm8/whatismaterial-materialprop-movementmaterial-020203_Material_Response_xhdpi_002.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWRWROZkxDS2JySG8/whatismaterial-materialprop-movementmaterial-020203_Material_Response_xhdpi_002.mp4"></source>
+										</video>
 									</div>
 								</div>
 								<br class="clear" />
@@ -142,20 +380,20 @@
         <div id="pagePrevious" class="pageNav">
 			<div class="pageNavContent">
 				<div class="pageNavContent">
-				<a href="../material-design/introduction.html">
+				<a href="environment.html">
 					<img src="../imgs/Arrow-left.png" alt="">
 					<span>上一页:</span>
-					<div>Material Design</div>
+					<div>环境</div>
 				</a>
 				</div>
 			</div>
 		</div>
 		<div id="pageNext" class="pageNav">
 			<div class="pageNavContent">
-				<a href="material-properties.html">
+				<a href="objects-in-3d-space.html">
 					<img src="../imgs/Arrow-right.png" alt="">
 					<span>下一页:</span>
-					<div>什么是质感设计？</div>
+					<div>3维世界的物体</div>
 				</a>
 			</div>
 		</div>
