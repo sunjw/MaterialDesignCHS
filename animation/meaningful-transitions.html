@@ -20,7 +20,10 @@
 		color: #9c27b0;
 	}
 	#content .chapter .chapterToc {
-		border-left-color: #9c27b0;
+		border-left-color: #e1bee7;
+	}
+    #content .chapter .chapterToc a,#content .chapter .chapterToc a:hover {
+		color: #9c27b0 !important;
 	}
 	#footer #pagePrevious {
 		background-color: #9c27b0;
@@ -167,33 +170,46 @@
 								<br class="clear" />
 							</div>
 						</div> <!-- article ends -->
+                        <div id="hierarchicalTiming" class="article">
+							<h2>Hierarchical timing</h2>
+							<div class="section">
+								<div class="column col6">
+									<p>When building a transition, consider the order and timing of the elements’ movement. Ensure that motion supports the information hierarchy, conveying what content is most important by creating a path for the eye to follow. </p>
+                                    <p>However, it’s not a simple formula in which the most important thing moves first and the least important last. The timing of transition elements should flow smoothly and avoid feeling disjointed.</p>
+								</div>
+                                <div class="column col6">
+									<div class="media goodBlock">
+										<video class="clickPlay" loop="" width="360" height="212">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B08MbvYZK1iNTGRLb2Zud2RUNFE/animation-meaningfultransitions-hierarchicaltiming-4do_large_xhdpi.webm"></source>
+                                            <source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B08MbvYZK1iNYjV0cXlhWURFMFU/animation-meaningfultransitions-hierarchicaltiming-4do_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Use overlapping motion to direct user attention.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<video class="clickPlay" loop="" width="360" height="212">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B08MbvYZK1iNOEV5T09wMU5YTUU/animation-meaningfultransitions-hierarchicaltiming-1dont_large_xhdpi.webm"></source>
+                                            <source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B08MbvYZK1iNTHVNbE96RU5ka0U/animation-meaningfultransitions-hierarchicaltiming-1dont_large_xhdpi.mp4"></source>
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Concurrent timing for all elements provides no indication of what is important. If all elements have equal importance, consider larger-scale motion to introduce them as a group.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
 						<div id="consistentChoreography" class="article lastArticle">
 							<h2>Consistent Choreography</h2>
 							<div class="section">
-								<div class="column col12">
+								<div class="column col6">
 									<p>As transitioning elements move around the screen, they should behave in a coordinated manner. The paths elements travel along should all make sense and be orderly. Haphazard motion is distracting. A well-choreographed app also provides teachable moments for the user. When transitioning elements are coordinated, the user’s understanding of the app grows. They “get” the app; they don’t feel disoriented by the animation. </p>
 								</div>
-								<br class="clear" />
-							</div>
-							<h3>最佳的实践</h3>
-							<div class="section">
-								<div class="column col12">
-									<ul>
-										<li>Avoid linear spatial paths, except when movement is constrained to an axis or moving towards/away from a specific point in concert with other elements.</li>
-										<li>Make sure that the direction in which elements move is cohesive across the transition. Avoid conflicting movements and overlapping paths.</li>
-										<li>Consider the depth story: what moves under what, and why?</li>
-										<li>If all moving elements traced their paths on screen, would it look beautiful and organized? Does it create a clear picture of where to look?</li>
-										<li>Support spatial relationships through consistent motions for incoming and outgoing elements.</li>
-									</ul>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<h3>示例</h3>
-								<div class="column col5-1">
-									<p></p>
-								</div>
-								<div class="column col6">
+                                <div class="column col6">
 									<div class="media goodBlock">
 										<video class="clickPlay" loop="" width="360" height="422">
 											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/meaningfultransitions-consistentchoreography_do1_large_xhdpi.webm"></source>
@@ -215,6 +231,19 @@
 										<label class="badLabel">Don't.</label>
 										<p>Avoid confusing users with inconsistent or disorderly motion and objects leaving/entering in seemingly random directions. </p>
 									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<h3>最佳的实践</h3>
+							<div class="section">
+								<div class="column col12">
+									<ul>
+										<li>Avoid linear spatial paths, except when movement is constrained to an axis or moving towards/away from a specific point in concert with other elements.</li>
+										<li>Make sure that the direction in which elements move is cohesive across the transition. Avoid conflicting movements and overlapping paths.</li>
+										<li>Consider the depth story: what moves under what, and why?</li>
+										<li>If all moving elements traced their paths on screen, would it look beautiful and organized? Does it create a clear picture of where to look?</li>
+										<li>Support spatial relationships through consistent motions for incoming and outgoing elements.</li>
+									</ul>
 								</div>
 								<br class="clear" />
 							</div>
