@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-    <title>Delightful Details - 动画效果 - Google 设计指导</title>
+    <title>环境 - 什么是质感设计？ - Google 设计指导</title>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
 	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
 	<style type="text/css">
 	#header {
-		background-color: #9c27b0;
+		background-color: #03a9f4;
 	}
 	#header a {
 		color: white;
 	}
 	#navWrapper a.highlight {
-		color: #9c27b0 !important;
+		color: #03a9f4 !important;
 	}
 	#content .chapter h1,#content .chapter .article h2 {
-		color: #9c27b0;
+		color: #03a9f4;
 	}
 	#content .chapter .chapterToc {
-		border-left-color: #e1bee7;
+		border-left-color: #03a9f4;
 	}
     #content .chapter a,#content .chapter a:hover {
-		color: #9c27b0 !important;
+		color: #03a9f4 !important;
 	}
 	#footer #pagePrevious {
-		background-color: #9c27b0;
+		background-color: #03a9f4;
 	}
 	#footer #pageNext {
-		background-color: #009688;
+		background-color: #03a9f4;
 	}
 	</style>
 	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
@@ -41,7 +41,7 @@
 	<div id="header">
         <div class="contentGrid">
 			<img id="navButton" src="../imgs/hamburger.png" />
-            <a class="normalTitle" href="index.html">动画效果<span id="subTitle">&nbsp;&gt;&nbsp;Delightful Details</span></a>
+            <a class="normalTitle" href="index.html">什么是质感设计？<span id="subTitle">&nbsp;&gt;&nbsp;环境</span></a>
         </div>
 	</div>
 	<div id="navWrapper">
@@ -61,46 +61,69 @@
 	<div id="content">
         <div class="contentGrid">
 			<div class="engLink">
-				阅读 <a href="http://www.google.com/design/spec/animation/delightful-details.html" target="_blank">英文原文</a>
+				阅读 <a href="http://www.google.com/design/spec/material-design/introduction.html" target="_blank">英文原文</a>
 			</div>
             <div class="chapter">
-				<h1 class="chapterTitle">Delightful Details</h1>
+				<h1 class="chapterTitle">介绍</h1>
 				<div class="chapterContent">
-					<!-- <div class="chapterToc">
+					<div class="chapterToc">
 						<h2>目录</h2>
 						<ul>
 							<li>
-								<a href="#delightfulDetails">Delightful Details</a>
+								<a href="#3dWorld">3D world</a>
+							</li>
+							<li>
+								<a href="#lightAndShadow">Light and shadow</a>
 							</li>
 						</ul>
-					</div> -->
+					</div>
 					<div class="chapterArticles">
-						<div id="delightfulDetails" class="article lastArticle">
+						<div id="3dWorld" class="article">
+							<h2>3D world</h2>
+							<div class="section">
+								<div class="column col6">
+									<p>The material environment is a 3D space, which means all objects have x, y, and z dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the positive z-axis extending towards the viewer. Every sheet of material occupies a single position along the z-axis and has a standard 1dp thickness.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="whatismaterial_environment_3d.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="lightAndShadow" class="article lastArticle">
+							<h2>Light and shadow</h2>
 							<div class="section">
 								<div class="column col12">
-									<p>Animation can exist within all components of an app and at all scales, from finely detailed icons to key transitions and actions. All elements work together to construct a seamless experience and a beautiful, functional app.</p>
-									<p>The most basic use of animation is in transitions, but an app can truly delight a user when animation is used in ways beyond the obvious. A menu icon that becomes an arrow or playback controls that seamlessly change from one to the other serve dual functions: to inform the user and to imbue your app with a moment of wonder and a sense of superb craftsmanship. Users do notice such small details.</p>
+									<p>Within the material environment, virtual lights illuminate the scene and allow objects to cast shadows. A key light creates directional shadows, while an ambient light creates consistent, soft shadows from all angles.</p>
+									<p>All shadows in the material environment are cast by these two light sources. Shadows are the absence of light resulting from the occlusion of these light sources by sheets of material at various positions along the z-axis.</p>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
-								<div class="column col5-1">
-									<p></p>
+								<div class="column col6">
+									<div class="media">
+										<img alt="" src="whatismaterial_environment_shadow1.png" />
+									</div>
+									<div class="exampleDesc">
+										<p>Shadow cast by key light</p>
+									</div>
 								</div>
 								<div class="column col6">
 									<div class="media">
-										<video class="clickPlay" loop="" width="360" height="360">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/DelightfulDetails_WellCrafted_v01_large_xhdpi.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/DelightfulDetails_WellCrafted_v01_large_xhdpi.mp4"></source>
-										</video>
+										<img alt="" src="whatismaterial_environment_shadow2.png" />
+									</div>
+									<div class="exampleDesc">
+										<p>Shadow cast by ambient light</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
 									<div class="media">
-										<video class="clickPlay" loop="" width="360" height="360">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/videos/animation-delightfulDetails-statusChange-example_large_xhdpi.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/videos/animation-delightfulDetails-statusChange-example_large_xhdpi.mp4"></source>
-										</video>
+										<img alt="" src="whatismaterial_environment_shadow3.png" />
+									</div>
+									<div class="exampleDesc">
+										<p>Combined shadow from key and ambient lights</p>
 									</div>
 								</div>
 								<br class="clear" />
@@ -118,19 +141,21 @@
 	<div id="footer">
         <div id="pagePrevious" class="pageNav">
 			<div class="pageNavContent">
-				<a href="meaningful-transitions.html">
+				<div class="pageNavContent">
+				<a href="../material-design/introduction.html">
 					<img src="../imgs/Arrow-left.png" alt="">
 					<span>上一页:</span>
-					<div>Meaningful Transitions</div>
+					<div>Material Design</div>
 				</a>
+				</div>
 			</div>
 		</div>
 		<div id="pageNext" class="pageNav">
 			<div class="pageNavContent">
-				<a href="../style/color.html">
+				<a href="material-properties.html">
 					<img src="../imgs/Arrow-right.png" alt="">
 					<span>下一页:</span>
-					<div>样式</div>
+					<div>什么是质感设计？</div>
 				</a>
 			</div>
 		</div>

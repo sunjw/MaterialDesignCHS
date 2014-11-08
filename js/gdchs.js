@@ -6,7 +6,7 @@
 
 var curUrl = window.location.href;
 
-var secondLevPath = ["material-design/", "animation/", "style/", "layout/", "components/", "patterns/", "usability"];
+var secondLevPath = ["material-design/", "what-is-material/", "animation/", "style/", "layout/", "components/", "patterns/", "usability"];
 var secondLevPathCount = secondLevPath.length;
 
 var responsibleHeader = true;
@@ -19,6 +19,19 @@ var menuContent = [
 		}, {
 			text : "介绍",
 			url : "material-design/introduction.html"
+		}
+	], [{
+			text : "什么是质感设计？",
+			url : ""
+		}, {
+			text : "环境",
+			url : "what-is-material/environment.html"
+		}, {
+			text : "材质属性",
+			url : "what-is-material/material-properties.html"
+		}, {
+			text : "3维世界的物体",
+			url : "what-is-material/objects-in-3d-space.html"
 		}
 	], [{
 			text : "动画效果",

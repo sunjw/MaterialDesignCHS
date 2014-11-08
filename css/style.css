@@ -363,12 +363,7 @@ code {
 #content .chapter .article .section {
 	padding-bottom: 60px;
 }
-#content .chapter .article .figureTitle {
-	margin-bottom: 20px;
-}
-#content .chapter .article .figureDesc {
-	color: #757575;
-}
+
 #content .chapter .media {
 	margin-bottom: 10px;
 }
@@ -385,6 +380,10 @@ code {
 }
 #content .chapter .badLabel {
 	color: #f44336;
+}
+#content .chapter .article .figureTitle {
+	margin-bottom: 20px;
+	font-weight: 500;
 }
 #content .chapter .exampleDesc {
 	padding-bottom: 20px;
