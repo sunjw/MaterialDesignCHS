@@ -74,58 +74,162 @@
 						<h2>目录</h2>
 						<ul>
 							<li>
-								<a href="#physicalProperties">Physical properties</a>
+								<a href="#elevation">Elevation</a>
 							</li>
 							<li>
-								<a href="#transformingMaterial">Transforming material</a>
-							</li>
-							<li>
-								<a href="#movementOfMaterial">Movement of material</a>
+								<a href="#objectRelationships">Object relationships</a>
 							</li>
 						</ul>
 					</div>
 					<div class="chapterArticles">
-						<div id="physicalProperties" class="article">
-							<h2>Physical properties</h2>
+						<div id="elevation" class="article">
+							<h2>Elevation</h2>
 							<div class="section">
+								<h3>Elevation</h3>
 								<div class="column col6">
-									<p>Material has <strong>varying x & y dimensions</strong> (measured in dps) and a <strong>uniform thickness</strong> (1dp). Material <strong>never</strong> has a thickness of 0.</p>
+									<p>Elevation is the relative position of an object along its parent’s z-axis. Elevation is the relative value between parent and child objects.</p>
+									<p>Elevation is measured in the same units as the x and y axes, typically in density independent pixels (dps). Since material has a standard 1dp thickness, all elevation distances are measured from one top surface to another top surface.</p>
 								</div>
-								<div class="column col6">
-									<div class="media goodBlock">
-										<img alt="" src="whatismaterial_materialproperties_physicalproperties_thickness_01_yes.png" />
-									</div>
-									<div class="exampleDesc">
-										<label class="goodLabel">Do.</label>
-										<p>The height and width of material can vary.</p>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="whatismaterial_3d_elevation1.png" />
 									</div>
 								</div>
-								<div class="column col6 nomarginRight">
-									<div class="media badBlock">
-										<img alt="" src="whatismaterial_materialproperties_physicalproperties_thickness_02_no.png" />
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Resting elevation</h3>
+								<div class="column col6">
+									<p>All material objects have a resting elevation, whether the object is a small component or a sheet that spans the entire display.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="whatismaterial_3d_elevation2.png" />
 									</div>
 									<div class="exampleDesc">
-										<label class="badLabel">Don't.</label>
-										<p>Material is always 1dp thick.</p>
+										<p>Examples of typical resting elevations for components.</p>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
 								<div class="column col6">
-									<p>Material casts shadows.</p>
-									<p>Shadows result naturally from the relative elevation (z-position) between material elements.</p>
+									<p>In the static state, the resting elevation for an object does not change. It is constant throughout an app. If an object changes elevation, it should return to its resting elevation as soon as possible.</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
-									<div class="media goodBlock">
-										<video class="clickPlay" loop="" height="360" width="760">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWSE9IaUpqYzlpSW8/whatismaterial-materialprop-physicalprop-020201_PaperShadow_Do_xhdpi_007.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWRWJfTERvdnM1bGc/whatismaterial-materialprop-physicalprop-020201_PaperShadow_Do_xhdpi_007.mp4"></source>
-										</video>
+									<div class="media">
+										<img alt="" src="whatismaterial_3d_elevation3.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>The resting elevation for a given component type is consistent across apps throughout a platform. However, that same component type may have different resting elevations from platform to platform depending on the depth of the environment (e.g., TV has a greater depth than mobile or desktop).</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="whatismaterial_3d_elevation4.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Responsive elevation and dynamic elevation offsets</h3>
+								<div class="column col6">
+									<p>Certain component types have responsive elevation, which means they change their elevation in response to user input or system events. Different component states (e.g., normal, focused, pressed) may result in varying elevation changes, which are consistently implemented using dynamic elevation offsets.</p>
+									<p>Dynamic elevation offsets are relative to the resting state of the component, and act as the goal or target elevation for the component to move towards for a given component state. They also ensure that elevation changes for a given action are consistent across a component type. For example, all components that lift on press have the same elevation change, relative to their current/resting elevation.</p>
+									<p>Once the input event is completed or cancelled, the component will return to its resting elevation.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="whatismaterial_3d_elevation5.png" />
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Functional shadows</h3>
+								<div class="column col12">
+									<p>Shadows provide several important visual cues about the arrangement of objects in space. Shadows are the only visual affordance indicating the amount of separation between surfaces. The elevation of an object determines the visual appearance of its shadow.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<div class="media">
+										<img alt="" src="whatismaterial_3d_elevation_shadow1.png" />
 									</div>
 									<div class="exampleDesc">
-										<label class="goodLabel">Do.</label>
-										<p>Material casts shadows</p>
+										<p>Without a shadow, there is nothing to indicate that the floating action button is a separate surface from the background surfaces.</p>
+									</div>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img alt="" src="whatismaterial_3d_elevation_shadow2.png" />
+									</div>
+									<div class="exampleDesc">
+										<p>Crisp shadows indicate both the floating action button and the app bar are separate surfaces very close to the background surface.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img alt="" src="whatismaterial_3d_elevation_shadow3.png" />
+									</div>
+									<div class="exampleDesc">
+										<p>Softer, larger shadows indicate the floating action button is at a higher elevation than the app bar.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col12">
+									<p>In motion, shadows also provide cues about an object’s direction of movement. This is another useful tool to indicate whether the distance between surfaces is increasing or decreasing.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<div class="media">
+										<img alt="" src="whatismaterial_3d_elevation_shadow4.png" />
+									</div>
+									<div class="exampleDesc">
+										<p>Without a shadow to indicate elevation, it’s unclear whether this circle is scaling at the same elevation, or simply increasing its elevation.</p>
+									</div>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img alt="" src="whatismaterial_3d_elevation_shadow5.png" />
+									</div>
+									<div class="exampleDesc">
+										<p>The shadow grows softer and larger as the object’s elevation increases and grows crisper and smaller as the elevation decreases.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img alt="" src="whatismaterial_3d_elevation_shadow6.png" />
+									</div>
+									<div class="exampleDesc">
+										<p>In this case, the consistent shadow helps the user understand that the object is changing shape as opposed to changing elevation.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="objectRelationships" class="article lastArticle">
+							<h2>Object relationships</h2>
+							<div class="section">
+								<div class="column col6">
+									<p>How you organize objects in an app determines how objects or collections of objects move in relation to one another. Objects can move independently of each other, or their movement can be constrained to, and dependent upon, their container. Containers and the objects they contain have a parent-child relationship. Every object has a single parent, and may or may not have one or more children.</p>
+									<p>Children inherit transformation properties from their parent, such as position, rotation, scale, and elevation. For example, in the case of a scrolling card collection where all cards move together, the cards are siblings and they are all children of the card collection container that handles the scrolling movement.</p>
+									<p>The hierarchy of parents and children determines how objects and groups of objects interact with one another. For example, child objects have minimal z-axis separation from their parent; other objects do not get inserted between parents and children. </p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img alt="" src="whatismaterial_3d_relationship1.png" />
+									</div>
+									<div class="exampleDesc">
+										<p>The raised button (child) scrolls off screen as its parent content scrolls.</p>
 									</div>
 								</div>
 								<br class="clear" />
@@ -135,234 +239,11 @@
 									&nbsp;
 								</div>
 								<div class="column col12-1 nomarginRight">
-									<div class="media badBlock">
-										<video class="clickPlay" loop="" height="360" width="760">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWYU5lQ1VXQjA3NnM/whatismaterial-materialprop-physicalprop-020201_PaperShadow_Dont_xhdpi_007.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWM0xqQms4LWRkMVE/whatismaterial-materialprop-physicalprop-020201_PaperShadow_Dont_xhdpi_007.mp4"></source>
-										</video>
-									</div>
-									<div class="exampleDesc">
-										<label class="badLabel">Do.</label>
-										<p>Shadows are never approximated using material.</p>
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									<p>Content is displayed on material, in any shape and color. Content does not add thickness to material.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media goodBlock">
-										<video class="clickPlay" loop="" height="360" width="760">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWTG41Rk9fT19qUXc/whatismaterial-materialprop-physicalprop-020201_InkDisplay_xhdpi_005.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWSGQycHdwcTdyRk0/whatismaterial-materialprop-physicalprop-020201_InkDisplay_xhdpi_005.mp4"></source>
-										</video>
-									</div>
-									<div class="exampleDesc">
-										<label class="goodLabel">Do.</label>
-										<p>Material can display any shape and color.</p>
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									<p>Content behavior can be decoupled from the behavior of material. However, the bounds of the material can limit the display of the content.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media goodBlock">
-										<video class="clickPlay" loop="" height="360" width="760">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWeVBlbExGYjlTeEE/whatismaterial-materialprop-physicalprop-020201_InkBehavior_xhdpi_005.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWVzltT01CSHpaNXM/whatismaterial-materialprop-physicalprop-020201_InkBehavior_xhdpi_005.mp4"></source>
-										</video>
-									</div>
-									<div class="exampleDesc">
-										<label class="goodLabel">Do.</label>
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									<p>Material is solid.</p>
-									<p>Input events cannot pass through material.</p>
-								</div>
-								<div class="column col6">
-									<div class="media goodBlock">
-										<img alt="" src="whatismaterial_properties_physical3.png" />
-									</div>
-									<div class="exampleDesc">
-										<label class="goodLabel">Do.</label>
-									</div>
-								</div>
-								<div class="column col6 nomarginRight">
-									<div class="media badBlock">
-										<img alt="" src="whatismaterial_properties_physical4.png" />
-									</div>
-									<div class="exampleDesc">
-										<label class="badLabel">Don't.</label>
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									<p>Multiple material elements cannot occupy the same point in space simultaneously.</p>
-								</div>
-								<div class="column col6">
-									<div class="media goodBlock">
-										<img alt="" src="whatismaterial_properties_physical5.png" />
-									</div>
-									<div class="exampleDesc">
-										<label class="goodLabel">Do.</label>
-									</div>
-								</div>
-								<div class="column col6 nomarginRight">
-									<div class="media badBlock">
-										<img alt="" src="whatismaterial_properties_physical6.png" />
-									</div>
-									<div class="exampleDesc">
-										<label class="badLabel">Don't.</label>
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									<p>Material cannot pass through other material.</p>
-									<p>For example, one sheet of material cannot pass through another sheet of material when changing elevation.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media badBlock">
-										<img alt="" src="whatismaterial_properties_physical7.png" />
-									</div>
-									<div class="exampleDesc">
-										<label class="badLabel">Don't.</label>
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-						</div> <!-- article ends -->
-						<div id="transformingMaterial" class="article">
-							<h2>Transforming material</h2>
-							<div class="section">
-								<div class="column col6">
-									<p>Material can change shape.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
 									<div class="media">
-										<video class="clickPlay" loop="" height="360" width="760">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWd2N5R1lqeUFwWkk/whatismaterial-materialprop-transformingmaterial-020202_PaperShape_xhdpi_004.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWSkpqVG1NajV6MjA/whatismaterial-materialprop-transformingmaterial-020202_PaperShape_xhdpi_004.mp4"></source>
-										</video>
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									<p>Material grows and shrinks along only its plane.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media goodBlock">
-										<video class="clickPlay" loop="" height="360" width="760">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWWFFOVGp2UFVNZzg/whatismaterial-materialprop-transformingmaterial-020202_PaperShapeLinear_xhdpi_004.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWenFrem90Wlk4MFk/whatismaterial-materialprop-transformingmaterial-020202_PaperShapeLinear_xhdpi_004.mp4"></source>
-										</video>
+										<img alt="" src="whatismaterial_3d_relationship2.png" />
 									</div>
 									<div class="exampleDesc">
-										<label class="goodLabel">Do.</label>
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									<p>Material never bends or folds.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media badBlock">
-										<video class="clickPlay" loop="" height="480" width="760">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWNktzeE04V0ZGNzg/whatismaterial-materialprop-transformingmaterial-020202_PaperBendFold_xhdpi_005.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWUHg1YkxJMXJXZ2s/whatismaterial-materialprop-transformingmaterial-020202_PaperBendFold_xhdpi_005.mp4"></source>
-										</video>
-									</div>
-									<div class="exampleDesc">
-										<label class="badLabel">Don't.</label>
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									<p>Sheets of material can join together to become a single sheet of material.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<video class="clickPlay" loop="" height="480" width="760">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWbE1WWExWSURmTDg/whatismaterial-materialprop-transformingmaterial-020202_PaperHeal_xhdpi_003.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWeUNMSk02cnYtc1k/whatismaterial-materialprop-transformingmaterial-020202_PaperHeal_xhdpi_003.mp4"></source>
-										</video>
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									<p>When split, material can heal. For example, if you remove a portion of material from a sheet of material, the sheet of material will become a whole sheet again.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<video class="clickPlay" loop="" height="480" width="760">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWX0dIVXh2QzlwcVU/whatismaterial-materialprop-transformingmaterial-020202_PaperSplitHeal_xhdpi_004.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWc2Y2QTRmbUFLLUE/whatismaterial-materialprop-transformingmaterial-020202_PaperSplitHeal_xhdpi_004.mp4"></source>
-										</video>
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-						</div> <!-- article ends -->
-						<div id="movementOfMaterial" class="article lastArticle">
-							<h2>Movement of material</h2>
-							<div class="section">
-								<div class="column col6">
-									<p>Material can be spontaneously generated or destroyed anywhere in the environment.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<video class="clickPlay" loop="" height="350" width="760">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWWWhMRFVudjl4bTQ/whatismaterial-materialprop-movementmaterial-020203_PaperPointExpand_xhdpi_004.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWQml4UFAxREJEQVE/whatismaterial-materialprop-movementmaterial-020203_PaperPointExpand_xhdpi_004.mp4"></source>
-										</video>
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									<p>Material can move along any axis.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<video class="clickPlay" loop="" height="480" width="760">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B2wX4iIvu8L6Y2Z1NUlzMWczaHc/whatismaterial-materialprop-movementmaterial-020203_PaperMove_xhdpi_007.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B2wX4iIvu8L6eDRlc0E2MWd0SlU/whatismaterial-materialprop-movementmaterial-020203_PaperMove_xhdpi_007.mp4"></source>
-										</video>
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									<p>Z-axis motion is typically a result of user interaction with material.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<video class="clickPlay" loop="" height="350" width="760">
-											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWNW5xUERVcEd1bm8/whatismaterial-materialprop-movementmaterial-020203_Material_Response_xhdpi_002.webm"></source>
-											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_1/quantumexternal/0B0NGgBg38lWWRWROZkxDS2JySG8/whatismaterial-materialprop-movementmaterial-020203_Material_Response_xhdpi_002.mp4"></source>
-										</video>
+										<p>The cards (siblings, and children of the card collection) scroll off screen as the floating action button (its own parent) remains in place.</p>
 									</div>
 								</div>
 								<br class="clear" />
