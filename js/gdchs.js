@@ -179,7 +179,7 @@ function fillMenu() {
 	var curPage = curUrl.split("/");
 	curPage = curPage[curPage.length - 1]; // *.html
 	if (curPage.search(".html") == -1) {
-		curPage = "index.html"; // fix default page.
+		curPage = "#"; // fix default page.
 	}
 	var idx = -1;
 	idx = curPage.indexOf("#");
