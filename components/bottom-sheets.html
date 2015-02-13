@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>底部菜单 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #c2185b;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="normalHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;底部菜单</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/bottom-sheets.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">底部菜单</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>One way to present a set of actions to a user is with a bottom sheet, a sheet of paper that slides up from the bottom edge of the screen. Bottom sheets offer flexibility in the display of clear and simple actions that do not need explanation.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#usage">Usage</a>
+							</li>
+							<li>
+								<a href="#contentArticle">Content</a>
+							</li>
+							<li>
+								<a href="#behavior">Behavior</a>
+							</li>
+                            <li>
+								<a href="#specs">Specs</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="usage" class="article">
+							<h2>Usage</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>Bottom sheets are especially suitable when three or more actions are displayed to the user and when the actions do not require a description. If there are two or fewer actions or detailed description is required, consider using a menu or dialog instead.</p>
+									<p>Bottom sheets can be list-style or grid-style. Grid layouts increase visual disambiguation.</p>
+									<p>You can use bottom sheets to show actions related to other apps or to allow entry points to other apps (via the app icon).</p>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="contentArticle" class="article">
+							<h2>Content</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>In a standard list-style bottom sheet, each action should have a text description and a left-aligned icon. When necessary, use separators to logically group actions. Also use subheaders or titles to give context to the choices.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>A scrollable grid-style bottom sheet can contain icons for standard share actions.</p>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_bottomsheets1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_bottomsheets2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_bottomsheets3.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_bottomsheets4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+                        <div id="behavior" class="article">
+							<h2>Behavior</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>When a bottom sheet is displayed, it should animate upwards from the bottom edge of the screen. The previous content dims to give the user context for where they just were and the modal nature of the choice. Tapping on the dimmed area dismisses the sheet, as does swiping down on the sheet. </p>
+									<p>If the sheet contains more actions that can fit in the initial display, the sheet is scrollable. Scrolling should also pull up the sheet container and eventually cover the entire screen. </p>
+									<p>When the action sheet covers the entire screen, add a dismiss button to the header, on the left side of the title.</p>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+                        <div id="specs" class="article lastArticle">
+							<h2>Specs</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>The following font, color specs and redlines are provided for mobile apps.</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Font and color:</p>
+                                    <ul>
+                                        <li>Text: Roboto Regular 16sp,  #000 87% </li>
+                                        <li>Title (optional): Roboto Regular 16sp, #000 54%</li>
+                                        <li>Default bottom sheet background fill: #FFF</li>
+                                        <li>Overlay shield fill: #000 20%</li>
+                                    </ul>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_bottomsheets_specs1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Redline for list-style bottom sheet</p>
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_bottomsheets_specs2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_bottomsheets_specs3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Redline for list-style sheet with header</p>
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_bottomsheets_specs4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_bottomsheets_specs5.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Example of bottom sheet moving up.</p>
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_bottomsheets_specs6.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_bottomsheets_specs7.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Redline for grid-style bottom sheet that contains a standard set of actions for other apps.</p>
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_bottomsheets_specs8.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="../layout/structure.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>布局</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="buttons.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>按钮</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
