@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>按钮 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;按钮</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/buttons.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">按钮</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>A button consists of text and/or an image that clearly communicates what action will occur when the user touches it.  There are three types of main buttons: </p>
+                         <ul>
+                            <li>Floating action button: a circular button made of paper that lifts and emits ink reactions on press.</li>
+                            <li>Raised button: a typically rectangular button made of paper that lifts and emits ink reactions on press.</li>
+                            <li>Raised button: a typically rectangular button made of paper that lifts and emits ink reactions on press.</li>
+                         </ul>
+                         <p>In addition, fully saturated icons in your design generally always denote affordances.</p>
+                         <p>Buttons should be designed in accordance with your app’s color theme.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#usage">Usage</a>
+							</li>
+							<li>
+								<a href="#flatRaisedButtons">Flat & raised buttons</a>
+							</li>
+							<li>
+								<a href="#floatingActionButton">Floating action button</a>
+							</li>
+                            <li>
+								<a href="#otherButtons">Other buttons</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="usage" class="article">
+							<h2>Usage</h2>
+							<div class="section">
+								<div class="column col6">
+									<div class="media">
+										<img src="components_buttons_usage1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Floating action button</p>
+                                    </div>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_buttons_usage2.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Raised button</p>
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_usage3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Flat button</p>
+                                    </div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<div class="media">
+										<img src="components_buttons_usage4.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_buttons_usage5.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_usage6.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>Choosing button style</h3>
+								<div class="column col6">
+									<p>Choosing a button style depends on the primacy of the button, the number of containers on screen, and the overall layout of the screen. </p>
+									<p>First, look at the button’s function: is it important and ubiquitous enough to be a floating action button? </p>
+									<p>Next, choose raised or flat dimensionality depending on the container it will be in and how many z-space layers you have on screen. There should not be layers upon layers upon layers of objects on the screen. </p>
+									<p>Finally, look at your specific layout. You should primarily use one type of button per container. Only mix button types when you have a good reason to, such as emphasizing an important function.</p>
+								</div>
+								<div class="column col12 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_usage_main.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>Buttons in dialogs</h3>
+								<div class="column col6">
+									<p>Use ink buttons on dialogs to prevent too many layers of dimension.</p>
+								</div>
+								<div class="column col12 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_usage_dialogs1.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_usage_dialogs2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_buttons_keyline1.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Buttons inline</h3>
+								<div class="column col6">
+									<p>Choose raised or flat buttons depending on your specific layout. Make sure to allow enough padding around flat buttons so the user can easily find them.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_buttons_usage_buttons1.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_usage_buttons2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Persistent footer buttons</h3>
+								<div class="column col6">
+									<p>If your app requires actions to be persistent and readily available to the user, first consider using the floating action button. </p>
+									<p>If a floating action button isn’t quite right, but the button still needs to be easy to access, consider persistent footer buttons.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_buttons_usage_buttons3.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_usage_buttons4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_buttons_keyline2.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Never use raised buttons within persistent button areas.</p>
+								</div>
+								<div class="column col6">
+									<div class="media badBlock">
+										<img src="components_buttons_keyline3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>With the addition of a divider, a persistent footer button can also be used for scrollable dialogs.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_buttons_usage_buttons5.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_usage_buttons6.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="flatRaisedButtons" class="article">
+							<h2>Flat & raised buttons</h2>
+							<div class="section">
+                                <h3>Raised buttons</h3>
+								<div class="column col6">
+									<p>Raised buttons emphasize functions that would otherwise get lost on a busy or wide space. They add dimension to mostly flat layouts. </p>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_buttons_main5.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Use raised buttons to give more prominence to actions in layouts with a lot of varying content.</p>
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_main6.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Raised buttons can even help delineate sections of content on a page.</p>
+                                    </div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="components_buttons_main7.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+                                        <p>Raised buttons stand out more than flat buttons.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="components_buttons_main8.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+                                        <p>Don’t use flat buttons in UIs where they would be difficult to see.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Flat buttons</h3>
+								<div class="column col6">
+									<p>Use flat buttons for contexts such as toolbars and dialogs to avoid gratuitous layering.</p>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_buttons_main9.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Flat buttons are appropriate in dialogs.</p>
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_main10.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Flat buttons minimize distraction from content.</p>
+                                    </div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="components_buttons_main11.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+                                        <p>Correct use of flat buttons.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="components_buttons_main12.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+                                        <p>Raised buttons here are too heavy.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Flat and raised button states</h3>
+								<div class="column col6">
+									<p>Button states for mocks:</p>
+                                    <ul>
+                                        <li>Raised buttons behave like a piece of material resting on another sheet – they lift and color on press.</li>
+                                        <li>Flat buttons are printed on the material. They do not lift but fill with color on press.</li>
+                                    </ul>
+									<p>When representing button states in mocks, use graphic rings to represent the focus states.</p>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_buttons_main13.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Flat Light/Light theme</p>
+                                        <p>Minimum width: 88dp<br/>
+                                        Height: 36dp<br/>
+                                        Hover: 20% #999999<br/>
+                                        Pressed: 40% #999999<br/>
+                                        Disabled text: 26% #000000</p>
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_main14.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Flat Dark/Dark theme</p>
+                                        <p>Minimum width: 88dp<br/>
+                                        Height: 36dp<br/>
+                                        Hover: 15% #CCCCCC<br/>
+                                        Pressed: 25% #CCCCCC<br/>
+                                        Disabled text: 30% #FFFFFF</p>
+                                    </div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_buttons_main15.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Raised Light/Light theme</p>
+                                        <p>Minimum width: 88dp<br/>
+                                        Height: 36dp<br/>
+                                        Disabled text: 26% #000000<br/>
+                                        Disabled button: 12% #000000</p>
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_main16.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Raised Dark/Dark theme</p>
+                                        <p>Minimum width: 88dp<br/>
+                                        Height: 36dp<br/>
+                                        Normal color: 500<br/>
+                                        Hover color: 600<br/>
+                                        Pressed color: 700<br/>
+                                        Disabled text: 30% #FFFFFF<br/>
+                                        Disabled button: 12% #FFFFFF</p>
+                                    </div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>A note on accessibility</h3>
+								<div class="column col6">
+									<p>To ensure usability for people with disabilities, make sure that your buttons have a height of 36dp, but that the touchable target has a minimum height of 48dp.</p>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_buttons_keyline4.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Buttons in motion</h3>
+								<div class="column col6">
+                                    &nbsp;
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" height="640" width="360">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B08MbvYZK1iNZUdUdVAzdUVPMG8/components-buttons-mainbuttons-buttons-motion1_large_xhdpi.webm"></source>
+                                            <source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B08MbvYZK1iNQ2kxM0VKdXQ0Tmc/components-buttons-mainbuttons-buttons-motion1_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Flat buttons</p>
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" height="640" width="360">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B08MbvYZK1iNRUdGNUlpVGpwbm8/components-buttons-mainbuttons-buttons-motionraised_large_xhdpi.webm"></source>
+                                            <source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B08MbvYZK1iNelZlNW13UVRzUnc/components-buttons-mainbuttons-buttons-motionraised_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Raised buttons</p>
+                                    </div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+                        <div id="floatingActionButton" class="article">
+							<h2>Floating action button </h2>
+							<div class="section">
+                                <h3>Floating action button</h3>
+								<div class="column col6">
+									<p>Floating action buttons are used for a special type of promoted action. They are distinguished by a circled icon floating above the UI and have special motion behaviors related to morphing, launching, and the transferring anchor point.</p>
+									<p>Floating action buttons come in two sizes: the default, which should be used in most cases, and the mini, which should only be used to create visual continuity with other elements on the screen. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_actions_fab1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Floating action button</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_actions_fab2.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Mini floating action button</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>The floating action button should be placed 16dp min from the edge on mobile and 24dp min on tablet/desktop. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_actions_fab3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Floating action button redlines</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_actions_fab4.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Mini floating action button redlines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Associated content</h3>
+								<div class="column col6">
+									<p>Not every screen needs a floating action button. A floating action button should represent the primary action in an application. In the screen on the left, the primary action is to touch images in a gallery, so no button is needed. On the right, the primary action is to add files.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media goodBlock">
+										<img src="patterns_actions_fab_content1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media goodBlock">
+										<img src="patterns_actions_fab_content2.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Try to use only one floating action button per screen, as it should represent only the most common action and is prominent on the screen.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media badBlock">
+										<img src="patterns_actions_fab_content3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_content4.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Don’t use floating action buttons in dialogs. Use a flat button.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media goodBlock">
+										<img src="patterns_actions_fab_content5.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_content6.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Don’t attach a floating action button to a side drawer; it could distract a user from the task they want to accomplish. Side drawers are for navigation.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media goodBlock">
+										<img src="patterns_actions_fab_content7.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_content8.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Don’t associate floating action buttons with pulldown menus.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media goodBlock">
+										<img src="patterns_actions_fab_content9.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_content10.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Related actions</h3>
+								<div class="column col6">
+									<p>Put overflow actions in the overflow menu in toolbars, not in floating action buttons.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media goodBlock">
+										<img src="patterns_actions_fab_actions1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media goodBlock">
+										<img src="patterns_actions_fab_actions2.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+                                    <div class="media badBlock">
+										<img src="patterns_actions_fab_actions3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_actions4.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>If the hallmark of the app is adding file types, a floating action button can morph into related actions after it is first touched.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media goodBlock">
+										<img src="patterns_actions_fab_actions5.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media goodBlock">
+										<img src="patterns_actions_fab_actions6.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>However, if a set of actions that appear after touching a floating action button are unrelated to the button and are not a natural extension of it, then place the actions into an overflow menu.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media badBlock">
+										<img src="patterns_actions_fab_actions7.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_actions8.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>If a floating action button morphs into a toolbar, that toolbar should contain related actions. In this example, the button lets the user select the media type to add.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media goodBlock">
+										<img src="patterns_actions_fab_actions9.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media goodBlock">
+										<img src="patterns_actions_fab_actions10.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Don’t morph floating action buttons into a toolbar that contains unrelated or confusing actions.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media badBlock">
+										<img src="patterns_actions_fab_actions11.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_actions12.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>A floating action button can contain a list of contacts.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media goodBlock">
+										<img src="patterns_actions_fab_actions13.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media goodBlock">
+										<img src="patterns_actions_fab_actions14.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>The list of contacts shouldn’t contain unrelated actions. </p>
+								</div>
+								<div class="column col6">
+                                    <div class="media badBlock">
+										<img src="patterns_actions_fab_actions15.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_actions16.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Qualities</h3>
+								<div class="column col6">
+									<p>Make floating action buttons positive actions like Create, Favorite, Share, Navigate, and Explore.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									 <div class="media goodBlock">
+										<img src="patterns_actions_fab_qualities1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>In general, avoid using floating action buttons for destructive actions like Archive or Trash; nonspecific actions; alerts or errors; limited tasks like cutting text; or controls that should be in a toolbar, like volume control or changing a font color. Floating action buttons don’t contain app bar icons or status bar info like notifications. Don’t layer badges or other elements over a floating action button.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_qualities2.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Use the circle-shaped icon consistently to enforce the primary action pattern across apps.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media goodBlock">
+										<img src="patterns_actions_fab_qualities5.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_qualities6.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Don’t make floating action buttons bounce.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media goodBlock">
+										<img src="patterns_actions_fab_qualities7.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_qualities8.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Placement</h3>
+								<div class="column col6">
+									<p>A floating action button can be placed according to the keyline spacing rules or attached to an extended app bar. If floating action button is placed at the base of a list, the content should have enough padding at the bottom so the button does not block content in last row. </p>
+								</div>
+								<div class="column col6">
+                                    <div class="media goodBlock">
+										<img src="patterns_actions_fab_placement1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media goodBlock">
+										<img src="patterns_actions_fab_placement2.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>A floating action button can attach to a footer or to an extended sheet.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media goodBlock">
+										<img src="patterns_actions_fab_placement3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media goodBlock">
+										<img src="patterns_actions_fab_placement4.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<br class="clear" />
+                             </div>
+                             <div class="section">
+								<div class="column col6">
+									<p>A floating action button shouldn’t float in a random location. Take care when attaching floating action buttons to a toolbar, where it might overlap with or cover other touch targets.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media badBlock">
+										<img src="patterns_actions_fab_placement5.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_placement6.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>A floating action button can attach to an extended app bar.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									 <div class="media goodBlock">
+										<img src="patterns_actions_fab_placement7.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<br class="clear" />
+                             </div>
+                             <div class="section">
+								<div class="column col6">
+									<p>A floating action button can be attached to a toolbar or structural element within a sheet (as long as it’s not blocking other elements).</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									 <div class="media goodBlock">
+										<img src="patterns_actions_fab_placement8.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<br class="clear" />
+                             </div>
+                             <div class="section">
+								<div class="column col6">
+									<p>A floating action button can be attached to the edge of a sheet.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									 <div class="media goodBlock">
+										<img src="patterns_actions_fab_placement9.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<br class="clear" />
+                             </div>
+                             <div class="section">
+								<div class="column col6">
+									<p>Don’t have more than one floating action button per screen.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_placement10.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+                             </div>
+                             <div class="section">
+								<div class="column col6">
+									<p>Don’t place floating action buttons inside a drawer or attached to a drawer.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_placement11.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+                             </div>
+                             <div class="section">
+								<div class="column col6">
+									<p>Don’t associate floating action buttons with every element on a screen.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_placement12.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+                             </div>
+                             <div class="section">
+								<div class="column col6">
+									<p>Don’t block floating action buttons with snackbars or toasts.</p>
+								</div>
+								<div class="column col6">
+                                    <div class="media goodBlock">
+										<img src="patterns_actions_fab_placement13.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									 <div class="media badBlock">
+										<img src="patterns_actions_fab_placement14.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+                        <div id="otherButtons" class="article lastArticle">
+							<h2>Other buttons</h2>
+                            <div class="section">
+                                <h3>Icon toggles</h3>
+								<div class="column col6">
+									<p>Icons are appropriate for app bars, toolbars, action buttons or as toggles.</p>
+									<p>Icon toggles can display bounded or unbounded ink press ripples beyond their touch target bounds. For more information, see <a href="../animation/responsive-interaction.html#surfaceReaction">Surface Reaction</a>.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_other1.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_other2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_other3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Mobile dropdown buttons</h3>
+								<div class="column col6">
+									<p><strong>Pulldown button</strong></p>
+									<p>A pulldown button controls the state of a value. There may be two to many states. The button displays the current state and a down arrow icon. When a user interacts with the button, a menu flies out adjacent to and typically below the button with all of the state options. </p>
+									<p>States may be represented within the pulldown menu as a list of strings, a palette, icons, or many other display options. Pressing one state changes the displayed state of the button. </p>
+									<p>The pulldown shown here is the generic pulldown button with a list menu. Scrolling within the pulldown should behave like scrolling within menus. </p>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_buttons_mobile1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_mobile2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_pulldown1.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Generic overflow pulldown button</strong></p>
+									<p>This button is a pulldown button that does not have a displayed state but has an arrow or a generic menu button. When the button is pressed, the menu flies out. Pressing an option on the menu generally navigates to further settings for that option. </p>
+									<p><strong>Segmented pulldown button</strong></p>
+									<p>A segmented pulldown has two sections: the current state and the dropdown arrow icon. Pressing the current state will cause that state’s action to fire within the screen. Pressing the dropdown arrow will display all the state options. Selecting one will change the displayed state. </p>
+                                    <p><strong>Editable segmented pulldown button</strong></p>
+									<p>This button has a segmented pulldown, where the displayed state is text editable, such as a font size picker. Pressing the current state causes both that state’s action to fire and makes the displayed state editable. Pressing the arrow displays all the state options. </p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_pulldown2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+                                    &nbsp;
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" height="402" width="360">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWaFNpY1BsYlNZekU/components-buttons-otherbuttons-060203_MobileDropdowns_xhdpi_002.webm"></source>
+                                            <source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWZVV2LXRhWkprd3M/components-buttons-otherbuttons-060203_MobileDropdowns_xhdpi_002.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Desktop dropdowns</h3>
+								<div class="column col6">
+									<p>Desktop app bar specs</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_buttons_pulldown3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="bottom-sheets.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>底部菜单</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="cards.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>卡片</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

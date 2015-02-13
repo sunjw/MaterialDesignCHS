@@ -85,34 +85,34 @@ var menuContent = [
 			text : "底部菜单",
 			url : "components/bottom-sheets.html"
 		}, {
-			text : "Buttons",
+			text : "按钮",
 			url : "components/buttons.html"
 		}, {
-			text : "Cards",
+			text : "卡片",
 			url : "components/cards.html"
 		}, {
 			text : "Chips",
 			url : "components/chips-tokens.html"
 		}, {
-			text : "Dialogs",
+			text : "对话框",
 			url : "components/dialogs.html"
 		}, {
 			text : "Dividers",
 			url : "components/dividers.html"
 		}, {
-			text : "Grids",
+			text : "网格列表",
 			url : "components/grids.html"
 		}, {
-			text : "Lists",
+			text : "列表",
 			url : "components/lists.html"
 		}, {
 			text : "List controls",
 			url : "components/list-controls.html"
 		}, {
-			text : "Menus",
+			text : "菜单",
 			url : "components/menus.html"
 		}, {
-			text : "Progress and Activity",
+			text : "活动和进度",
 			url : "components/progress-activity.html"
 		}, {
 			text : "Sliders",
@@ -127,10 +127,10 @@ var menuContent = [
 			text : "Switches",
 			url : "components/switches.html"
 		}, {
-			text : "Tabs",
+			text : "标签选项卡",
 			url : "components/tabs.html"
 		}, {
-			text : "Text fields",
+			text : "文本框",
 			url : "components/text-fields.html"
 		}, {
 			text : "Tooltips",
