@@ -37,16 +37,16 @@ var menuContent = [
 			text : "动画效果",
 			url : ""
 		}, {
-			text : "Authentic Motion",
+			text : "真实的动画",
 			url : "animation/authentic-motion.html"
 		}, {
-			text : "Responsive Interaction",
+			text : "响应式交互",
 			url : "animation/responsive-interaction.html"
 		}, {
-			text : "Meaningful Transitions",
+			text : "有意义的变幻",
 			url : "animation/meaningful-transitions.html"
 		}, {
-			text : "Delightful Details",
+			text : "丰富的细节",
 			url : "animation/delightful-details.html"
 		}
 	], [{
@@ -82,7 +82,7 @@ var menuContent = [
 			text : "基本元素",
 			url : ""
 		}, {
-			text : "Bottom Sheets",
+			text : "底部菜单",
 			url : "components/bottom-sheets.html"
 		}, {
 			text : "Buttons",
