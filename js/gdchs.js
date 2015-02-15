@@ -97,7 +97,7 @@ var menuContent = [
 			text : "对话框",
 			url : "components/dialogs.html"
 		}, {
-			text : "Dividers",
+			text : "分割线",
 			url : "components/dividers.html"
 		}, {
 			text : "网格列表",

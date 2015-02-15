@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>分割线 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;分割线</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/dividers.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">分割线</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Dividers group and separate content within lists and page layouts. The divider is a thin rule, lightweight yet sufficient to distinguish content visually and spatially.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#usage">Usage</a>
+							</li>
+							<li>
+								<a href="#typesOfDividers">Types of dividers</a>
+							</li>
+                            <li>
+								<a href="#specs">Specs</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="usage" class="article">
+							<h2>Usage</h2>
+                            <div class="section">
+								<div class="column col12">
+									<p>Dividers help users understand how content is organized by establishing a rhythm and hierarchy on a page. But a heavy use of dividers can lead to visual noise and dilute their impact. </p>
+									<p>Full-bleed dividers emphasize separate content areas and sections, but if such strong divisions are not required, consider using white space, subheaders, or inset dividers.</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Items without anchors</strong></p>
+									<p>When lists don’t have an anchoring element such as an avatar or icon, spacing alone isn’t always enough to separate tiles. In this case, full-bleed dividers can help create rhythm and separate individual tiles.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_dividers_usage1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_dividers_usage2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Image-based content</strong></p>
+									<p>Because the grid itself creates visual distinction, grid lists do not need dividers to separate subheaders from content. In this case, the white space and the subheaders separate the sections adequately.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_dividers_usage3.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="components_dividers_usage6.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+                                        <p>Judicious use of inset dividers helps demarcate major sections of content.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media badBlock">
+										<img src="components_dividers_usage4.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+                                        <p>Overuse of full-bleed dividers creates visual noise and ultimately diminishes the meaning of the dividers.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="components_dividers_usage5.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+                                        <p>Inset dividers help cut down on visual noise and should be used with anchor elements, but overuse reduces their meaning.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="typesOfDividers" class="article">
+							<h2>Types of dividers</h2>
+							<div class="section">
+                                <h3>Full-bleed dividers</h3>
+								<div class="column col6">
+									<p>Full-bleed dividers separate distinct content sections (e.g., biographic details from contact information) or distinct content elements (e.g., list items) in both lists and page layouts.</p>
+									<p>Full-bleed dividers can also indicate seams in material where the material will expand when content is expanded.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_dividers_type1.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_dividers_type2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Inset dividers</h3>
+								<div class="column col6">
+									<p>Inset dividers subdivide related content, such as phone numbers from email addresses from street addresses in a contact detail.</p>
+									<p>Inset dividers should be used in conjunction with anchoring elements such as icons or avatars aligned with the Title Key Line.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_dividers_type3.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_dividers_type4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Subheaders and dividers</h3>
+								<div class="column col6">
+									<p>When using a divider with a subheader, place the divider above the subheader to reinforce the relationship between the subheader and the content.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_dividers_type5.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_dividers_type6.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+                        <div id="specs" class="article lastArticle">
+							<h2>Specs</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>Dividers are 1dp thick, with an opacity of either 12% black in light themes or 12% white in dark themes.</p>
+                                    <p>Dividers are placed along the bottom edge of the content tiles, independent of the grid.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_dividers_specs.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="chips.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>Chips 列表</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="dividers.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>分割线</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
