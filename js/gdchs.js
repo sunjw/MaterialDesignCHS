@@ -14,7 +14,7 @@ var responsibleHeader = true;
 // Menu Setup
 var menuContent = [
 	[{
-			text : "Material Design",
+			text : "质感设计",
 			url : ""
 		}, {
 			text : "介绍",
