@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>Chips 列表 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;Chips 列表</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/chips.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">Chips 列表</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Chips are small blocks that represent a complex entity, such as a calendar event or contact. They can contain a photo, short title string (truncated if necessary), and other brief information. Chips are easily manipulated through drag and drop. Touching them invokes the full entity view in a card or full screen view or invokes a menu of options related to that chip’s entity.</p>
+                         <p>Cards have a constant width and variable height. The maximum height is limited to what can fit within a single view on a platform, but it can temporarily expand as needed (for example, to display a comment field). Cards do not flip to reveal information on their back.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#contactChips">Contact chips</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="contactChips" class="article lastArticle">
+							<h2>Contact chips</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>Contact chips represent people for whom the user has contact information. They are invoked and inserted into a text field (usually the To field) when the user starts typing a contact’s name, sees the contact’s addresses, and selects the correct one. Contact chips can be added directly to a text field from a menu of contacts.</p>
+									<p>Contact chips confirm that the user will be sending their message to the correct person, and are space and operationally efficient. </p>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_chips_contact1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_chips_contact2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Closed contact chip</strong></p>
+                                    <ul>
+                                        <li>The contact name text is Roboto Regular 14sp.</li>
+                                        <li>Upon focus, the chip rises. When pressed, it expands to shows alternative addresses for the contact.</li>
+                                    </ul>
+                                    <p><strong>Open contact chip</strong></p>
+                                    <ul>
+                                        <li>Contact name text:  Roboto Regular 16sp</li>
+                                        <li>Address text: Roboto Regular 14sp</li>
+                                        <li>On press, the contact chip closes automatically.</li>
+                                        <li>By default, the top field is activated and focused.</li>
+                                    </ul>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_chips_contact_keyline1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_chips_contact_keyline2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_chips_contact3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="cards.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>卡片</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="dialogs.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>对话框</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -91,7 +91,7 @@ var menuContent = [
 			text : "卡片",
 			url : "components/cards.html"
 		}, {
-			text : "Chips",
+			text : "Chips 列表",
 			url : "components/chips.html"
 		}, {
 			text : "对话框",
