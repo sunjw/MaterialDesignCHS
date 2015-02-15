@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>卡片 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;卡片</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/cards.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">卡片</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>A card is a piece of paper that contains unique related data; for example, a photo, text, and link all about a single subject. Cards are typically an entry point to more complex and detailed information.</p>
+                         <p>Cards have a constant width and variable height. The maximum height is limited to what can fit within a single view on a platform, but it can temporarily expand as needed (for example, to display a comment field).  Cards do not flip to reveal information on their back.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#usage">Usage</a>
+							</li>
+							<li>
+								<a href="#contentArticle">Content</a>
+							</li>
+							<li>
+								<a href="#actions">Actions</a>
+							</li>
+                            <li>
+								<a href="#behavior">Behavior</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="usage" class="article">
+							<h2>Usage</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>Cards are a convenient means of displaying content composed of different types of objects. They’re also well-suited for presenting similar objects whose size or supported actions can vary considerably, like photos with captions of variable length.</p>
+								</div>
+								<div class="column col12 nomarginRight">
+									<div class="media">
+										<img src="components_cards1.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>A card collection is a coplanar layout of cards.</p>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_cards8.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Example of a card collection.</p>
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_cards10.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Example of a card collection.</p>
+                                    </div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Each of these cards contains a unique data set: <br/>
+                                    a checklist with an action, a note with an action, a note with a photo.</p>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_cards12.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Each of these cards contains a unique data set.</p>
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Use a card layout when displaying content that:</p>
+                                    <ul>
+                                        <li>As a collection, comprises multiple heterogeneous data types (for example, the card collection consists of photos, movies, text, images).</li>
+                                        <li>Does not require direct comparison (a user is not directly comparing images or text strings).</li>
+                                        <li>Includes supporting content of highly variable length, such as comments.</li>
+                                        <li>Consists of rich content or interaction, such as +1 buttons, sliders, or comments.</li>
+                                        <li>Would otherwise be in a list but needs to display more than three lines of text.</li>
+                                        <li>Would otherwise be in a grid list but needs to display more text to supplement the image.</li>
+                                    </ul>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="components_cards2.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+                                        <p>1. Cards have rounded corners.</p>
+                                        <p>2. Cards can have multiple actions.</p>
+                                        <p>3. Cards can be dismissible and rearranged.</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="components_cards3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+                                        <p>This is a tile, not a card.</p>
+                                        <p>1. Tiles have square corners.</p>
+                                        <p>2. Tiles have no more than two actions.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="components_cards4.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+                                        <p>A quickly scannable list, instead of cards, is an appropriate way to represent homogeneous content that doesn't have many actions.</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="components_cards5.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+                                        <p>The use of cards here distracts the user from being able to quickly scan. These list items are also not dismissable, so having them on separate cards is confusing. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="components_cards6.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+                                        <p>Grid tiles are a clean and lightweight way to present a gallery of images.</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="components_cards7.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+                                        <p>Cards are unnecessary in a gallery of images (homogeneous content). </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Card layout guidelines</h3>
+								<div class="column col6">
+									<p><strong>Typography</strong></p>
+									<p>Body type: 14sp or 16sp<br/>
+                                    Headlines: 24sp or larger<br/>
+                                    Flat buttons: Roboto Medium, 14sp, 10sp tracking</p>
+									<p><strong>Card gutters on mobile</strong></p>
+									<p>Padding from edge of screen to card: 8dp<br/>
+                                    Gutters between cards: 8dp</p>
+									<p><strong>Content padding</strong></p>
+									<p>16dp</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_cards9.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_cards11.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_cards13.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_cards15.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="contentArticle" class="article">
+							<h2>Content</h2>
+							<div class="section">
+								<div class="column col6">
+									<p>Card content type and quantity can vary greatly, depending on the content being expressed. Cards provide context and an entry point to more robust information and views. Don't overload cards with extraneous information or actions.</p>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_cards10.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Cards support varied content.</p>
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_cards14.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Cards support varied layouts.</p>
+                                    </div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Place primary content at the top of the card. Use hierarchy to direct users’ attention to the most important information in the card.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_cards8.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Primary content is placed at the top of cards.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_cards12.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Typography can emphasize primary content.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+                        <div id="actions" class="article">
+							<h2>Actions</h2>
+							<div class="section">
+								<div class="column col6">
+									<p>The primary action in a card is typically the card itself.</p>
+									<p>Supplemental actions can vary from card to card in a collection, depending on the content type and expected outcome; for example, playing a movie versus opening a book. Within cards in a collection, position actions consistently. </p>
+									<p><strong>Supplemental actions</strong></p>
+									<p>Supplemental actions can vary from card to card in a collection, depending on the content type and expected outcome; for example, playing a movie versus opening a book. Within cards in a collection, position actions consistently. </p>
+									<p>Limit supplemental actions to two actions, in addition to an overflow menu.</p>
+                                    <p><strong>UI controls</strong></p>
+									<p>UI controls, like a slider, placed inline with primary content can modify the view of primary content. For example, a slider to choose a day, stars to rate content, or a segmented button to select a date range.</p>
+									<p><strong>Overflow menu</strong></p>
+									<p>An overflow menu (optional) is typically placed in the upper-right corner of cards, but can be in the lower right if the placement improves content layout and legibility.</p>
+									<p>Take care not to overload an overflow menu with too many actions.</p>
+                                    <p><strong>Considerations</strong></p>
+									<p>Inline links within text content are strongly discouraged.</p>
+									<p>Although cards can support multiple actions, UI controls, and an overflow menu, use restraint and remember that cards are entry points to more complex and detailed information.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_cards16.png" alt="">
+									</div>
+                                    <div class="media">
+										<img src="components_cards17.png" alt="">
+									</div>
+                                    <div class="media">
+										<img src="components_cards18.png" alt="">
+									</div>
+                                    <div class="media">
+										<img src="components_cards19.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+                             </div>
+						</div> <!-- article ends -->
+                        <div id="behavior" class="article lastArticle">
+							<h2>Behavior</h2>
+                            <div class="section">
+                                <h3>Gestures</h3>
+								<div class="column col12">
+									<p>The swipe gesture on a per-card basis is supported. Card gesture behavior should be consistently implemented within a card collection.</p>
+									<p>The pick-up-and-move gesture is possible. However, consider whether it’s important for the user to be able to sort cards within the collection or if the content would be better organized with programmatic filtering/sorting. </p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Card collection filtering, sorting, and reorganization</h3>
+								<div class="column col12">
+									<p>Card collections can be programmatically sorted or filtered by date, file size, alphabetical order, or other parameters. The first item in the collection is positioned at the top left of the collection, and the order proceeds left to right and top to bottom.</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Scrolling</h3>
+								<div class="column col12">
+									<p>Card collections only scroll vertically. Card content that exceeds the maximum card height is truncated and does not scroll.</p>
+									<p>Cards with truncated content can be expanded, in which case the card height may exceed the maximum height of the view. In this case, the card will scroll with the card collection</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Card focus</h3>
+								<div class="column col12">
+									<p>For interfaces dependent upon sequential focus traversal for navigation (DPad, keyboard), individual cards should either have only a primary action or open a new view with the primary and supplemental actions available.</p>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="buttons.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>按钮</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="chips.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>Chips</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

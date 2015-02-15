@@ -92,7 +92,7 @@ var menuContent = [
 			url : "components/cards.html"
 		}, {
 			text : "Chips",
-			url : "components/chips-tokens.html"
+			url : "components/chips.html"
 		}, {
 			text : "对话框",
 			url : "components/dialogs.html"
