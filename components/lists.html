@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>列表 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;列表</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/lists.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">列表</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Lists present multiple line items in a vertical arrangement as a single continuous element.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#usage">Usage</a>
+							</li>
+							<li>
+								<a href="#contentArticle">Content</a>
+							</li>
+                            <li>
+								<a href="#behavior">Behavior</a>
+							</li>
+                            <li>
+								<a href="#specs">Specs</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="usage" class="article">
+							<h2>Usage</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>A <strong>list</strong> consists of a single continuous column of tessellated sub-divisions of equal width called <strong>rows</strong> that function as containers for <strong>tiles</strong>.</p>
+									<p><strong>Tiles</strong> hold content, and can vary in height within a list.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_usage1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_usage2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Lists are best suited to presenting a <strong>homogeneous data type</strong> or sets of data types, such as images and text, optimized for <strong>reading comprehension</strong> with the goal of differentiating between like data types or qualities within a single data type.</p>
+									<p>If more than three lines of text need to be shown in list tiles, use cards instead.</p>
+									<p>If the primary distinguishing content consists of images, use a grid list.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_usage3.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="contentArticle" class="article">
+							<h2>Content</h2>
+							<div class="section">
+                                <h3>Tile content</h3>
+								<div class="column col6">
+									<p>List tiles present collections of related content in a consistent format, using hierarchy to enhance readability by prioritizing a consistent type or set of content. For example, in an email app, an inbox list emphasizes an avatar and text snippet over a time stamp. This helps users more easily find the most important information within the collection of content. </p>
+									<p>List tiles can contain up to three lines of text, and the amount of text can vary between tiles within the same list. To display more than three lines of text, use a card.</p>
+									<p>Bias the most distinguishing content in a tile towards the left of the tile. In tiles with mutli-line content, place the most distinguishing content in the first line.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_content1.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Tile actions</h3>
+								<div class="column col6">
+									<p>The majority of space on a list tile should be dedicated to the primary action.</p>
+									<p>Because actions are not distinguishing elements of list tiles, place supplemental actions on the right side of the tile.</p>
+									<p>Primary and supplemental actions, such as play, zoom in, delete, and select, are immediate and typically do not have a submenu of options (action overflow) within the list.</p>
+                                    <p>Actions can open a subsequent view, such as a card.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_content2.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col12">
+									<p><strong>Primary actions</strong>:</p>
+                                    <ul>
+                                        <li>Fill the entire tile, and therefore are not represented via icons, text, etc.</li>
+                                        <li>Are consistent throughout tiles in a specific list. For example, the primary action for all tiles in a single list of music would be to play a song, or in a list of emails, to open to read an email.</li>
+                                    </ul>
+                                    <p><strong>Supplemental actions</strong>:</p>
+                                    <ul>
+                                        <li>Are represented in tiles with icons, secondary text, etc.</li>
+                                        <li>Are functionally consistent throughout tiles in a specific list, for example, an icon that indicates whether someone is online.</li>
+                                        <li>Are placed in a consistent location within the tiles of a specific list.</li>
+                                    </ul>
+									<p>Avoid creating visual noise by repeatedly using supplemental actions in tiles, for example, by displaying a share action in every tile. Toggles, such as stars or pins, are exceptions because they provide meaningful information by displaying state.</p>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+                        <div id="behavior" class="article">
+							<h2>Behavior</h2>
+                            <div class="section">
+                                <h3>Scrolling</h3>
+								<div class="column col12">
+									<p>Lists scroll only vertically.</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Gestures</h3>
+								<div class="column col12">
+									<p>Per-tile swipe actions should be consistent within lists.</p>
+									<p>Where appropriate, tiles can be moved between a list and a drop target (for example, moving a file into a folder) and picked up and manually reordered within a list.</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Tile filtering and sorting</h3>
+								<div class="column col6">
+									<p>List tiles can be programmatically sorted or filtered by date, file size, alphabetical order, or other parameters.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="components_lists_behavior1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+                                        <p>Alphabetical sorting makes information easier to find.</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="components_lists_behavior2.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+                                        <p>Don’t display information in random order; if the UI doesn’t allow the user to sort a list, your app should use a logical sort order.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+                        <div id="specs" class="article lastArticle">
+							<h2>Specs</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>In a <strong>single-line list</strong>, each tile contains a single line of text. The amount of text can vary between tiles within the same list.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Element</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines_single6.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Context</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>In a <strong>two-line list</strong>, each tile contains a maximum of two lines of text. The amount of text can vary between tiles within the same list.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Element</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines4.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Context</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>In a <strong>three-line list</strong>, each tile contains a maximum of three lines of text.</p>
+									<p>The amount of text can vary between tiles within the same list.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines5.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Element</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines6.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+                                        <p>Context</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Single-line list</h3>
+								<div class="column col6">
+									<p><strong>Text only</strong></p>
+									<p>Font: Roboto Regular 16sp<br/>
+                                    Tile height: 48dp<br/>
+                                    Text padding, top: 16dp<br/>
+                                    Text padding, bottom: 20dp</p>
+                                    <p>Bottom padding is measured from the baseline.</p>
+                                    <p>Add 8dp padding at the top and bottom of a list. One exception is at the top of a list with a subheader, because subheaders contain their own padding.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines_single1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+                                    <div class="media">
+										<img src="components_lists_keylines_single3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines_single2.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<p>Keylines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Icon with text</strong></p>
+									<p>Font: Roboto Regular 16sp<br/>
+                                    Tile height: 56dp<br/>
+                                    Icon padding, left: 16dp<br/>
+                                    Text padding, left: 72dp<br/>
+                                    Text padding, top: 16dp<br/>
+                                    Text padding, bottom: 20dp</p>
+                                    <p>Bottom padding is measured from the baseline.</p>
+                                    <p>Add 8dp padding at the top and bottom of a list. One exception is at the top of a list with a subheader, because subheaders contain their own padding.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines_single4.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+                                    <div class="media">
+										<img src="components_lists_keylines_single6.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines_single5.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<p>Keylines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Avatar with text</strong></p>
+									<p>Font: Roboto Regular 16sp<br/>
+                                    Tile height: 56dp<br/>
+                                    Left avatar padding: 16dp<br/>
+                                    Text padding, left: 72dp<br/>
+                                    Text padding, top: 20dp<br/>
+                                    Text padding, bottom: 24dp</p>
+                                    <p>Bottom padding is measured from the baseline.</p>
+                                    <p>Add 8dp padding at the top and bottom of a list. One exception is at the top of a list with a subheader, because subheaders contain their own padding.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines_single7.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+                                    <div class="media">
+										<img src="components_lists_keylines_single9.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines_single8.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<p>Keylines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Avatar with text and icon</strong></p>
+									<p>Font: Roboto Regular 16sp<br/>
+                                    Tile height: 48dp<br/>
+                                    Left avatar padding: 16dp<br/>
+                                    Text padding, left: 72dp<br/>
+                                    Text padding, top: 20dp<br/>
+                                    Text padding, bottom: 24dp</p>
+                                    <p>Bottom padding is measured from the baseline.</p>
+                                    <p>Right icon padding: 16dp</p>
+                                    <p>Add 8dp padding at the top and bottom of a list. One exception is at the top of a list with a subheader, because subheaders contain their own padding.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines_single10.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+                                    <div class="media">
+										<img src="components_lists_keylines_single9.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines_single11.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<p>Keylines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Two-line list</h3>
+								<div class="column col6">
+									<p><strong>Text only</strong></p>
+									<p>Primary text font: Roboto Regular 16sp<br/>
+                                    Secondary text font: Roboto Regular 14sp<br/>
+                                    Tile height: 72dp<br/>
+                                    Text padding, left: 16dp<br/>
+                                    Text padding, top and bottom: 20dp</p>
+                                    <p>Bottom padding is measured from the baseline.</p>
+                                    <p>Add 8dp padding at the top and bottom of a list. One exception is at the top of a list with a subheader, because subheaders contain their own padding.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines_two1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+                                    <div class="media">
+										<img src="components_lists_keylines_two3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines_two2.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<p>Keylines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Icon with text</strong></p>
+									<p>Primary text font: Roboto Regular 16sp<br/>
+                                    Secondary text font: Roboto Regular 14sp<br/>
+                                    Tile height: 72dp<br/>
+                                    Left icon padding: 16dp<br/>
+                                    Text padding, left: 72dp<br/>
+                                    Text padding, top and bottom: 20dp<br/>
+                                    Bottom padding is measured from the baseline.</p>
+                                    <p>Add 8dp padding at the top and bottom of a list. One exception is at the top of a list with a subheader, because subheaders contain their own padding.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines_two4.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+                                    <div class="media">
+										<img src="components_lists_keylines_two12.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines_two5.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<p>Keylines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Avatar with text</strong></p>
+									<p>Primary text font: Roboto Regular 16sp<br/>
+                                    Secondary text font: Roboto Regular 14sp<br/>
+                                    Tile height: 72dp<br/>
+                                    Left avatar padding: 16dp<br/>
+                                    Text padding, left: 72dp<br/>
+                                    Text padding, top and bottom: 20dp</p>
+                                    <p>Bottom padding is measured from the baseline.</p>
+                                    <p>Center-align icon with text area.</p>
+                                    <p>Add 8dp padding at the top and bottom of a list. One exception is at the top of a list with a subheader, because subheaders contain their own padding.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines_two6.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+                                    <div class="media">
+										<img src="components_lists_keylines_two8.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines_two7.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<p>Keylines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Avatar with text and icon</strong></p>
+									<p>Primary text font: Roboto Regular 16sp<br/>
+                                    Secondary text font: Roboto Regular 14sp<br/>
+                                    Tile height: 72dp<br/>
+                                    Left avatar padding: 16dp<br/>
+                                    Text padding, left: 72dp<br/>
+                                    Text padding, top and bottom: 20dp</p>
+                                    <p>Bottom padding is measured from the baseline.</p>
+                                    <p>Right icon padding: 16dp</p>
+                                    <p>Add 8dp padding at the top and bottom of a list. One exception is at the top of a list with a subheader, because subheaders contain their own padding.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines_two9.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+                                    <div class="media">
+										<img src="components_lists_keylines_two11.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines_two10.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<p>Keylines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Three-line list</h3>
+								<div class="column col6">
+									<p><strong>Text only</strong></p>
+									<p>Primary text font: Roboto Regular 16sp</p>
+									<p>Secondary text font: Roboto Regular 14sp<br/>
+                                    Tile height: 88dp<br/>
+                                    Text padding, left: 16dp<br/>
+                                    Text padding, top: 16dp<br/>
+                                    Text padding, bottom: 20dp</p>
+                                    <p>Bottom padding is measured from the baseline.</p>
+                                    <p>Add 8dp padding at the top and bottom of a list. One exception is at the top of a list with a subheader, because subheaders contain their own padding.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines_three1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+                                    <div class="media">
+										<img src="components_lists_keylines_three12.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines_three2.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<p>Keylines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Icon with text</strong></p>
+									<p>Primary text font: Roboto Regular 16sp<br/>
+                                    Secondary text font: Roboto Regular 14sp<br/>
+                                    Tile height: 88dp<br/>
+                                    Left icon padding: 16dp<br/>
+                                    Text left padding: 72dp<br/>
+                                    Text padding, top: 16dp<br/>
+                                    Text padding, bottom: 20dp</p>
+                                    <p>Bottom padding is measured from the baseline.</p>
+                                    <p>Top-align icon with primary text.</p>
+                                    <p>Add 8dp padding at the top and bottom of a list. One exception is at the top of a list with a subheader, because subheaders contain their own padding.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines_three4.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+                                    <div class="media">
+										<img src="components_lists_keylines_three3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines_three5.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<p>Keylines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Avatar with text</strong></p>
+									<p>Primary text font: Roboto Regular 16sp<br/>
+                                    Secondary text font: Roboto Regular 14sp<br/>
+                                    Tile height: 88dp<br/>
+                                    Left avatar padding: 16dp<br/>
+                                    Left text padding: 72dp<br/>
+                                    Text padding, top: 16dp<br/>
+                                    Text padding, bottom: 20dp</p>
+                                    <p>Bottom padding is measured from the baseline.</p>
+                                    <p>Top-align avatar with primary text.</p>
+                                    <p>Add 8dp padding at the top and bottom of a list. One exception is at the top of a list with a subheader, because subheaders contain their own padding.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines_three6.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+                                    <div class="media">
+										<img src="components_lists_keylines_three8.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines_three7.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<p>Keylines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Avatar with text and icon</strong></p>
+									<p>Primary text font: Roboto Regular 16sp<br/>
+                                    Secondary text font: Roboto Regular 14sp<br/>
+                                    Tile height: 88dp<br/>
+                                    Left avatar padding: 16dp<br/>
+                                    Text left padding: 72dp<br/>
+                                    Text padding, top: 16dp<br/>
+                                    Text padding, bottom: 20dp</p>
+                                    <p>Bottom padding is measured from the baseline.</p>
+                                    <p>Right icon padding: 16dp</p>
+                                    <p>Top-align avatar and icon with primary text.</p>
+                                    <p>Add 8dp padding at the top and bottom of a list. One exception is at the top of a list with a subheader, because subheaders contain their own padding.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_lists_keylines_three9.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+                                    <div class="media">
+										<img src="components_lists_keylines_three11.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_lists_keylines_three10.png" alt="">
+									</div>
+                                     <div class="exampleDesc">
+										<p>Keylines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="dividers.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>分割线</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="lists.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>列表</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
