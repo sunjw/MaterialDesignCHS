@@ -106,7 +106,7 @@ var menuContent = [
 			text : "列表",
 			url : "components/lists.html"
 		}, {
-			text : "List controls",
+			text : "列表控件",
 			url : "components/list-controls.html"
 		}, {
 			text : "菜单",
