@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>列表控件 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;列表控件</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/list-controls.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">列表控件</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>List controls are icons that appear to the left or right of the list text. They indicate the state of a list item, information about a list item, or serve as an action related to the list item. Leave-behinds are list controls, which are revealed only upon swipe.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#usage">Usage</a>
+							</li>
+							<li>
+								<a href="#typesOfListControls">Types of list controls</a>
+							</li>
+                            <li>
+								<a href="#typesOfMenuControls">Types of menu controls</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="usage" class="article">
+							<h2>Usage</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>List controls fall under four categories:</p>
+                                    <ul>
+                                        <li>State</li>
+                                        <li>Primary action (including text strings)</li>
+                                        <li>Secondary action</li>
+                                        <li>Secondary info</li>
+                                    </ul>
+                                    <p>Distinguishing elements of list tiles need to be on the left for Left-to-Right interfaces, and vice versa. States and primary actions are placed on the left side of a list tile. Text within a list item should be considered part of the primary action target.</p>
+                                    <p>Don’t place two icons or actions next to one another, such as a checkbox next to an avatar. </p>
+                                    <p>If the primary action of the list item is navigational, don’t use an icon. The list item itself and its context should be sufficient to communicate the destination. </p>
+                                    <p>Secondary actions and Info should be placed on the right side of the title. Secondary actions are always a separate target from the primary action, as users increasingly expect every icon to trigger an action. </p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_listcontrols_usage.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="typesOfListControls" class="article">
+							<h2>Types of list controls</h2>
+							<div class="section">
+                                <h3>Checkbox</h3>
+								<div class="column col6">
+									<p>A checkbox can either be a primary action or a secondary action.</p>
+									<p>Type: primary action/state</p>
+									<p>Desktop checkboxes should appear only on hover and focus. </p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_listcontrols_checkbox1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>The checkbox is the primary action and the state indicator for the list item.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Type: secondary action</p>
+									<p>Separate target</p>
+									<p>When controlling a family of variables, consider using switches instead. </p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_listcontrols_checkbox2.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>The checkbox is the secondary action for the list item.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Switch</h3>
+								<div class="column col6">
+									<p>Type: secondary action</p>
+									<p>Separate target</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_listcontrols_switch.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Reorder</h3>
+								<div class="column col6">
+									<p>Type: secondary action</p>
+									<p>Usually a separate target, depending on which mode list it is in. </p>
+									<p>Allows dragging of the list item to other locations within the list. It usually appears in list editing mode.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_listcontrols_reorder.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>The reorder icon is the secondary action for the list item. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Expand/collapse</h3>
+								<div class="column col6">
+									<p>Type: secondary action</p>
+									<p>Separate target</p>
+									<p>Expands and collapses a list view vertically to show and hide details of existing list items.</p>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_listcontrols_expand1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_listcontrols_expand2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_listcontrols_expand3.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_listcontrols_expand4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Leave-behinds</h3>
+								<div class="column col6">
+									<p>Type: Other</p>
+									<p>A leave-behind is an informative hint as to what swiping a list item away will do to that item. The leave-behind can transform into an action.</p>
+									<p>Swiping on a list item from either direction will reveal an icon indicating the action. After swiping, the action appears as a text button centered within the space of the list item.</p>
+								</div>
+                                <div class="column col6">
+									<div class="media">
+										<img src="components_listcontrols_leave1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_listcontrols_leave2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+                        <div id="typesOfMenuControls" class="article lastArticle">
+							<h2>Types of menu controls</h2>
+                            <div class="section">
+								<div class="column col12">
+									<p>A menu is a special type of list. In menus, use controls that are appropriate for dropdown menus, overflow menus, and so on. Don’t use these controls in regular lists. Use the regular list controls instead.</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Check</h3>
+								<div class="column col6">
+									<p>Type: state</p>
+									<p>Not a separate target. </p>
+									<p>Menus only. Indicates that the list item has been selected. The selection is done through a different control.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_listcontrols_menu1.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Inline information</h3>
+								<div class="column col6">
+									<p>Type: secondary info</p>
+									<p>Not a separate target. </p>
+									<p>Menus only. Inline information is a small snippet of text related to the line title that can provide information or a tip, like a keyboard shortcut. It cannot be truncated.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_listcontrols_menu2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Nested menu indicator</h3>
+								<div class="column col6">
+									<p>Type: primary action</p>
+									<p>Not a separate target. </p>
+									<p>Menus only. The glyph indicates that a secondary menu will fly out upon hover, focus, and/or selection. </p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_listcontrols_menu3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="lists.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>列表</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="menus.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>菜单</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
