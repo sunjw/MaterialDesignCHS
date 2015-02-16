@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>网格列表 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;网格列表</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/grids.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">网格列表</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Grid lists are an alternative to standard list views. Grid lists are distinct from grids used for layouts and other visual presentations.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#usage">Usage</a>
+							</li>
+							<li>
+								<a href="#contentArticle">Content</a>
+							</li>
+                            <li>
+								<a href="#behavior">Behavior</a>
+							</li>
+                            <li>
+								<a href="#specs">Specs</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="usage" class="article">
+							<h2>Usage</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>A grid list is best suited to presenting a <strong>homogenous data type</strong>, typically images, and is optimized for <strong>visual comprehension</strong> and differentiating between like data types.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_grids_usage1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>A <strong>grid list</strong> is a continuous element consisting of tessellated, regular subdivisions called cells that contain tiles.</p>
+									<p><strong>Cells</strong> are arrayed vertically and horizontally within the grid.</p>
+									<p><strong>Tiles</strong> hold content and can span one or more cells vertically or horizontally.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_grids_usage2.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_grids_usage3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col12">
+									<p>If the text in tiles needs to be prominent enough to distinguish between primary content pieces, consider using a different container, like a list or cards, optimized for displaying text and facilitating reading comprehension.</p>
+									<p><strong>Lists</strong>: Optimized for reading comprehension, particularly when comparing a set of data containing multiple data types.</p>
+									<p><strong>Cards</strong>: Used for content with inconsistent formatting, such as photos with captions of variable length, or data sets with heterogeneous content, such as a mixed collection of photos and videos and books.</p>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="contentArticle" class="article">
+							<h2>Content</h2>
+							<div class="section">
+                                <h3>Content in tiles</h3>
+								<div class="column col6">
+									<p>Tile content consists of primary content and secondary content. Primary content is the main differentiating element, typically an image. Secondary content can be an action or text.</p>
+									<p>Provide a default image for tiles that lack an image for primary content.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_grids_content1.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Actions in tiles</h3>
+								<div class="column col6">
+									<p>Actions on both primary and secondary content—such as play, zoom in, delete, or select—are immediate and typically do not result in a submenu of options (action overflow) within the grid list.</p>
+									<p>Actions can open a subsequent view, such as a card.</p>
+									<p><strong>Primary actions</strong></p>
+                                    <ul>
+                                        <li>Fill the entire tile and therefore are not represented via icons or text.</li>
+                                        <li>Are consistent throughout tiles in a specific grid. For example, the primary action for all tiles in a single grid could be to view details for an image.</li>
+                                    </ul>
+                                    <p><strong>Secondary actions or content</strong></p>
+                                    <ul>
+                                        <li>Are represented in tiles with icons or text.</li>
+                                        <li>Are consistent throughout tiles in a specific grid.</li>
+                                        <li>Are placed in a consistent location within the tiles of a specific grid, but that consistent location may vary between grids (at corners or edges). For example, all titles in a grid could be located at the bottom left corner.</li>
+                                    </ul>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_grids_content2.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+                        <div id="behavior" class="article">
+							<h2>Behavior</h2>
+                            <div class="section">
+                                <h3>Scrolling</h3>
+								<div class="column col6">
+									<p>Grids typically scroll only vertically.</p>
+                                    <p>Horizontally scrolling grids are discouraged because the scrolling interferes with typical reading patterns, affecting comprehension.</p>
+                                    <p>Cut off grid tiles to communicate the scroll direction for content overflow.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="components_grids_behavior1.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+                                        <p>Indicate content overflow by cutting off grid tiles.</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="components_grids_behavior2.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Gestures</h3>
+								<div class="column col12">
+									<p>Per-tile swipe actions are not permitted. Pick-up-and-move actions are discouraged.</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Tile filtering and sorting</h3>
+								<div class="column col12">
+									<p>Content in a grid list can be programmatically filtered or sorted by date, file size, alphabetical order, or other parameters.</p>
+									<p>The first item in the grid is positioned at the top left of the grid, and the order proceeds left to right and top to bottom.</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Dimensions and resizing</h3>
+								<div class="column col12">
+									<p>Resizing a grid list causes the tiles to re-sort as horizontal space becomes available. Tiles do not scale to fill available horizontal space. </p>
+									<p>A grid list does not transform into a list when horizontal space contracts. Grid lists and lists are separate structures for emphasizing different data types. Grid lists prioritize images over text and lists prioritize text over images.</p>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+                        <div id="specs" class="article lastArticle">
+							<h2>Specs</h2>
+                            <div class="section">
+                                <h3>Grid list header/footers</h3>
+								<div class="column col6">
+									<p><strong>Single-line header/footer</strong></p>
+                                    <p>Height: 48dp<br/>
+                                    Text padding: 16dp<br/>
+                                    Default font size: 16sp<br/>
+                                    Secondary action is flush right to the footer.</p>
+                                    <p><strong>Two-line header/footer</strong></p>
+                                    <p>Height: 68dp<br/>
+                                    Text padding: 16dp<br/>
+                                    Default font size for each line: 16sp/12sp or 14sp/14sp</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_grids_specs1.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_grids_specs2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Image-only grid list</h3>
+								<div class="column col6">
+									<p>Grid padding: 4dp or 1dp</p>
+									<p>Tiles in grid lists can span multiple columns.</p>
+									<p>Carefully consider whether secondary text is needed in grid lists that use multi-column tiles, as larger tiles can develop significant empty space.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_grids_specs3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_grids_specs4.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Single-line grid list</h3>
+								<div class="column col6">
+									<p><strong>Text only</strong></p>
+									<p>Height: 48dp<br/>
+                                    Text padding: 16dp<br/>
+                                    Default font size: 16sp<br/>
+                                    Grid padding: 4dp or 1dp</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_grids_specs5.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_grids_specs6.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_grids_specs7.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Text with icon</strong></p>
+									<p>Height: 48dp<br/>
+                                    Text padding: 16dp<br/>
+                                    Default font size: 16sp<br/>
+                                    Grid padding: 4dp or 1dp</p>
+                                    <p>The secondary action can be flush right or flush left within the footer or header.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_grids_specs8.png" alt="">
+									</div>
+                                    <div class="media">
+										<img src="components_grids_specs10.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_grids_specs9.png" alt="">
+									</div>
+                                    <div class="media">
+										<img src="components_grids_specs11.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_grids_specs12.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>Two-line grid list</h3>
+								<div class="column col6">
+									<p><strong>Text only</strong></p>
+									<p>Height: 68dp<br/>
+                                    Text padding: 16dp<br/>
+                                    Default font size for each line:16sp/12sp or 14sp/14sp<br/>
+                                    Grid padding: 4dp or 1dp</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_grids_specs13.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_grids_specs14.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_grids_specs15.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context, 1dp example</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_grids_specs16.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context, 4dp example</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Text with icon</strong></p>
+									<p>Height: 68dp<br/>
+                                    Text padding: 16dp<br/>
+                                    Default font size for each line: 16sp/12sp or 14sp/14sp</p>
+                                    <p>The secondary action can be flush right or flush left within the footer or header.</p>
+                                    <p>Grid padding: 4dp or 1dp</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_grids_specs17.png" alt="">
+									</div>
+                                    <div class="media">
+										<img src="components_grids_specs19.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Element</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_grids_specs18.png" alt="">
+									</div>
+                                    <div class="media">
+										<img src="components_grids_specs20.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_grids_specs21.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="dividers.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>分割线</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="lists.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>列表</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
