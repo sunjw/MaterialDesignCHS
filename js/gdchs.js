@@ -115,16 +115,16 @@ var menuContent = [
 			text : "活动和进度",
 			url : "components/progress-activity.html"
 		}, {
-			text : "Sliders",
+			text : "滑块",
 			url : "components/sliders.html"
 		}, {
-			text : "Snackbars and Toasts",
+			text : "Snackbars 和 Toasts",
 			url : "components/snackbars-and-toasts.html"
 		}, {
-			text : "Subheaders",
+			text : "副标题",
 			url : "components/subheaders.html"
 		}, {
-			text : "Switches",
+			text : "开关",
 			url : "components/switches.html"
 		}, {
 			text : "标签选项卡",
@@ -133,7 +133,7 @@ var menuContent = [
 			text : "文本框",
 			url : "components/text-fields.html"
 		}, {
-			text : "Tooltips",
+			text : "提示",
 			url : "components/tooltips.html"
 		}
 	], [{
@@ -157,13 +157,6 @@ var menuContent = [
 		}, {
 			text : "Search",
 			url : "patterns/search.html"
-		}
-	], [{
-			text : "可用性",
-			url : ""
-		}, {
-			text : "Accessibility",
-			url : "usability/accessibility.html"
 		}
 	]
 ];
