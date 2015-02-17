@@ -140,23 +140,38 @@ var menuContent = [
 			text : "模式",
 			url : ""
 		}, {
-			text : "Selection",
-			url : "patterns/color.html"
+			text : "Data formats",
+			url : "patterns/data-formats.html"
+		}, {
+			text : "Erros",
+			url : "patterns/errors.html"
 		}, {
 			text : "Gestures",
 			url : "patterns/gestures.html"
 		}, {
-			text : "Promoted Actions",
-			url : "patterns/promoted-actions.html"
+			text : "Loading images",
+			url : "patterns/loading-images.html"
+		}, {
+			text : "Navigation drawer",
+			url : "patterns/navigation-drawer.html"
+		}, {
+			text : "Navigation transitions",
+			url : "patterns/navigation-transitions.html"
+		}, {
+			text : "Scrolling techniques",
+			url : "patterns/scrolling-techniques.html"
+		}, {
+			text : "Search",
+			url : "patterns/search.html"
+		}, {
+			text : "Selection",
+			url : "patterns/selection.html"
 		}, {
 			text : "Settings",
 			url : "patterns/settings.html"
 		}, {
-			text : "Imagery Treatment",
-			url : "patterns/imagery-treatment.html"
-		}, {
-			text : "Search",
-			url : "patterns/search.html"
+			text : "Swipe to refresh",
+			url : "patterns/swipe-to-refres.html"
 		}
 	]
 ];
