@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>选择器 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;选择器</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/pickers.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">选择器</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Pickers provide a simple way to select a single value from a set. Ready-to-use date and time pickers are included.</p>
+						 <p>Each picker is a dialog with a set of controls for entering the parts of the date (month, day, year) or time (hour, minute, AM/PM). Using these in your app helps ensure that a user's specification of a date or time input is valid and formatted correctly. The format of a time and date picker adjusts automatically to the locale, i.e. month-day-year in the US and day-month-year in other regions.</p>
+						 <p>Pickers can be used inline on a form, but on mobile their relatively large footprint is best suited for display in a dialog. For inline display, consider using more compact controls such as text fields or dropdown menus.</p>
+					</div>
+					<!-- <div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#usage">Usage</a>
+							</li>
+							<li>
+								<a href="#menuItems">Menu items</a>
+							</li>
+                            <li>
+								<a href="#behavior">Behavior</a>
+							</li>
+                            <li>
+								<a href="#simpleMenus">Simple Menus</a>
+							</li>
+							<li>
+								<a href="#specs">Specs</a>
+							</li>
+						</ul>
+					</div> -->
+					<div class="chapterArticles">
+						<div id="usage" class="article lastArticle">
+                            <div class="section">
+								<h3>Date Picker</h3>
+								<div class="column col6">
+									<p>Light and Dark themes in portrait and landscape</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_pickers_date1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Date picker: Light theme, portrait</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_pickers_date2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Time picker: Dark theme, portrait</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_pickers_date3.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Date picker: Light theme, landscape</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_pickers_date4.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Date picker: Dark theme, landscape</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Time</h3>
+								<div class="column col6">
+									<p>Light and Dark themes in portrait and landscape</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_pickers_time1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Date picker: Light theme, portrait</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_pickers_time2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Time picker: Dark theme, portrait</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_pickers_date3.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Date picker: Light theme, landscape</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="menus.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>菜单</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="progress-activity.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>活动和进度</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
