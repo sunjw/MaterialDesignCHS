@@ -112,6 +112,9 @@ var menuContent = [
 			text : "菜单",
 			url : "components/menus.html"
 		}, {
+			text : "选择器",
+			url : "components/pickers.html"
+		}, {
 			text : "活动和进度",
 			url : "components/progress-activity.html"
 		}, {
