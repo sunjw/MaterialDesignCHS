@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>副标题 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;副标题</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/subheaders.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">副标题</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Subheaders are special list tiles that delineate distinct sections of a list or grid list and are typically related to the current filtering or sorting criteria. Subheader tiles are either displayed inline with tiles or can be associated with content, for example, in an adjacent column.</p>
+						 <p>Upon scrolling, subheaders remain pinned to the top of the screen until pushed on or off screen by the next subheader.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#listSubheaders">List subheaders</a>
+							</li>
+							<li>
+								<a href="#gridSubheaders">Grid subheaders</a>
+							</li>
+							<li>
+								<a href="#menuSubheaders">Menu subheaders</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="listSubheaders" class="article">
+							<h2>List subheaders</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>Tile height: 48dp<br/>
+									Subheader font: Roboto </p>
+									<p>Medium 14sp</p>
+									<p>Subheader color can either be the secondary grey text value (54% black) or the primary color of the app.</p>
+									<p>In long lists of complex information, consider using colored subheaders to delineate content. An example of the use of color for subheaders is in Android settings.</p>
+									<p>A subheader should be left-aligned with an avatar/icon in a list, unless there is a promoted action in that space.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_subheaders1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_subheaders2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>If there is a floating action button left-aligned with the avatar/icon in a list, align the subheader with the text content.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_subheaders3.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_subheaders4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="gridSubheaders" class="article">
+							<h2>Grid subheaders</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>Tile height: 48dp<br/>
+									Subheader font: Roboto Medium 14sp<br/>
+									Subheader is aligned 16dp from the left edge</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_subheaders5.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_subheaders6.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="menuSubheaders" class="article lastArticle">
+							<h2>Menu subheaders</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>Tile height: 48dp<br/>
+									Subheader font: Roboto Medium 14sp<br/>
+									Subheader is aligned 16dp from the left edge</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_subheaders7.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_subheaders8.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="snackbars-toasts.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>Snackbars 和 Toasts</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="switches.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>开关</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
