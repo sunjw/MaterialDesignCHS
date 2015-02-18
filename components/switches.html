@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>开关 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;开关</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/subheaders.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">开关</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Switches allow the user to select options. There are three kinds: checkboxes, radio buttons, and on/off switches. </p>
+						 <p>*Note: The graphic rings shown in the following examples represent animation and do not represent what buttons should look like in implementation.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#checkbox">Checkbox</a>
+							</li>
+							<li>
+								<a href="#radioButton">Radio button</a>
+							</li>
+							<li>
+								<a href="#switch">Switch</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="checkbox" class="article">
+							<h2>Checkbox</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>Checkboxes allow the user to select multiple options from a set. </p>
+									<p>If you have multiple on/off options appearing in a list, checkboxes are a good way to preserve space.</p>
+									<p>If you have a single on/off option, avoid using a checkbox and use an on/off switch instead.</p>
+									<p>Checkboxes use animation to communicate focused and pressed states. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_switches_check1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Light theme</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_switches_check2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Dark theme</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>Light</h3>
+								<div class="column col6">
+									<p>On: Swatch 500, Alpha 100%<br/>
+									Off: #000000, Alpha 54%<br/>
+									Disabled: #000000, Alpha 26%</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_switches_check3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Dark</h3>
+								<div class="column col6">
+									<p>On: Swatch 500, Alpha 100%<br/>
+									Off: #FFFFFF, Alpha 70%<br/>
+									Disabled: #FFFFFF, Alpha 30%</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_switches_check4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="radioButton" class="article">
+							<h2>Radio button</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>Radio buttons allow the user to select one option from a set. Use radio buttons for exclusive selection if you think that the user needs to see all available options side-by-side. </p>
+									<p>Otherwise, consider a pulldown, which uses less space than displaying all options. </p>
+									<p>Radio buttons use animation to communicate focused and pressed states.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_switches_radio1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Light theme</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_switches_radio2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Dark theme</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>Light</h3>
+								<div class="column col6">
+									<p>On: Swatch 500, Alpha 100%<br/>
+									Off: #000000, Alpha 54%<br/>
+									Disabled: #000000, Alpha 26%</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_switches_radio3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Dark</h3>
+								<div class="column col6">
+									<p>On: Swatch 500, Alpha 100%<br/>
+									Off: #FFFFFF, Alpha 70%<br/>
+									Disabled: #FFFFFF, Alpha 30%</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_switches_radio4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="switch" class="article lastArticle">
+							<h2>Switch</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>On/off switches toggle the state of a single settings option. The option that the switch controls, as well as the state it’s in, should be made clear from the corresponding inline label. Switches take on the same visual properties of the radio button. </p>
+									<p>Switches use animation to communicate focused and pressed states.</p>
+									<p>The on/off slide toggle with the words “on” and “off” baked within the asset is deprecated. Use the switch shown here instead. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_switches_switch1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Light theme</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_switches_switch2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Dark theme</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>Light</h3>
+								<div class="column col6">
+									<p>Thumb On: Swatch 500, Alpha 100%<br/>
+									Track On: Swatch 500, Alpha 50%</p>
+									<p>Thumb Off: Grey 50, #FAFAFA, Alpha 100%<br/>
+									Track Off: #000000, Alpha 26%</p>
+									<p>Thumb Disabled: Grey 400, #BDBDBD, Alpha 100%<br/>
+									Track Disabled: #000000, Alpha 12%</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_switches_switch3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Dark</h3>
+								<div class="column col6">
+									<p>Thumb On: Swatch 200, Alpha 100%<br/>
+									Track On: Swatch 200, Alpha 50%</p>
+									<p>Thumb Off: Grey 400, #BDBDBD, Alpha 100%<br/>
+									Track Off: #FFFFFF, Alpha 30%</p>
+									<p>Thumb Disabled: Grey 800, #424242, Alpha 100%<br/>
+									Track Disabled: #FFFFFF, Alpha 10%</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_switches_switch4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Use the outer radial reaction only on form factors that favor finger touch, where interaction may obstruct the element completely. For desktop usage with a mouse, you do not need this extra indication.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_switches_switch5.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Radial reaction on mobile</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_switches_switch6.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>No radial reaction on desktop</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="subheaders.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>副标题</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="tabs.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>标签选项卡</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
