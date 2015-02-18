@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>Snackbars 和 Toasts - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;Snackbars 和 Toasts</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/snackbars-toasts.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">Snackbars 和 Toasts</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Snackbars provide lightweight feedback about an operation. They show a brief message at the bottom of the screen on mobile and lower left on desktop. Snackbars appear above all other elements on screen. Snackbars can contain an action.</p>
+						 <p>They automatically disappear after a timeout or after user interaction elsewhere on the screen, particularly after interactions that summon a new surface or activity. Snackbars can be swiped off screen. They do not block input on the screens on which they appear. Show only one snackbar on screen at a time. </p>
+						 <p>Android also provides a capsule-shaped toast, primarily used for system messaging. Toasts are similar to snackbars but do not contain actions and cannot be swiped off screen.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#usage">Usage</a>
+							</li>
+							<li>
+								<a href="#specs">Specs</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="usage" class="article">
+							<h2>Usage</h2>
+                            <div class="section">
+								<h3>Very short text strings</h3>
+								<div class="column col6">
+									<p>Snackbars should generally only be tall enough to accommodate one string, and the string should be directly related to the operation performed. They cannot contain icons or action icons. Actions are in the form of text. </p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="components_toasts_usage1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="components_toasts_usage2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>Transient</h3>
+								<div class="column col6">
+									<p>For usability, snackbars should not contain the only way to access a core use case. They should not be persistent or stack, as they are above other elements on screen.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="components_toasts_usage3.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="components_toasts_usage4.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>0-1 actions, not dismiss or cancel</h3>
+								<div class="column col6">
+									<p>If an action is present, comply with dialog spacing and affordance rules. For two or more actions, use a dialog, not a snackbar, even when one of the actions is a dismiss action. If the action described in the snackbar is important enough to block the use of the screen, it should be a dialog.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="components_toasts_usage5.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="components_toasts_usage6.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Don’t block the floating action button</h3>
+								<div class="column col6">
+									<p>Move your floating action button vertically to accommodate the snackbar height. </p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="components_toasts_usage7.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="components_toasts_usage8.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="specs" class="article lastArticle">
+							<h2>Specs</h2>
+                            <div class="section">
+								<h3>Mobile snackbar</h3>
+								<div class="column col6">
+									<ul>
+										<li>Single-line snackbar height: 48dp </li>
+										<li>Multi-line snackbar height: 80dp</li>
+										<li>Text: Roboto Regular 14sp</li>
+										<li>Action button: Roboto Medium 14sp, all-caps text</li>
+										<li>Default background fill: #323232 100% </li>
+									</ul>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_toasts_mobile1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_toasts_mobile2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWZFcwa2wyTG1ybE0/components-snackbarstoasts-spec-061302_Mobile_Snackbar_xhdpi_002.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWVHFGQWVfN0VFSFE/components-snackbarstoasts-spec-061302_Mobile_Snackbar_xhdpi_002.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_toasts_mobile3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Tablet/desktop snackbar</h3>
+								<div class="column col6">
+									<ul>
+										<li>Single-line snackbar height: 48dp tall</li>
+										<li>Minimum width: 288dp</li>
+										<li>Maximum width:  568dp</li>
+										<li>2dp rounded corner</li>
+										<li>Text: Roboto Regular 14sp</li>
+										<li>Action button: Roboto Medium 14sp, all-caps text</li>
+										<li>Default background fill: #323232 100%  </li>
+									</ul>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_toasts_tabletdesktop1.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_toasts_tabletdesktop2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_toasts_tabletdesktop3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="760" height="570">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWV3RmVzk4Zm1kenc/components-snackbarstoasts-spec-061302_Tablet_Snackbar_xhdpi_003.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWT3R3b3k3cDI0Q28/components-snackbarstoasts-spec-061302_Tablet_Snackbar_xhdpi_003.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Android toast</h3>
+								<div class="column col6">
+									<p>Developers can create custom toasts or custom screen placements for them. If making a custom toast, you are strongly encouraged to adhere to the snackbar style provided above. </p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_toasts_android1.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_toasts_android2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_toasts_android3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="sliders.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>滑块</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="subheaders.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>副标题</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

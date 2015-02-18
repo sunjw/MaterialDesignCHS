@@ -122,7 +122,7 @@ var menuContent = [
 			url : "components/sliders.html"
 		}, {
 			text : "Snackbars 和 Toasts",
-			url : "components/snackbars-and-toasts.html"
+			url : "components/snackbars-toasts.html"
 		}, {
 			text : "副标题",
 			url : "components/subheaders.html"
