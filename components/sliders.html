@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>滑块 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;滑块</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/sliders.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">滑块</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Sliders let users select a value from a continuous or discrete range of values by moving the slider thumb. The smallest value is to the left, the largest to the right. Sliders can have icons to the left and right of the bar that reflect the value intensity. The interactive nature of the slider makes it a great choice for settings that reflect intensity levels, such as volume, brightness, or color saturation.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#continuousSlider">Continuous slider</a>
+							</li>
+							<li>
+								<a href="#discreteSlider">Discrete slider</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="continuousSlider" class="article">
+							<h2>Continuous slider</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>Use continuous sliders for subjective settings that do not require a specific value for the user to make meaningful adjustments.</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Light</strong></p>
+									<p>Thumb on: Swatch 500, Alpha 100%<br/>
+									Track on: Swatch 500, Alpha 100%</p>
+									<p>Thumb off: #000000, Alpha 26%<br/>
+									Track off: #000000, Alpha 26%</p>
+									<p>Disabled (disconnected): #000000, Alpha 26%</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_sliders_continuous1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Light theme</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Dark</strong></p>
+									<p>Thumb on: Swatch 200, Alpha 100%<br/>
+									Track on: Swatch 200, Alpha 100%</p>
+									<p>Thumb off: #000000, Alpha 30%<br/>
+									Track off: #000000, Alpha 30%</p>
+									<p>Disabled (disconnected): #000000, Alpha 30%</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_sliders_continuous2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Dark theme</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="294">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWTlhMcnRsMjJJU0E/components-sliders-continuousslider-061201_Slider_LightTheme_xhdpi_002.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWUmVqMEI2d0t1b3M/components-sliders-continuousslider-061201_Slider_LightTheme_xhdpi_002.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p>Various slider behaviors</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Spacing for icons to the left and/or right of the bar:</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_sliders_continuous3.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_sliders_continuous4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>With an editable numeric value</h3>
+								<div class="column col6">
+									<p>Use for settings for which users need to set the exact value. Upon pressing the thumb, the text box becomes editable.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_sliders_continuous5.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_sliders_continuous6.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="discreteSlider" class="article lastArticle">
+							<h2>Discrete slider</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>The discrete slider thumb snaps to evenly spaced tick marks along the slider rail. Use for objective settings that require specific values for the user to make meaningful adjustments. Each tick mark should change the setting to a level that’s discernible to the user. The values are predetermined and aren’t user-editable.</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>With a numeric value label</h3>
+								<div class="column col6">
+									<p>Use for settings for which users need to know the exact value of the setting. </p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_sliders_discrete1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Light theme</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_sliders_discrete2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Dark theme</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="307">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWWmpKc2h2Y2J5Ujg/components-sliders-discreteslider-061202_Slider_LightTheme_xhdpi_002.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWZ1BIYzJZY0pQVEE/components-sliders-discreteslider-061202_Slider_LightTheme_xhdpi_002.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="progress-activity.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>进度条和活动指示器</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="snackbars-and-toasts.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>Snackbars 和 Toasts</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
