@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>活动和进度 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;活动和进度</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/progress-activity.html" target="_blank">活动和进度</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">活动和进度</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Make loading content in your app as delightful and painless as possible by minimizing the amount of visual change a user sees before they can view and interact with content. Each operation should only be represented by one activity indicator—for example, one refresh operation should not display both a refresh bar and an activity circle.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#typesOfIndicators">Types of indicators</a>
+							</li>
+                            <li>
+								<a href="#behavior">Behavior</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="typesOfIndicators" class="article">
+							<h2>Types of indicators</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>For operations where the percentage of the operation completed can be ascertained, use a determinate indicator. They give users a quick sense of how long an operation will take.</p>
+									<p>For operations where the user is asked to wait a moment while something finishes, and it’s not necessary to expose what's happening behind the scenes and how long it will take, use an indeterminate indicator.</p>
+									<p>There are two types of indicators: linear and circular. You can use either one for determinate and indeterminate operations. </p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>Linear</h3>
+								<div class="column col6">
+									<p>A linear progress indicator should always fill from 0% to 100% and never move backwards to a lower value. If multiple operations are happening in sequence, use the progress indicator to represent the delay as a whole. This way, when the bar reaches 100%, it doesn't return back to 0%.</p>
+									<p>Linear bars should appear and disappear on the edge of a header or sheet.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="760" height="581">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWYmNmallST001a1k/components-progressactivity-typesofindicators-061101_Linear_Sheet_xhdpi_003.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWVXBBVF9qR3E4a2s/components-progressactivity-typesofindicators-061101_Linear_Sheet_xhdpi_003.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p>Linear progress indicators</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWZ21MdkdaZzZmWnc/components-progressactivity-typesofindicators-061101_Linear_Video_xhdpi_003.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWbjNqR2VRakhTODA/components-progressactivity-typesofindicators-061101_Linear_Video_xhdpi_003.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p>Buffering progress indicator on a video</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B2wX4iIvu8L6aExBYjVCTVlBVUU/components-progressactivity-typesofindicators-061101_Linear_Image_xhdpi_003.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B2wX4iIvu8L6MHBFZE5Wcm55ME0/components-progressactivity-typesofindicators-061101_Linear_Image_xhdpi_003.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p>Query indicator on a webpage</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>Circular</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="760" height="159">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWbTdnLS1mS0xDWk0/components-progressactivity-typesofindicators-061101_Circular_Sheet_xhdpi_003.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWQnF5WGo1UEZBYkk/components-progressactivity-typesofindicators-061101_Circular_Sheet_xhdpi_003.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p>Circular determinate progress indicators</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Circular with integration</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="360">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWbTlSaHdQZEMtalk/components-progressactivity-typesofindicators-061101_Circular_Aspirational_xhdpi_002.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWaVpNbk1SV3dSbXc/components-progressactivity-typesofindicators-061101_Circular_Aspirational_xhdpi_002.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p>A circular loader may be integrated with a floating action button. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWYkhVU0JZdWp3Rlk/components-progressactivity-typesofindicators-061101_Circular_wFab_xhdpi_002.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWNmdHSWcxekI1Z0k/components-progressactivity-typesofindicators-061101_Circular_wFab_xhdpi_002.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="behavior" class="article lastArticle">
+							<h2>Behavior</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>Loading in phases</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWZUdoUkZRMDRHWlE/components-progressactivity-behavior-061102_Loading_SwipeDown_xhdpi_004.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWcXdJR1RGRVZ3YUU/components-progressactivity-behavior-061102_Loading_SwipeDown_xhdpi_004.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p><strong>One-phased loads</strong></p>
+										<p>Ink (copy and images) loads within an existing, unchanging container. </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWSV8tTDFVLTdoWkk/components-progressactivity-behavior-061102_Loading_Photos_xhdpi_003.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWQ3hCU2k3UXRBT0E/components-progressactivity-behavior-061102_Loading_Photos_xhdpi_003.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Two-phased loads</strong></p>
+										<p>The paper container is generated, then the ink (copy and images) load within it. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWYXJ3Wmk1czNwUzg/components-progressactivity-behavior-061102_Loading_Files_Linear_xhdpi_002.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWQjlvYm1rVFMwVlU/components-progressactivity-behavior-061102_Loading_Files_Linear_xhdpi_002.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p>Loading content for the first time.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWTG5jYi1JV1MxSDg/components-progressactivity-behavior-061102_Loading_Files_Circular_xhdpi_002.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWNjNYREh0M3YxMGs/components-progressactivity-behavior-061102_Loading_Files_Circular_xhdpi_002.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p>Load and display all content at once.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>Loading additional content</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="760" height="570">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWM2E2bkFCTFlFbG8/components-progressactivity-behavior-061102_Loading_BigTop_xhdpi_003.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWQW5WdklybnVhdXc/components-progressactivity-behavior-061102_Loading_BigTop_xhdpi_003.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Example 1: Card expansion</strong></p>
+										<p>An indeterminate linear indicator is recommended for a card expanding on larger surfaces such as desktop.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWSV8tTDFVLTdoWkk/components-progressactivity-behavior-061102_Loading_Photos_xhdpi_003.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWQ3hCU2k3UXRBT0E/components-progressactivity-behavior-061102_Loading_Photos_xhdpi_003.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Example 2: Scroll up to load more</strong></p>
+										<p>An indeterminate circular indicator with an initial radial ink reaction is recommended when loading a list from below.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWZUdoUkZRMDRHWlE/components-progressactivity-behavior-061102_Loading_SwipeDown_xhdpi_004.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWcXdJR1RGRVZ3YUU/components-progressactivity-behavior-061102_Loading_SwipeDown_xhdpi_004.mp4"></source>
+										</video>
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Example 3: Swipe down to refresh</strong></p>
+										<p>An indeterminate circular indicator with a radial ink reaction is recommended when refreshing a list from above.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="pickers.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>选择器</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="sliders.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>滑块</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
