@@ -521,7 +521,7 @@ $(function () {
 
 	initMenu();
 
-	// Auto play video
+	// Click to play video
 	$('video.clickPlay').click(function () {
 		$(this).get(0).load();
 		$(this).get(0).play();
