@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>文本框 - 基本元素 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #3f51b5;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #3f51b5 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #3f51b5;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #c5cae9;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #3f51b5 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #3f51b5;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">基本元素<span id="subTitle">&nbsp;&gt;&nbsp;文本框</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/components/text-fields.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">文本框</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Text fields allow the user to input text. They can be single line, with or without scrolling, or multi-line, and can have an icon. Touching a text field places the cursor and automatically displays the keyboard. In addition to typing, text fields allow for a variety of other tasks, such as text selection (cut, copy, paste) and data lookup via auto-completion. See <a href="../patterns/selection.html">Patterns > Selection</a> for text selection design. </p>
+						 <p>The type of text field determines what kind of characters are allowed inside the field and may prompt the virtual keyboard to optimize its layout for frequently used characters. Common types for which you should optimize include number, text, email address, phone number, person’s name, username, URL, street address, credit card number, PIN, and search query. </p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#singleLineTextField">Single-line text field</a>
+							</li>
+							<li>
+								<a href="#floatingLabels">Floating labels</a>
+							</li>
+							<li>
+								<a href="#multiLineTextField">Multi-line text field</a>
+							</li>
+							<li>
+								<a href="#fullWidthTextField">Full-width text field</a>
+							</li>
+							<li>
+								<a href="#characterCounter">Character counter</a>
+							</li>
+							<li>
+								<a href="#autoCompleteTextField">Auto-complete text field</a>
+							</li>
+							<li>
+								<a href="#searchFilter">Search filter</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="singleLineTextField" class="article">
+							<h2>Single-line text field</h2>
+                            <div class="section">
+								<h3>Single-line fields </h3>
+								<div class="column col6">
+									<p>Single-line fields automatically scroll their content to the left as the text input cursor reaches the right edge of the input field.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_single1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_single2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_single3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Light theme</h3>
+								<div class="column col6">
+									<ul>
+										<li>Hint and input font: Roboto Regular 16sp</li>
+										<li>Tile height: 48dp</li>
+										<li>Text top and bottom padding: 16dp</li>
+										<li>Text field divider padding: 8dp</li>
+									</ul>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_single4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Dark theme</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_single5.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_single6.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Light theme with icon</h3>
+								<div class="column col6">
+									<ul>
+										<li>Hint and input font: Roboto Regular 16sp</li>
+										<li>Tile height: 48dp</li>
+										<li>Text top and bottom padding: 16dp</li>
+										<li>Text field divider padding: 8dp</li>
+									</ul>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_single7.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Dark theme with icon</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_single8.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_single9.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="floatingLabels" class="article">
+							<h2>Floating labels</h2>
+                            <div class="section">
+								<h3>Floating labels</h3>
+								<div class="column col6">
+									<p>With floating inline labels, when the user engages with the text input field, the labels move to float above the field. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_labels1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_labels2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Light theme</h3>
+								<div class="column col6">
+									<ul>
+										<li>Hint and input font: Roboto Regular 16sp</li>
+										<li>Label font: Roboto Regular 12sp</li>
+										<li>Tile height: 72dp</li>
+										<li>Text top and bottom padding: 16dp</li>
+										<li>Text field divider padding: 8dp</li>
+									</ul>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_labels3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Dark theme</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_labels4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_labels5.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="multiLineTextField" class="article">
+							<h2>Multi-line text field</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>Multi-line text fields automatically break to a new line for overflow text and scroll vertically when the cursor reaches the lower edge.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_multiline1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_multiline2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Light theme</h3>
+								<div class="column col6">
+									<ul>
+										<li>Hint and input font: Roboto Regular 16sp</li>
+										<li>Label font: Roboto Regular 12sp</li>
+										<li>Text top and bottom padding: 16dp</li>
+										<li>Text field divider padding: 8dp</li>
+									</ul>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_multiline3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Dark theme</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_multiline4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_multiline5.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="fullWidthTextField" class="article">
+							<h2>Full-width text field</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>Full-width text fields are useful for more in-depth tasks</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_full1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_full2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Single and multi-line fields</h3>
+								<div class="column col6">
+									<ul>
+										<li>Hint and input font: Roboto Regular 16sp</li>
+										<li>Top and bottom padding for text: 20dp</li>
+									</ul>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_full3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_full4.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="characterCounter" class="article">
+							<h2>Character counter</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>Use a character counter in fields where a character restriction is in place.</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>Single line with character counter</h3>
+								<div class="column col6">
+									<p>Counter text: Roboto Regular 12sp</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_counter1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_counter2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Multi-line with character counter</h3>
+								<div class="column col6">
+									<p>Counter text: Roboto Regular 12sp</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_counter3.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_counter4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_counter5.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Full width with character counter</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_counter6.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_counter7.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_counter8.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="autoCompleteTextField" class="article">
+							<h2>Auto-complete text field</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>Use auto-complete text fields to present real-time suggestions or completions in dropdowns, so users can enter information more accurately and efficiently.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_auto1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_auto2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Full-width auto-complete</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_auto3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Inset auto-complete</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_auto4.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_auto5.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_auto6.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Full-width inline auto-complete</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_auto7.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_auto8.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_auto9.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>In-line auto-complete</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_auto10.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="searchFilter" class="article lastArticle">
+							<h2>Search filter</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>The app bar can act as a text input field. As the user types, the content underneath it is filtered and sorted.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="components_textfields_search1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_search2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>Full-width text field in app bar</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="components_textfields_search3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="tabs.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>标签选项卡</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="tooltips.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>提示</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
