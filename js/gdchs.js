@@ -115,7 +115,7 @@ var menuContent = [
 			text : "选择器",
 			url : "components/pickers.html"
 		}, {
-			text : "活动和进度",
+			text : "进度条和活动指示器",
 			url : "components/progress-activity.html"
 		}, {
 			text : "滑块",
