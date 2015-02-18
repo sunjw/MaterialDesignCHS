@@ -385,6 +385,7 @@ function toggleMenu() {
 		}
 
 		mask.show();
+        menuFooterFix();
 	}
 }
 
