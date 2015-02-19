@@ -77,6 +77,7 @@ code {
 .fixedHeader #header {
 	position: fixed;
 	height: 64px;
+	z-index: 100;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
@@ -369,7 +370,25 @@ code {
 
 #content .chapter .media {
 	margin-bottom: 10px;
+	position: relative;
 }
+#content .chapter .media img,#content .chapter .media video {
+	position: static;
+	z-index: 50;
+}
+#content .chapter .media video {
+	cursor: pointer;
+}
+#content .chapter .media .videoMask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: black url('../imgs/video-maks-play.png') center center no-repeat;
+	opacity: 0.5;
+	z-index: 80;
+	cursor: pointer;
+}
+
 #content .chapter .goodBlock {
 	padding-bottom: 10px;
 	border-bottom: 15px solid #4caf50;

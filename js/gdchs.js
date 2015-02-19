@@ -417,6 +417,53 @@ function initMenu() {
 	menuFooterFix();
 }
 
+// Prepare video player
+function initVideoPlayer() {
+	var videos = $('video.clickPlay');
+	var videoCount = videos.length;
+
+	for (var i = 0; i < videoCount; ++i) {
+		var video = $(videos[i]);
+		var videoWidth = video.width();
+		var videoHeight = video.height();
+
+		// Add mask
+		var videoMask = $("<div/>");
+		videoMask.addClass("videoMask");
+		videoMask.width(videoWidth);
+		videoMask.height(videoHeight);
+
+		video.after(videoMask);
+
+		// Click to play video
+		video.click(function () {
+			var thisVideo = $(this);
+			var thisVideoRaw = thisVideo.get(0);
+
+			if (thisVideoRaw.paused) {
+				thisVideoRaw.load();
+				thisVideoRaw.play();
+			} else {
+				thisVideoRaw.pause();
+
+				var thisMask = thisVideo.next();
+				if (thisMask.hasClass("videoMask")) {
+					thisMask.show();
+				}
+			}
+		});
+
+		videoMask.click(function () {
+			var thisMask = $(this);
+			var thisVideo = thisMask.prev();
+			if (thisVideo.is("video")) {
+				thisVideo.click();
+				thisMask.hide();
+			}
+		});
+	}
+}
+
 // Acronym tooltip
 var tooltipDiv = 0;
 function initTooltip() {
@@ -522,11 +569,7 @@ $(function () {
 
 	initMenu();
 
-	// Click to play video
-	$('video.clickPlay').click(function () {
-		$(this).get(0).load();
-		$(this).get(0).play();
-	});
+	initVideoPlayer();
 
 	initTooltip();
 
