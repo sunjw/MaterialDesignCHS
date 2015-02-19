@@ -159,7 +159,7 @@ var menuContent = [
 			url : "patterns/navigation-drawer.html"
 		}, {
 			text : "导航变幻",
-			url : "patterns/navigation-transitions.html"
+			url : "patterns/navigational-transitions.html"
 		}, {
 			text : "滚动",
 			url : "patterns/scrolling-techniques.html"
