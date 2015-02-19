@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>导航抽屉 - 模式 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #ff9800;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #ff9800 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #ff9800;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #ffe0b2;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #ff9800 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #ff9800;
+	}
+	#footer #pageNext {
+		background-color: #ff9800;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">模式<span id="subTitle">&nbsp;&gt;&nbsp;导航抽屉</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/patterns/navigation-drawer.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">导航抽屉</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>The navigation drawer is a common pattern found in Google apps.  The navigation drawer slides in from the left. It follows the keylines and metrics for lists. </p>
+					</div>
+					<!-- <div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#loadingImages">Loading images</a>
+							</li>
+						</ul>
+					</div> -->
+					<div class="chapterArticles">
+						<div id="contentArticle" class="article lastArticle">
+                            <div class="section">
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_navdrawer_metrics1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Typography</strong></p>
+										<ol>
+											<li>Roboto Medium, 14sp, #FFFFFF</li>
+											<li>Roboto Regular, 14sp, #FFFFFF</li>
+											<li>List item: Roboto Medium, 14sp, 87% #000000</li>
+											<li>Subheader: Roboto Medium, 14sp, 54% #000000. Aligns to the 16dp keyline.</li>
+										</ol>
+									</div>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_navdrawer_metrics2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Vertical keylines and horizontal margins</strong></p>
+										<p>Vertical keylines for icons are at 16dp from the left and right edges of the side nav and are 54% #000000.</p>
+										<p>Content associated with an icon or avatar aligns 72dp from the left edge of the side nav. </p>
+										<p>The width of the side nav is equal to the width of the screen minus the height of the action bar, or in this case 56dp from the right edge of the screen. The maximum width of the nav drawer is 5 times the standard increment (56dp on mobile and 64dp on tablet).</p>
+										<p>Use 16dp horizontal margins on mobile and 24dp on tablet</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_navdrawer_metrics3.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Vertical spacing</strong></p>
+										<ol>
+											<li>24dp</li>
+											<li>56dp</li>
+											<li>8dp</li>
+											<li>48dp</li>
+										</ol>
+										<p>Add 8dp padding at the top and bottom of every list grouping. One exception is at the top of a list with a subheader, because subheaders contain their own padding. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Elevation</h3>
+								<div class="column col6">
+									<p>The nav drawer spans the full height of the screen and the drawer is below the status bar. Everything below the drawer will be darkened by a scrim. All the content is still visible under the scrim. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_navdrawer_elevation1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Nav drawer on Android</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Selection state</h3>
+								<div class="column col6">
+									<p>After a list item is selected, that item becomes the app’s primary color or #000000 100% to clearly indicate selection. The touch ripple also becomes a highlight, to further indicate selection. </p>
+									<p>If this color the touch ripple/highlight doesn’t provide enough contrast with your primary color, use a darker tint of the primary color.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_navdrawer_selection1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_navdrawer_selection2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_navdrawer_selection3.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_navdrawer_selection4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_navdrawer_selection5.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_navdrawer_selection6.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Dividers</h3>
+								<div class="column col6">
+									<p>All dividers in the nav drawer are full-bleed inside the panel. There is also an 8dp padding above and below the divider.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_navdrawer_dividers1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Context</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_navdrawer_dividers2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>8 dp vertical spacing</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Scrolling</h3>
+								<div class="column col6">
+									<p>The navigation drawer can scroll like any normal view would.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_navdrawer_scrolling1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_navdrawer_scrolling2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Settings and support</h3>
+								<div class="column col6">
+									<p>Settings and support are located at the bottom of the scrolling list, in-line with the rest of the list content.</p>
+									<p>If the list of content in the navigation drawer is very long, the two options can be pinned to the bottom of the navigation drawer on a surface with a higher elevation. This surface is present only while at the top of the list; any other scroll position will immediately result in dismissing the surface and placing the options at the end of the list, in-line with the rest of the list content. The navigation drawer retains its scroll position when closed and reopened.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_navdrawer_settings1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_navdrawer_settings2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>If the list doesn’t scroll, the settings and support items will appear at the end of the list and are not pinned.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_navdrawer_settings3.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="loading-images.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>载入图片</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="navigation-transitions.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>导航变幻</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
