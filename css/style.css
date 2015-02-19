@@ -300,13 +300,16 @@ code {
 	color: #555555;
 }
 
+#content .chapter .chapterIntro ul,#content .chapter .article ul,#content .chapter .article ol {
+	padding-left: 20px;
+}
 #content .chapter .chapterIntro ul li,#content .chapter .article ul li {
 	list-style-type: disc;
-	list-style-position: inside;
+	list-style-position: outside;
 }
 #content .chapter .article ol li {
 	list-style-type: decimal;
-	list-style-position: inside;
+	list-style-position: outside;
 }
 
 #content .chapter {
