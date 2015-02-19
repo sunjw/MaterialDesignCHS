@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>选择 - 模式 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #ff9800;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #ff9800 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #ff9800;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #ffe0b2;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #ff9800 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #ff9800;
+	}
+	#footer #pageNext {
+		background-color: #ff9800;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">模式<span id="subTitle">&nbsp;&gt;&nbsp;选择</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/patterns/selection.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">选择</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>A long-press (a touch or mousedown that’s held in the same position for a moment) is the global gesture to select data. On touch devices, a two-finger touch may also be used to trigger selection.</p>
+						 <p>Using checkboxes (or custom analogs) to initiate selection is an explicit anti-pattern for mobile. For desktop, checkboxes may be used, with the following guidelines:</p>
+						 <ul>
+							<li>Avoid persistently displaying checkboxes as part of each item.</li>
+							<li>When hovering on an item, display a single checkbox for that item.</li>
+							<li>After an item has been selected, display checkboxes for all remaining items in that set.</li>
+						 </ul>
+						 <p>The use of checkboxes in contexts such as task lists or checklists where checking an item indicates completion, rather than selection, is entirely appropriate.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#itemSelection">Item selection</a>
+							</li>
+							<li>
+								<a href="#textSelection">Text selection</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="itemSelection" class="article">
+							<h2>Item selection</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>Support for multi-selection is strongly recommended for list and grid containers. However, this is not required if the only actions available are valid for a single selection (like a list of phone numbers, where calling is the only action), or if the context is strongly biased toward direct, single-item manipulation (like moving icons on Android’s home screen.)</p>
+									<p>Both long-press and two-finger touch may be extended by a drag gesture to select multiple items when initiating selection. Other items between the beginning and end points of the drag will be included in the selection. On desktop, a simple drag originating outside the bounds of all items may also be used to initiate multi-selection (for example, beginning a drag in the left margin of a list, and extending down and to the right to select items from that list.)</p>
+									<p>Once an initial selection is made, it can be altered through a number of user actions:</p>
+									<ul>
+										<li>Touch on an unselected item to select it, or on a selected item to unselect it.</li>
+										<li>Shift+touch/click on an item to extend selection to that item and all items between it and the original selection.</li>
+									</ul>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="textSelection" class="article lastArticle">
+							<h2>Text selection</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>Text selection is indicated by highlighting the bounds of the selected text. </p>
+									<p>On mobile platforms, a selection handle is added to both the beginning and end of the selection. Standard actions related to the text appear in a dropdown menu ideally positioned immediately above, but not overlapping, the selection.</p>
+									<p>Text selection is effectively a single-select context, as the selection must be one contiguous block. However, the bounds of the selection may be altered following selection through a number of user actions:</p>
+									<ul>
+										<li>Dragging during the initial selection to expand the selection</li>
+										<li>Dragging on either of the selection handles to expand or reduce the selection</li>
+										<li>Touching (or clicking) repeatedly within the selection to expand it (single word > paragraph > all)</li>
+										<li>Keyboard shortcuts</li>
+									</ul>
+									<ul>
+										<li>Shift+Left/Right Arrow for character-by-character</li>
+										<li>Shift+Up/Down Arrow for line-by-line</li>
+										<li>Ctrl/Command+A to select all</li>
+									</ul>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Text selection handles</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_selection_text1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_selection_text2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Text Selection - Light Theme</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="patterns_selection_text3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Text Selection - Dark Theme</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="patterns_selection_text4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Dropdown menus for Cut, Copy, Paste, and More appear above the selection area. When the user selects More, the dropdown will collapse toward the icon and the overflow menu items will grow, centered from the icon area. The font for menu text is Roboto Medium 14 sp, all in capital letters.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_selection_text5.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_selection_text6.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_selection_text7.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_selection_text8.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_selection_text9.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="search.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>搜索</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="settings.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>设置</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
