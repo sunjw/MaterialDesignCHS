@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>错误提示 - 模式 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #ff9800;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #ff9800 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #ff9800;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #ffe0b2;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #ff9800 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #ff9800;
+	}
+	#footer #pageNext {
+		background-color: #ff9800;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">模式<span id="subTitle">&nbsp;&gt;&nbsp;错误提示</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/patterns/errors.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">错误提示</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Errors are instances where an app fails to complete what is expected. Errors happen when: </p>
+						 <ul>
+							<li>The app does not understand user input. </li>
+							<li>The system or app fails.</li>
+							<li>A user intends to run incompatible operations concurrently. </li>
+						 </ul>
+						 <p>Try to prevent errors through good design. Make your app understand the user, rather than making the user have to understand the app. When an error occurs, communicate clearly about what is happening and how a user can quickly resolve it. Save and preserve as much state as possible, especially when the user has input content. </p>
+						 <p>As with all feedback, prioritize which messages are most important, communicate through content states to avoid extraneous elements on screen, and be consistent with screen placements within and across form factors.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#userInputErrors">User input errors</a>
+							</li>
+							<li>
+								<a href="#appErrors">App errors</a>
+							</li>
+							<li>
+								<a href="#incompatibleStateErrors">Incompatible state errors</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="userInputErrors" class="article">
+							<h2>User input errors</h2>
+                            <div class="section">
+								<div class="column col12">
+									<p>Give context for user input errors to help users fix them. Politely let users know as soon as possible that they have made an error that they need to correct. Don’t let them submit a long form before telling them they made an error. Disable a form submission button if errors are detected. If the error can only be found after the user has submitted a form, be clear about what went wrong and what the user specifically needs to do to fix it. </p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Text field input</h3>
+								<div class="column col6">
+									<p>Helper text may appear at any time before, during, or after user interaction. Error text should not appear before user interaction with the field. Helper text may transform into error text if the user inputs incorrect text.  </p>
+									<p>Do not slow down users with too much text on screen. Not every text field needs helper and/or error text. </p>
+									<p>If the text field can have an error below it, it should have an additional 16dps of padding below it to account for the error field. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_userinput1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_userinput2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Light</strong></p>
+									<ul>
+										<li>Error font is Roboto Regular 12sp</li>
+										<li>Hint and helper text is #000000 with 38% alpha</li>
+									</ul>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_userinput3.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Dark</strong></p>
+									<ul>
+										<li>Error font is Roboto Regular 12sp</li>
+										<li>Hint and helper text is #FFFFFF with 30% alpha</li>
+									</ul>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_userinput4.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Helper and error text </strong></p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_userinput5.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_userinput6.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_userinput7.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_userinput8.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_userinput9.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_userinput_keyline1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Error with floating text label</strong></p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_userinput10.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_userinput11.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_userinput12.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_userinput_keyline2.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Text field input - Over/under character or word count </h3>
+								<div class="column col12">
+									<p>Counter may be displayed before, during, and after user interaction with the field. Consider not displaying the counter until the user is approaching the limit. Counter fields should have additional 16dps of padding below it.</p>
+									<ul>
+										<li>Counter font is Roboto Regular 12sp</li>
+									</ul>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Single line with character counter </strong></p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_userinput13.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_userinput14.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Multi line with character counter</strong></p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_userinput15.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_userinput16.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_userinput17.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_userinput_keyline3.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Incompatible values</h3>
+								<div class="column col6">
+									<p>Incompatible value errors should be displayed during or after user interaction with the text field that triggers the error.</p>
+									<p>If two or more fields have incompatible inputs, the text field and error message below each field should indicate a fix is needed. An additional message should be added at the top of the form or screen summarizing the fixes needed and any additional explanation.</p>
+									<p><strong>Errors detected after attempted form submission</strong></p>
+									<p>The form should reload with scroll position at the top of the form, where the error messages are consolidated. Error messages for individual fields may be resolved as the user works through the form. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_userinput18.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_userinput19.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Incomplete form </h3>
+								<div class="column col6">
+									<p>Incomplete form errors should be displayed after a user has sufficiently advanced through the form to indicate they have skipped the field. If unable to detect user progress through the form, display the error after the user has attempted to submit the form. </p>
+									<p>If fields in a form are left empty, the text field and error message below each field should indicate the error. </p>
+									<p><strong>Multiple errors in a form before submission</strong></p>
+									<p>It is sufficient to individually label error messages as the user works through the form. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_userinput21.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_userinput22.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Single line list error</h3>
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_userinput23.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="appErrors" class="article">
+							<h2>App errors</h2>
+                            <div class="section">
+								<div class="column col12">
+									<p>App errors are failures that occur regardless of user input.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>General app error</h3>
+								<div class="column col6">
+									<p>While an error is in progress, an app should continue to display its activity/loading indicators until the failure state is reached and the app error is displayed.</p>
+									<p>If a feature is not available, it may be represented within the UI. Not every error requires a new component to pop up. </p>
+									<p>If possible, give your user an action that will help them address the error. Don’t let them get stuck. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_app1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Alert dialog: app feedback about an error that is blocking normal operation </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_app2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Snackbar: app feedback about a peripheral error. Snackbars are transient, don't use them for critical, persistent, or bulk errors.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Sync error/failure to load</h3>
+								<div class="column col6">
+									<p>A key part of designing an app is determining how screens will present content. A subset of that is determining what each screen should do when its regular content can't be shown. Examples include:</p>
+									<ul>
+										<li>A screen that normally presents a list of items, but no items exist yet.</li>
+										<li>A screen that normally shows search results, but the current search yielded zero results.</li>
+										<li>A screen that normally shows cloud-based content, but can't right now because of an unknown error.</li>
+									</ul>
+									<p>These types of scenarios are called empty states. Although they're not the norm, they're important to design well because users may already be disappointed from encountering something unexpected.</p>
+									<p>When sync is down or content has failed to load, the user should be able to interact with as much of the rest of the app as possible. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_app3.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Empty state for the screen/content being loaded.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_app4.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Container/component specific error with action.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Connectivity</h3>
+								<div class="column col6">
+									<p>When connectivity is down, the user should be able to interact with as much of the rest of the app as possible. </p>
+									<p>If appropriate, present a link to help a user accomplish their task. Only offer links that you can actually support. For example, don't offer an option like "Try again" in cases where you can already detect that the operation will fail.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_app5.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Snackbar with action to retry </p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_app6.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Empty state for a screen only available online</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="incompatibleStateErrors" class="article lastArticle">
+							<h2>Incompatible state errors</h2>
+                            <div class="section">
+								<div class="column col12">
+									<p>Incompatible state errors occur when users attempt to run operations that conflict, such as making a call while in airplane mode or taking a screenshot from a restricted work account. Try to avoid letting users putt themselves into these situations by clearly communicating the states they are selecting and the implications for the rest of their experience. When these errors are triggered, do not imply that they are the user’s fault.</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>General incompatibility </h3>
+								<div class="column col6">
+									<p>Be clear about why the error is occurring and where it originates.  </p>
+									<p>Example: </p>
+									<ul>
+										<li>Screenshots and premium features are not allowed while in a restricted mode. </li>
+									</ul>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_state1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Snackbar + Special mode indicator</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Offline by choice</h3>
+								<div class="column col6">
+									<p>Consider displaying an unintrusive but persistent indicator when users are in these states. </p>
+									<p>Example: </p>
+									<ul>
+										<li>Placing a call while in airplane mode</li>
+										<li>Music availability while offline</li>
+									</ul>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_state2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Snackbar</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_errors_state3.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Indicator that device has been placed into airplane mode. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Permission requested</h3>
+								<div class="column col6">
+									<p>If your app requires user permission granted before proceeding along a workflow, consider working the permission request into the app flow instead of treating it as an error. </p>
+									<p>If permissions are necessary before the first run of an app, consider how they might fit into your app’s warm welcome. </p>
+									<p>Example: </p>
+									<ul>
+										<li>An app’s permissions have changed.</li>
+										<li>In-app purchases have been disabled.</li>
+									</ul>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_errors_state4.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Dialog</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="date-formats.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>时间和日期格式</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="gestures.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>手势</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
