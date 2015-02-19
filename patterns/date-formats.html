@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>时间和日期格式 - 模式 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #ff9800;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #ff9800 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #ff9800;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #ffe0b2;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #ff9800 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #3f51b5;
+	}
+	#footer #pageNext {
+		background-color: #ff9800;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="normalHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">模式<span id="subTitle">&nbsp;&gt;&nbsp;时间和日期格式</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/patterns/data-formats.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">时间和日期格式</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Display data such as date & time in a consistent and user-friendly way. Present the information concisely and avoid unnecessary redundancy.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#dateTime">时间和日期</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+                        <div id="dateTime" class="article lastArticle">
+							<h2>时间和日期</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>These guidelines apply to: </p>
+									<ul>
+										<li>The current date and time</li>
+										<li>A date and time setting, such as an alarm or reminder</li>
+										<li>A date and time when an object was created, sent, edited, or otherwise acted upon</li>
+									</ul>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<h3>Basic displays</h3>
+								<div class="column col6">
+									<p>For time, use uppercase AM or PM without periods, separated from time with a space.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>10:00 AM</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>If a timestamp is within the current day,  it’s generally unnecessary to show either “today”, the day or date. Only display the time in “hour:minute AM/PM” format.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>11:51 AM</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>If the day is in the past or future within the current calendar year, display the abbreviated date.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Jul 14</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p>If the day is in the past or future outside of the current calendar year, display the abbreviated date and year.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Jul 14, 2012</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>If the date is a range of time, separate with an en-dash without a space on either side.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>8:00 AM–12:30 PM</p>
+									<p>Jan 6–Feb 2</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>If both dates in a range start and end in the current year, omit the year. Otherwise, show the year on both the start and end.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Dec 6, 2013–Jan 2, 2014</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>When a range shares a common AM/PM, append only on the end of the range.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>8:00–10:30 AM</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>When listing the time zone, drop the leading 0 for single digits.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>UTC+5:00</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Using human and relative language and approximate times</h3>
+								<div class="column col12">
+									<p>When space permits, display the relevant date/time information in the context of the current date/time, as people normally speak to each other.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>If the day is yesterday or tomorrow, use those terms.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Yesterday, Tomorrow</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>If the day is in the future and within a week, display the unabbreviated day of the week.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Tuesday</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>If a word alternative helps understanding or describes a time-of-day preset, display that alternative.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Store open 9:00 AM–MidnightReminder for tomorrow afternoon</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>If absolute time isn’t necessary for specificity or comparison, you may choose to display approximate relative times.</p>
+									<p>Don’t combine units (e.g. “1 hour 32 minutes ago”). Instead, round down to the most recent largest unit (e.g. “1 hour ago”). </p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>In 5 minutes<br/>
+									8 hours from now<br/>
+									3 days ago</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Relative language may not always be appropriate, e.g. current date in a clock app, or the specific time of an event or alarm. In these cases, use absolute time.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Mon, Jan 10<br/>
+									Today, 10:00 AM</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Be modular</h3>
+								<div class="column col12">
+									<p>Depending on the context, show either date or time, or both date and time.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Typically, future settings should append time to a day or date.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Jan 10, 8:00 AM </p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>When a past time is necessary, such as a triggered reminder, display both date and time.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Reminded Jan 5, 7:16 AM</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>When the day of week is necessary, such as on a calendar invite, display the abbreviated day separated by a comma.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Mon, Jan 10, 8:00 AM</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>When it’s an event in the distant past, omit the time.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Jan 3</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Use HH:MM:SS to show the duration of a recording, like audio or video. If hours or seconds don’t apply, then omit them.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>0:30<br/>
+									2:14<br/>
+									1:01:05</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Be brief</h3>
+								<div class="column col6">
+									<p>Always abbreviate months, with single or double digit dates.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Jan 6, Feb 7, Mar 8, Apr 9, May 10, Jun 11, <br/>
+									Jul 12, Aug 13, Sep 14, Oct 15, Nov 16, Dec 17</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>Abbreviate days of the week when combined with a time.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Mon, 8:00 AM</p>
+									<p>Tue, 9:00 AM</p>
+									<p>Wed, 10:00 AM</p>
+									<p>Thu, 11:00 AM</p>
+									<p>Fri, 12:00 PM</p>
+									<p>Sat, 1:00 PM</p>
+									<p>Sun, 2:00 PM</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>If real estate is limited (such as with timestamps, labels on graphs, durations, etc.) abbreviate units, using numerical versions and/or by removing the “:00”: </p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>8 AM</p>
+									<p>2 hr 32 min ago</p>
+									<p>3/12/12</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>If truncation of “tomorrow” or “yesterday” happens repeatedly, do not abbreviate. Instead, use the month date format.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<p>Jun 6</p>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="../components/tooltips.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>基本元素</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="errors.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>错误提示</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
