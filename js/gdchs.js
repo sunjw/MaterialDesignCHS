@@ -143,37 +143,37 @@ var menuContent = [
 			text : "模式",
 			url : ""
 		}, {
-			text : "Data formats",
-			url : "patterns/data-formats.html"
+			text : "时间和日期格式",
+			url : "patterns/date-formats.html"
 		}, {
-			text : "Erros",
+			text : "错误提示",
 			url : "patterns/errors.html"
 		}, {
-			text : "Gestures",
+			text : "手势",
 			url : "patterns/gestures.html"
 		}, {
-			text : "Loading images",
+			text : "载入图片",
 			url : "patterns/loading-images.html"
 		}, {
-			text : "Navigation drawer",
+			text : "导航抽屉",
 			url : "patterns/navigation-drawer.html"
 		}, {
-			text : "Navigation transitions",
+			text : "导航变幻",
 			url : "patterns/navigation-transitions.html"
 		}, {
-			text : "Scrolling techniques",
+			text : "滚动",
 			url : "patterns/scrolling-techniques.html"
 		}, {
-			text : "Search",
+			text : "搜索",
 			url : "patterns/search.html"
 		}, {
-			text : "Selection",
+			text : "选择",
 			url : "patterns/selection.html"
 		}, {
-			text : "Settings",
+			text : "设置",
 			url : "patterns/settings.html"
 		}, {
-			text : "Swipe to refresh",
+			text : "下拉刷新",
 			url : "patterns/swipe-to-refres.html"
 		}
 	]
