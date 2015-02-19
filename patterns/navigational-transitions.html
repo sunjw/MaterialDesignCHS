@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>导航变幻 - 模式 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #ff9800;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #ff9800 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #ff9800;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #ffe0b2;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #ff9800 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #ff9800;
+	}
+	#footer #pageNext {
+		background-color: #ff9800;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">模式<span id="subTitle">&nbsp;&gt;&nbsp;导航变幻</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/patterns/navigational-transitions.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">导航变幻</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Navigational transitions occur when the user is taken from one state to another within the app, such as moving from a high-level view to a detailed view or a task-completion view. Most transitions are hierarchical in nature, but non-hierarchical transitions also occur. </p>
+						 <p>These brief moments are very important for the user experience. Consider the user’s journey carefully to determine which transition to use when. Different kinds of transitions are appropriate for various cases. </p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#parentToChild">Parent to child</a>
+							</li>
+							<li>
+								<a href="#siblingToSibling">Sibling to sibling</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="parentToChild" class="article">
+							<h2>Parent to child</h2>
+                            <div class="section">
+								<div class="column col12">
+									<p>One of the most important transitions is when the user “drills down” into content. It can be thought of as a parent-to-child transition, because it is hierarchical in nature.</p>
+									<p>In material design, a parent-to-child transition is indicated by a change in elevation. The surface or the area of the surface that the user touches should lift up and expand into place from its origin. This motion guides the user from point A to point B and should highlight both the origin as well as the destination. It should feel natural, using the material motion curves, and familiar, because the expansion and movement from the origin appears logical.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="media">
+									<video class="clickPlay" loop="" width="1160" height="640">
+										<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B2wX4iIvu8L6UjZvd0w1MmdQVWs/patterns_navigational-transitions_parent-to-child_list-01_xhdpi.webm"></source>
+										<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B2wX4iIvu8L6OG5GWnBqWFFRdVU/patterns_navigational-transitions_parent-to-child_list-01_xhdpi.mp4"></source>
+									</video>
+								</div>
+							</div>
+							<div class="section">
+								<div class="media">
+									<video class="clickPlay" loop="" width="1160" height="870">
+										<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B2wX4iIvu8L6U0Q0M3FtYUE0VHM/patterns_navigational-transitions_parent-to-child_calendar_tablet_xhdpi.webm"></source>
+										<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B2wX4iIvu8L6aklPVUgzZ1BYR0U/patterns_navigational-transitions_parent-to-child_calendar_tablet_xhdpi.mp4"></source>
+									</video>
+								</div>
+							</div>
+						</div> <!-- article ends -->
+						<div id="siblingToSibling" class="article lastArticle">
+							<h2>Sibling to sibling</h2>
+                            <div class="section">
+								<div class="column col12">
+									<p>Transitions that are not hierarchical in nature behave differently than hierarchical transitions. You can think of non-hierarchical transitions as sibling transitions. </p>
+									<p>An example for this kind of transition is when a user navigates through a row of tabs. There is no elevation change; the content and surface of each tab stays on the same elevation level. New content slides in from the right and pushes its sibling off screen to the left.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="media">
+									<video class="clickPlay" loop="" width="1160" height="640">
+										<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B2wX4iIvu8L6bXdoMlplMWtMeWs/patterns_navigational-transitions_sibling-to-sibling_tabs-01_xhdpi.webm"></source>
+										<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B2wX4iIvu8L6bDNpdXBkdElHWDg/patterns_navigational-transitions_sibling-to-sibling_tabs-01_xhdpi.mp4"></source>
+									</video>
+								</div>
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="navigation-drawer.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>导航抽屉</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="scrolling-techniques.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>滚动</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
