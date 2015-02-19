@@ -174,7 +174,7 @@ var menuContent = [
 			url : "patterns/settings.html"
 		}, {
 			text : "下拉刷新",
-			url : "patterns/swipe-to-refres.html"
+			url : "patterns/swipe-to-refresh.html"
 		}
 	]
 ];
