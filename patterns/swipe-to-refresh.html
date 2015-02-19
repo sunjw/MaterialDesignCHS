@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-    <title>设置 - 模式 - Google 设计指导</title>
+    <title>下拉刷新 - 模式 - Google 设计指导</title>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
 	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
@@ -40,7 +40,7 @@
 	<div id="header">
         <div class="contentGrid">
 			<img id="navButton" src="../imgs/hamburger.png" />
-            <a class="normalTitle" href="#">模式<span id="subTitle">&nbsp;&gt;&nbsp;设置</span></a>
+            <a class="normalTitle" href="#">模式<span id="subTitle">&nbsp;&gt;&nbsp;下拉刷新</span></a>
         </div>
 	</div>
 	<div id="navWrapper">
@@ -60,10 +60,10 @@
 	<div id="content">
         <div class="contentGrid">
 			<div class="engLink">
-				阅读 <a href="http://www.google.com/design/spec/patterns/settings.html" target="_blank">英文原文</a>
+				阅读 <a href="http://www.google.com/design/spec/patterns/swipe-to-refresh.html" target="_blank">英文原文</a>
 			</div>
             <div class="chapter">
-				<h1 class="chapterTitle">设置</h1>
+				<h1 class="chapterTitle">下拉刷新</h1>
 				<div class="chapterContent">
 					<!-- <div class="chapterIntro">
 						 <p></p>
@@ -72,38 +72,37 @@
 						<h2>目录</h2>
 						<ul>
 							<li>
-								<a href="#settings">Settings</a>
+								<a href="#swipeToRefresh">Swipe to refresh</a>
 							</li>
 						</ul>
 					</div>
 					<div class="chapterArticles">
-						<div id="settings" class="article lastArticle">
-							<h2>Settings</h2>
+						<div id="swipeToRefresh" class="article lastArticle">
+							<h2>Swipe to refresh</h2>
 							<div class="section">
+								<h3>Updating content</h3>
 								<div class="column col12">
-									<p>Application settings allow users to indicate their preferences for how the app should behave. They grant the user a genuine sense of control and can be useful in avoiding repeated interruptions with the same question.</p>
+									<p>There are two methods for updating content in an app. The preferred method is to automatically update content using sync. Syncing is a process by which an app periodically and automatically keeps its content seamlessly up to date, so users always have the freshest content. Syncing is preferred because it doesn’t require user action, and users have the confidence that they’re always looking at the most recent content.</p>
+									<p>The other method for updating content is to use a manual refresh. Refresh requires users to initiate content updates via an action or a swipe to refresh gesture. Refresh can be used to supplement syncing, for example, when checking for new mail in a Gmail account, or updated notifications in Google+. An explicit refresh action enables users to refresh content while maintaining their current scroll position.</p>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
-								<h3>Accessing settings</h3>
+								<h3>Swipe to refresh</h3>
 								<div class="column col6">
-									<p>Settings are given low prominence in the UI because they’re not frequently needed by users. When your app uses settings:</p>
-									<ul>
-										<li>The action for accessing Settings should always be simply labelled as “Settings”.</li>
-										<li>If the current screen supports a side nav drawer, place a menu item for Settings in the drawer, below all other items except Help & Feedback.</li>
-										<li>Otherwise, if there is a toolbar on the current screen, place a menu item for Settings in the toolbar’s action overflow, below all other items except Help & Feedback.</li>
-									</ul>
+									<p>Swipe to refresh is a <a href="../patterns/gestures.html">swipe gesture</a> available at the beginning of lists, grid lists, and card collections where the most recent content appears (Index 0). Typically, this gesture is available at the top of content collections, but it can also be at the bottom (for example, in chat applications). It’s best to utilize this gesture with dynamic content that has frequent updates and that emits from a consistent location, where users have a high probability of seeing new content after initiating the gesture.</p>
+									<p>Be aware that changes may not be immediately obvious to users when the swipe to refresh gesture is used in applications and views that can change significantly or are completely replaced upon refresh. For example, the refresh may non-sequentially delete, reorder, modify, and insert items or only change off-screen items.</p>
 								</div>
 								<div class="column col6">
 									<div class="media">
-										<img src="patterns_settings_menu.png" alt="">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B8v7jImPsDi-TUMwQjBnZmYwcFE/070601_swipeToRefresh_xdpi_v14f.webm"></source>
+											<source type="video/mp4" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B8v7jImPsDi-MGhWZkMzNHl4c0E/070601_swipeToRefresh_xdpi_v14f.mp4"></source>
+										</video>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
-									<div class="media">
-										<img src="patterns_settings_sidenav.png" alt="">
-									</div>
+									&nbsp;
 								</div>
 								<br class="clear" />
 							</div>
@@ -178,20 +177,20 @@
 	<div id="footer">
         <div id="pagePrevious" class="pageNav">
 			<div class="pageNavContent">
-				<a href="selection.html">
+				<a href="settings.html">
 					<img src="../imgs/Arrow-left.png" alt="">
 					<span>上一页:</span>
-					<div>选择</div>
+					<div>设置</div>
 				</a>
 			</div>
 		</div>
 		<div id="pageNext" class="pageNav">
 			<div class="pageNavContent">
-				<a href="swipe-to-refresh.html">
+				<!-- <a href="swipe-to-refres.html">
 					<img src="../imgs/Arrow-right.png" alt="">
 					<span>下一页:</span>
 					<div>下拉刷新</div>
-				</a>
+				</a> -->
 			</div>
 		</div>
 	</div>
