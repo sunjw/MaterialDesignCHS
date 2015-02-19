@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>手势 - 模式 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #ff9800;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #ff9800 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #ff9800;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #ffe0b2;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #ff9800 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #ff9800;
+	}
+	#footer #pageNext {
+		background-color: #ff9800;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">模式<span id="subTitle">&nbsp;&gt;&nbsp;手势</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/patterns/gestures.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">手势</h1>
+				<div class="chapterContent">
+					<div class="chapterIntro">
+						 <p>Gestures are divided into <strong>Touch Mechanics</strong> (what your fingers do on the screen) and <strong>Touch Activities</strong> (context-specific results of specific gestures in the user interface).  A single touch mechanic (touch) may have multiple results depending on context (tap, cancel, enable/disable lights out), and a single touch activity (zoom in) may be achieved through multiple touch mechanics (pinch open, double touch, double-touch drag, etc.) </p>
+						 <p>Note that Drag, Swipe, and Fling gesture activities are covered in more detail in their own section due to their highly contextual results.</p>
+					</div>
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#touchMechanics">Touch mechanics</a>
+							</li>
+							<li>
+								<a href="#touchActivities">Touch activities</a>
+							</li>
+							<li>
+								<a href="#dragSwipeOrFlingDetails">Drag, swipe, or fling details</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="touchMechanics" class="article">
+							<h2>Touch mechanics</h2>
+                            <div class="section">
+								<div class="column col12">
+									<p>Touch mechanics are what the user's fingers do on the screen.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns-gestures-gestures-touch_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Touch</strong></p>
+										<p>one-finger press, lift</p>
+										<p>Example: Select</p>
+									</div>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns-gestures-gestures-double-touch_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Double touch</strong></p>
+										<p>one-finger press, lift, one-finger press, lift</p>
+										<p>Example: Zoom in</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns-gestures-gestures-swipe_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Drag, Swipe, or Fling</strong></p>
+										<p>one-finger press, move, lift</p>
+										<p>Example: Dismiss, scroll, tilt, etc.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns-gestures-gestures-long-press_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Long press</strong></p>
+										<p>one-finger press, wait, lift</p>
+										<p>Example: Select an element, such as a list item</p>
+										<p>Long press is not used to display a contextual menu.</p>
+									</div>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns-gestures-gestures-long-press-drag_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Long-press drag</strong></p>
+										<p>one-finger press, wait, move, lift</p>
+										<p>Example: Pick up and move, select multiple items</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="Patterns-Gestures-TouchMechanics-6-Long-press-drag_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Double-touch drag</strong></p>
+										<p>one-finger press, lift, one-finger press, drag, lift</p>
+										<p>Example: Zoom in, zoom out</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns-gestures-gestures-pinch-open_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Pinch open</strong></p>
+										<p>two-finger press, move outwards, lift</p>
+										<p>Example: Zoom in</p>
+									</div>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns-gestures-gestures-pinch-closed_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Pinch closed</strong></p>
+										<p>two-finger press, move inwards, lift</p>
+										<p>Example: Zoom out</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns-gestures-gestures-two-finger-touch_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Two-finger touch</strong></p>
+										<p>two-finger press, lift</p>
+										<p>Example: Zoom out</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns-gestures-gestures-two-finger-swipe_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Two-finger swipe, drag, fling</strong></p>
+										<p>two-finger press, move, lift</p>
+										<p>Example: Select multiple items, pan, tilt</p>
+									</div>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns-gestures-gestures-two-finger-long-press_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Two-finger long-press</strong></p>
+										<p>two-finger press, wait, lift</p>
+										<p>Example: None; this gesture is uncommon.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns-gestures-gestures-two-finger-long-press-drag_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Two-finger long-press drag</strong></p>
+										<p>two-finger press, wait, move, lift</p>
+										<p>Example: Pick up and move</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns-gestures-gestures-two-finger-double-touch_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Two-finger double touch</strong></p>
+										<p>two-finger press, lift, two-finger press, lift</p>
+										<p>Example: Zoom out</p>
+									</div>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns-gestures-gestures-rotate_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p><strong>Rotate</strong></p>
+										<p>two-finger press, simultaneously orbit both fingers around center point, lift</p>
+										<p>Example: Rotate content, such as a map</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="touchActivities" class="article">
+							<h2>Touch activities</h2>
+                            <div class="section">
+								<div class="column col12">
+									<p>Context-specific results of specific gestures in the user interface.</p>
+									<p><strong>Activate</strong></p>
+									<p>Activates a screen element, like a button.</p>
+									<p>Touch mechanics: Touch</p>
+									<p><strong>Cancel or Escape</strong></p>
+									<p>Cancels or escapes out of the current task, as in dialogs or menus.</p>
+									<p>Touch mechanics: Touch</p>
+									<p><strong>Enable/Disable lights out</strong></p>
+									<p>Hides or shows a view’s chrome.</p>
+									<p>Touch mechanics: Touch</p>
+									<p><strong>Drag or Swipe or Fling</strong></p>
+									<p>See the following section for distinctions between Scroll, Reveal upon scroll, Pan, Dismiss, Swipe to refresh, Edge swipe, Paging swipe, Overscroll collapse, Menu open, and Tilt.</p>
+									<p>Touch mechanics: Drag, Swipe, or Fling</p>
+									<p><strong>Data selection (when nothing is selected)</strong></p>
+									<p>Selects a single element</p>
+									<p>Touch mechanics: Long press, two-finger touch</p>
+									<p><strong>Data selection (when items are already selected)</strong></p>
+									<p>Selects additional elements while in selection mode. Can use any combination of subsequent one- or two-finger gestures.</p>
+									<p>Touch mechanics: Touch, two-finger touch</p>
+									<p><strong>Data multi-selection drag</strong></p>
+									<p>Reveals selection box that originates from point of gesture initiation. Height and width can be adjusted based on finger position. Final selection is based on selection box dimensions upon finger(s) lifting.</p>
+									<p>Touch mechanics: Two-finger swipe or drag, long-press drag with no items selected</p>
+									<p><strong>Pick up and move</strong></p>
+									<p>Affects the selected item or items. It can be used to:</p>
+									<ul>
+										<li>Double-touch</li>
+										<li>Double-touch drag (down)</li>
+										<li>Pinch open</li>
+									</ul>
+									<p><strong>Zoom in to fit</strong></p>
+									<p>For nested views, scales up the smallest targetable view.</p>
+									<p>Touch mechanics: Double-touch</p>
+									<p><strong>Zoom out</strong></p>
+									<p>Scales down content.</p>
+									<p>Touch mechanics:</p>
+									<ul>
+										<li>Double-touch at maximum zoom</li>
+										<li>Double-touch drag (up)</li>
+										<li>Pinch closed</li>
+										<li>Two-finger touch</li>
+										<li>Two-finger double touch</li>
+									</ul>
+									<p><strong>Expand</strong></p>
+									<p>Expands collapsed content.</p>
+									<p>Touch mechanics: Pinch open</p>
+									<p><strong>Collapse</strong></p>
+									<p>Collapses expanded content.</p>
+									<p>Touch mechanics: Pinch closed</p>
+									<p><strong>Rotate</strong></p>
+									<p>Rotates the targeted content.</p>
+									<p>Touch mechanics: Rotate</p>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+						<div id="dragSwipeOrFlingDetails" class="article lastArticle">
+							<h2>Drag, swipe, or fling details</h2>
+                            <div class="section">
+								<div class="column col12">
+									<p>Because the activity performed by a swipe gesture can vary greatly based on context, this section describes some of the major swipe gesture patterns and their differences. Gesture velocity (from least to most) is the main distinction between Drag, Swipe, and Fling. Depending on context of use, gesture velocity can produce different results:</p>
+									<ul>
+										<li>Drag: Fine gesture, slower, more deliberate, controlled, typically has an on-screen target</li>
+										<li>Swipe: Gross gesture, faster, typically has no on-screen target</li>
+										<li>Fling: Gross gesture, no on-screen target</li>
+									</ul>
+									<p>A swipe becomes a fling based on ending velocity and whether the affected element has crossed a threshold.</p>
+									<p>Generally, gesture velocity impacts whether the action is immediately reversible once crossing that threshold: a Drag maintains contact with the element, and reversing the gesture will drag the element back across the threshold. A fling imparts velocity and removes contact with the element while it crosses the threshold, preventing a reversal.</p>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Scroll</strong></p>
+									<p>Vertical or horizontal swipe in content body.</p>
+									<p>Scroll amount varies based on velocity of gesture: drag (slow) vs. swipe vs. fling (fast)</p>
+									<p>Generally:</p>
+									<p>- scroll directions are mutually exclusive</p>
+									<p>- applied to content at 100% scale</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="Patterns-Gestures-TouchActivities-02_large_xhdpi.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Reveal upon scroll</strong></p>
+									<p>Reversing the scroll direction in a content area can have an additional effect of immediately revealing hidden in-app elements. E.g., scrolling up in Chrome shows the Omnibox.</p>
+									<p>Dismiss in-app elements by resuming original scroll direction.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="Patterns-Gestures-TouchActivities-02_large_xhdpi.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Pan</strong></p>
+									<p>Omnidirectional, one or two fingers</p>
+									<p>Generally applied to:</p>
+									<p>- unbounded content (maps)</p>
+									<p>- content that is larger than the screen height or width (zoomed in web page or photo)</p>
+									<p>two-finger pan gesture, when transitioning from another two-finger gesture (e.g., pinch zoom or rotate) such as in Maps, will result in <strong>two-finger pan</strong>.</p>
+									<p>Two-finger pan gesture as the initiating gesture will result in <strong>tilt</strong>.</p>
+									<p>Drag is typically used with Pan.</p>
+									<p>Fling will maintain gesture velocity, resulting in a significant pan of the content along the direction of the fling gesture.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="Patterns-Gestures-TouchActivities-03_large_xhdpi.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Dismiss</strong></p>
+									<p>Originates on a swipeable element such as a list item or card.</p>
+									<p>Orthogonal to the direction of scrolling.</p>
+									<p>The gesture is typically horizontal, with symmetrical actions.</p>
+									<p>The Dismiss gesture is committed based on crossing a threshold.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="Patterns-Gestures-TouchActivities-04_large_xhdpi.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Swipe to refresh</strong></p>
+									<p>Available at index zero of a list, or at the content origination edge of an empty container.</p>
+									<p>Generally vertical and in a downward direction.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="Patterns-Gestures-TouchActivities-05_large_xhdpi.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Edge swipe</strong></p>
+									<p>A swipe that originates outside of the screen and reveals off-screen content. Invokes out-of-context content, that is, content separate and distinct from the current view.</p>
+									<p>If no edge swipe action is defined, an <strong>Edge swipe</strong> gesture can default to a <strong>Paging swipe</strong>.</p>
+									<p>The Edge swipe gesture is committed based on crossing a threshold.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="Patterns-Gestures-TouchActivities-06_large_xhdpi.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Paging swipe</strong></p>
+									<p>An on-screen, in-content swipe that reveals additional, related off-screen content. </p>
+									<p>Don’t use paging swipes when individual elements are swipeable. The gesture reveals one page/tab per paging swipe.</p>
+									<p>Paged content may be >100% zoom, in which case an in-content swipe will <strong>Pan</strong> to an edge of the content, and an additional in-content swipe will <strong>Page</strong>.</p>
+									<p>See also: <strong>Overscroll collapse</strong></p>
+									<p>The Paging swipe gesture is committed based on crossing a threshold.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="Patterns-Gestures-TouchActivities-07_large_xhdpi.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Overscroll collapse</strong></p>
+									<p>Navigate up in hierarchy.</p>
+									<p>Paging swipe at the top or bottom of scrolling content to navigate to Parent content.</p>
+									<p>The Overscroll collapse gesture is committed based on crossing a threshold.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="Patterns-Gestures-TouchActivities-08_large_xhdpi.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Menu open</strong></p>
+									<p>Drag originating from a menu or picker reveals a menu. Upon lift, the highlighted menu option is selected.</p>
+									<p>Menu appears upon touch </p>
+									<p>Drag is used with <strong>Menu open</strong>.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="Patterns-Gestures-TouchActivities-09_large_xhdpi.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Tilt</strong></p>
+									<p>Tilts 3D content forward or backward</p>
+									<p>When transitioning from another two-finger gesture (e.g., pinch zoom or rotate) such as in Maps, will result in <strong>two-finger pan</strong>.</p>
+									<p>Drag is used with <strong>Tilt</strong>.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="Patterns-Gestures-TouchActivities-10_large_xhdpi.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="errors.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>错误提示</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="loading-images.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>载入图片</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
