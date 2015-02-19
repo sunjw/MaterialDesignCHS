@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>搜索 - 模式 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #ff9800;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #ff9800 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #ff9800;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #ffe0b2;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #ff9800 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #ff9800;
+	}
+	#footer #pageNext {
+		background-color: #ff9800;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">模式<span id="subTitle">&nbsp;&gt;&nbsp;搜索</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/patterns/search.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">搜索</h1>
+				<div class="chapterContent">
+					<!-- <div class="chapterIntro">
+						 <p></p>
+					</div> -->
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#inAppSearch">In-app search</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="inAppSearch" class="article lastArticle">
+							<h2>In-app search</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>When an app supports large amounts of information, users expect to be able to quickly locate particular content by searching. </p>
+									<p>In its most basic form, a search involves:</p>
+									<ul>
+										<li>Opening a search text field</li>
+										<li>Entering and submitting a query</li>
+										<li>Displaying a set of search results</li>
+									</ul>
+									<p>However, the search experience can be made significantly more gratifying by including some enhancements:</p>
+									<ul>
+										<li>Enabling voice search</li>
+										<li>Providing historical search suggestions based on recent user queries, even before a query has been started</li>
+										<li>Offering auto-completed search suggestions that match actual results in your application data</li>
+									</ul>
+									<p>There are two major patterns for in-app search: <strong>persistent search</strong> and <strong>expandable search</strong>.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Persistent search</h3>
+								<div class="column col6">
+									<p>Persistent search is appropriate when search is the primary focus of your app. The search text field is presented within an inset search box, ready to receive focus. The user also can touch the microphone action to initiate a voice search.</p>
+									<p>When in focus, the search field expands to present historical search suggestions. If needed, the onscreen keyboard will also appear. Choosing any of the suggestions submits the search. Touching the up arrow releases the focus from search, dismissing suggestions and the onscreen keyboard.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_search_persistent1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Persistent search box</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_search_persistent2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Persistent search text field in focus</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>As the user enters a query, the search suggestions shift to auto-completion. As the user types, the suggestions are filtered and sorted. Choosing a suggestion or pressing the return key submits the search.</p>
+									<p>The X action in the search box clears the query. </p>
+									<p>When displaying search results, the search box remains visible, but is not focused by default. The onscreen keyboard is dismissed so more results can be shown.</p>
+									<p>Search results are formatted as cards to match the inset appearance of the search box and to accommodate different types of results.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_search_persistent3.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Auto-complete</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_search_persistent4.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Search results</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Expandable search</h3>
+								<div class="column col6">
+									<p>Expandable search is appropriate when search is not the primary focus of your app.</p>
+									<p>Instead of displaying a search text box, a search action, denoted by the magnifying glass icon, is presented within a toolbar.</p>
+									<p>Touching the search icon causes the toolbar to transform, clearing other content and displaying a search text field. If voice search is supported, the microphone icon also appears.</p>
+									<p>The search text field automatically receives focus, and, if needed, the onscreen keyboard will appear. Historical search suggestions can be shown beneath the toolbar. Choosing any of the suggestions submits the query.</p>
+									<p>Touching the up arrow closes search and restores the original presentation of the toolbar.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_search_expandable1.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Expandable search</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_search_expandable2.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Search text field in focus</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p>As the user enters a query, the search suggestions shift to auto-completion. As the user types, the suggestions are filtered and sorted. Choosing a suggestion or pressing the return key submits the search.</p>
+									<p>The X action in the search field clears the query.</p>
+									<p>When displaying search results, the search version of the toolbar remains visible, but is not focused by default. The onscreen keyboard is dismissed so more results can be shown.</p>
+									<p>Search results, like the suggestions from the previous steps, appear in the main body of the page beneath the toolbar.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_search_expandable3.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Auto-complete</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_search_expandable4.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Search results</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="scrolling-techniques.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>滚动</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="selection.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>选择</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
