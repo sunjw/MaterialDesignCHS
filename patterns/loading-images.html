@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>载入图片 - 模式 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #ff9800;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #ff9800 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #ff9800;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #ffe0b2;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #ff9800 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #ff9800;
+	}
+	#footer #pageNext {
+		background-color: #ff9800;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">模式<span id="subTitle">&nbsp;&gt;&nbsp;载入图片</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/patterns/loading-images.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">载入图片</h1>
+				<div class="chapterContent">
+					<!-- <div class="chapterIntro">
+						 <p></p>
+					</div> -->
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#loadingImages">Loading images</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="loadingImages" class="article lastArticle">
+							<h2>Loading images</h2>
+                            <div class="section">
+								<div class="column col6">
+									<p>Rather than relying heavily on opacity shifts, illustrations and photographs may load and transition in three phases at staggered durations. </p>
+									<p>The levels are adjusted for a low contrast exposure and desaturated in color. The final stage would be a full color saturation, only after the opacity is at 100%. </p>
+									<p>The lower contrast effect is a combination of a shift in gamma and black output for darker images. </p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="patterns_loadingimages1.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns-imagetreatment-imageload2_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Low opacity and low contrast</p>
+									</div>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns-imagetreatment-imageload3_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Full opacity and exposure</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns-imagetreatment-imageload4_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<p>Color saturation</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Aperture vs development</h3>
+								<div class="column col6">
+									<p>Don’t adjust the levels in a way that will blow out the whites. This creates an effect that implies an overexposure of the aperture through a camera lens.</p>
+									<p>Do imagine the image is fading in like a photographic print during the photo developing process.</p>
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="patterns-imagetreatment-aperturevsdevelopment1-yes-no_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="patterns-imagetreatment-aperturevsdevelopment2-yes-no_large_xhdpi.png" alt="">
+									</div>
+									<div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Load and transition</h3>
+								<div class="column col6">
+									<p>Use the ratio of the three phases (opacity, contrast and saturation) graphed above to suit your needs. A longer duration is recommended for loads and a shorter durations is recommended for transitions.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="360">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B08MbvYZK1iNM2xXbGwyN2pISUE/patterns-imagerytreatment-imageload-transition_large_xhdpi.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B08MbvYZK1iNU2VGSFotTTluU2s/patterns-imagerytreatment-imageload-transition_large_xhdpi.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Loading on larger screens</h3>
+								<div class="column col6">
+									<p>This process is ideal for larger screens, such as in this Chrome OS wallpaper loading use case.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="760" height="550">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B2wX4iIvu8L6RkFKU3Nvd2hwZGM/patterns-imagerytreatment-imageload-transition_desktop_large_xhdpi_004.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B2wX4iIvu8L6UE5ndDctVDVxdEU/patterns-imagerytreatment-imageload-transition_desktop_large_xhdpi_004.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Adding animation</h3>
+								<div class="column col6">
+									<p>Add a small position shift on top of this image treatment for instances, such as an account switcher.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="760" height="760">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWdlUtbnpFOUMzRUk/patterns-loadingimages-loading-070901_Load_Add_Animation_xhdpi_002.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWRm5QODB0bk95SUE/patterns-loadingimages-loading-070901_Load_Add_Animation_xhdpi_002.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="gestures.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>手势</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="navigation-drawer.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>导航抽屉</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
