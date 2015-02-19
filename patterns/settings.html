@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>设置 - 模式 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #ff9800;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #ff9800 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #ff9800;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #ffe0b2;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #ff9800 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #ff9800;
+	}
+	#footer #pageNext {
+		background-color: #ff9800;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">模式<span id="subTitle">&nbsp;&gt;&nbsp;设置</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/patterns/settings.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">设置</h1>
+				<div class="chapterContent">
+					<!-- <div class="chapterIntro">
+						 <p></p>
+					</div> -->
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#settings">Settings</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="settings" class="article lastArticle">
+							<h2>Settings</h2>
+							<div class="section">
+								<div class="column col12">
+									<p>Application settings allow users to indicate their preferences for how the app should behave. They grant the user a genuine sense of control and can be useful in avoiding repeated interruptions with the same question.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Accessing settings</h3>
+								<div class="column col6">
+									<p>Settings are given low prominence in the UI because they’re not frequently needed by users. When your app uses settings:</p>
+									<ul>
+										<li>The action for accessing Settings should always be simply labelled as “Settings”.</li>
+										<li>If the current screen supports a side nav drawer, place a menu item for Settings in the drawer, below all other items except Help & Feedback.</li>
+										<li>Otherwise, if there is a toolbar on the current screen, place a menu item for Settings in the toolbar’s action overflow, below all other items except Help & Feedback.</li>
+									</ul>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_settings_menu.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_settings_sidenav.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Using settings appropriately</h3>
+								<div class="column col12">
+									<p>When users visit Settings—however infrequently—they’ll hold this screen to the same expectations as the rest of their experience. It should be well-organized and predictable. Don’t overwhelm the user with too many options.</p>
+									<p>Avoid the urge to “just make it a setting”. For each control you’re considering adding to Settings, make sure it’s appropriate by asking the following questions:</p>
+									<ul>
+										<li><strong>Is this actually a user preference?</strong> Information and actions are not user preferences.<br/>
+											If not, don’t make it a setting. If it’s static information about the app (e.g. version number, terms of service, open source licenses), organize it into a Help screen.If it’s an action (e.g. refresh, change account), find an appropriate place for it within the main flow of your app.</li>
+										<li><strong>Is this infrequently changed by users?</strong> Would users feel burdened by taking multiple actions to access this control each time?<br/>
+											If not, don’t make it a setting. Make the control more readily available, possibly via a toolbar or action overflow.</li>
+										<li><strong>Would fewer than 20% of users change the value of this control?</strong> <br/>
+											If not, don’t make it a setting.</li>
+									</ul>
+									<p>These same questions should be applied to both new and existing settings. For existing settings, you may have to think more about the last question: If the setting were removed, would it cause harm to the minority who would no longer be able to change it? If so, then maintaining it as a setting is appropriate.</p>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Grouping settings</h3>
+								<div class="column col6">
+									<p>When you have many settings, turn one long list into multiple shorter lists by clustering the settings. Your strategy for arranging them will depend on the total number of settings in the Settings panel in your app.</p>
+									<p><strong>Seven or fewer</strong></p>
+									<p>Don’t group at all.</p>
+									<p><strong>Nine to 10</strong></p>
+									<p>Try grouping related settings under 1 or 2 section dividers. If you have any "singletons" (settings that don't relate to any other settings and can't be grouped under your section dividers), treat them as follows:</p>
+									<ul>
+										<li>If they include some of your most important settings, list them at the top without a section divider.</li>
+										<li>Otherwise, list them at the bottom with a section divider called "Other", in order of importance.</li>
+									</ul>
+									<p><strong>11 to 15</strong></p>
+									<p>Same advice as above, but try two to four section dividers. Look for "doubles": two settings that relate to one another, but not to any other settings. Try to combine them into one setting. For example, you might be able to redesign two related checkbox settings into one multiple choice setting.</p>
+									<p><strong>16 or more</strong></p>
+									<p>If you have any instances of four or more related settings, group them under a subscreen. Apply the guidance above to each subscreen.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_settings_subscreen2.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Choosing defaults</h3>
+								<div class="column col12">
+									<p>Users will expect the initial value for each setting to be sensible. The following questions can help inform your decisions:</p>
+									<ul>
+										<li>Which choice would most users be likely to choose on their own if there were no default?</li>
+										<li>Which choice is the most neutral or middle-of-the-road?</li>
+										<li>Which choice is the least risky, controversial, or over-the-top?</li>
+										<li>Which choice uses the least amount of battery or mobile data?</li>
+										<li>Which choice most respects the user’s attention, and only interrupts when it is important?</li>
+									</ul>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="selection.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>选择</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="swipe-to-refres.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>下拉刷新</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
