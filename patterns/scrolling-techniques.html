@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>滚动 - 模式 - Google 设计指导</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/folding.css" />
+	<style type="text/css">
+	#header {
+		background-color: #ff9800;
+	}
+	#header a {
+		color: white;
+	}
+	#navWrapper a.highlight {
+		color: #ff9800 !important;
+	}
+	#content .chapter h1,#content .chapter .article h2 {
+		color: #ff9800;
+	}
+	#content .chapter .chapterToc {
+		border-left-color: #ffe0b2;
+	}
+    #content .chapter a,#content .chapter a:hover{
+		color: #ff9800 !important;
+	}
+	#footer #pagePrevious {
+		background-color: #ff9800;
+	}
+	#footer #pageNext {
+		background-color: #ff9800;
+	}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.common.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.folding.min.js"></script>
+	<script type="text/javascript" src="../js/gdchs.js"></script>
+</head>
+<body class="fixedHeader normalNav">
+	<div id="header">
+        <div class="contentGrid">
+			<img id="navButton" src="../imgs/hamburger.png" />
+            <a class="normalTitle" href="#">模式<span id="subTitle">&nbsp;&gt;&nbsp;滚动</span></a>
+        </div>
+	</div>
+	<div id="navWrapper">
+		<div id="navGrid">
+			<div id="navLogo">
+				<img src="../imgs/Google_Logo.png" />
+			</div>
+			<div id="menuGrid"></div>
+			<div id="navFooter">
+				<div id="navFooterGrid">
+				<p>Material Design <br/>
+				非官方简体中文版</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+        <div class="contentGrid">
+			<div class="engLink">
+				阅读 <a href="http://www.google.com/design/spec/patterns/scrolling-techniques.html" target="_blank">英文原文</a>
+			</div>
+            <div class="chapter">
+				<h1 class="chapterTitle">滚动</h1>
+				<div class="chapterContent">
+					<!-- <div class="chapterIntro">
+						 <p></p>
+					</div> -->
+					<div class="chapterToc">
+						<h2>目录</h2>
+						<ul>
+							<li>
+								<a href="#scrolling">Scrolling</a>
+							</li>
+						</ul>
+					</div>
+					<div class="chapterArticles">
+						<div id="scrolling" class="article lastArticle">
+							<h2>Scrolling</h2>
+							<div class="section">
+								<h3>Based on blocks</h3>
+								<div class="column col6">
+									<p>When designing scrolling behavior, it is helpful to think in blocks. This is just a mental model and won’t be represented with any visual affordance. </p>
+									<p>These are the main four blocks for app bars that help with the scrolling structure:</p>
+									<ul>
+										<li>Status bar: 24dp </li>
+										<li>Navigation bar: 56dp on mobile and 64dp on tablet and desktop.</li>
+										<li>Tab bar/search bar: 48dp</li>
+										<li>Flexible space: space to accommodate a desired aspect ratio for images or extended app bars.</li>
+									</ul>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_scrolling_scroll1.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="patterns_scrolling_video1.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Standard app bar</h3>
+								<div class="column col6">
+									<p>The standard app bar height is 56dp on mobile and 64dp on larger screen sizes. There are two options when it comes to scrolling. </p>
+									<ol>
+										<li>The app bar can scroll off screen with the content and come back when the user reverse- scrolls. </li>
+										<li>The app bar can stay fixed at the top and let the content scroll under it.</li>
+									</ol>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_scrolling_scroll2.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWV2x1WF9Wb29NX2c/patterns-scrollingtech-scrolling-070801_Standard_AppBar_xhdpi_003.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWbGpsUDgxN1VwX0U/patterns-scrollingtech-scrolling-070801_Standard_AppBar_xhdpi_003.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Tabs</h3>
+								<div class="column col6">
+									<p>The standard app bar can be extended to include tabs or a search box. Using the blocks as a mental model is helpful when determining the scrolling behavior. In this case, you have two options:</p>
+									<ol>
+										<li>The navigation bar scrolls off and the tab bar stays anchored at the top.</li>
+										<li>The app bars stays in place and the content scrolls under it.</li>
+									</ol>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_scrolling_scroll3.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWUXVCVVhKUFdFQnM/patterns-scrollingtech-scrolling-070801_TabBar_xhdpi_003.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWU0RhQy1ab3FWOWM/patterns-scrollingtech-scrolling-070801_TabBar_xhdpi_003.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Flexible space</h3>
+								<div class="column col6">
+									<p>The app bar is flexible and can be extended to accommodate larger typography or images. To extend the app bar, add a flexible space block.</p>
+									<ol>
+										<li>The flexible space shrinks until only the navigation bar is left. The title should also shrink into place to become a 20sp title in the navigation bar. When scrolling all the way back, the flexible space and the title grow into place again.</li>
+										<li>The whole app bar scrolls off. When the user reverse-scrolls, the navigation bar returns anchored to the top. When scrolling all the way back, the flexible space and the title grow into place again.</li>
+									</ol>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_scrolling_scroll4.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWcFhaV1hiSlB4aFU/patterns-scrollingtech-scrolling-070801_Flexible_Space_xhdpi_003.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWUGZzYXdKZWpDNWM/patterns-scrollingtech-scrolling-070801_Flexible_Space_xhdpi_003.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<h3>Flexible space with image</h3>
+								<div class="column col6">
+									<p>To use images in the app bar, you can use flexible space to accommodate the desired aspect ratio. In this example, the aspect ratio is 4:3. When scrolling, the content pushes up the image so that the flexible space shrinks. The last 20% of the image’s flexible space is tinted with the primary color for the app.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="patterns_scrolling_scroll5.png" alt="">
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<video class="clickPlay" loop="" width="360" height="640">
+											<source type="video/webm" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWZ1F2b1pUOGFiZHc/patterns-scrollingtech-scrolling-070801_Flexible_Space_with_Image_xhdpi_002.webm"></source>
+											<source type="video/mp4" src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B0NGgBg38lWWWHR2eG5ITnZlMmM/patterns-scrollingtech-scrolling-070801_Flexible_Space_with_Image_xhdpi_002.mp4"></source>
+										</video>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+						</div> <!-- article ends -->
+					</div> <!-- chapterArticles ends -->
+				</div> <!-- chapterContent ends -->
+			</div> <!-- chapter ends -->
+			<div id="copyright">
+				<p>Sun Junwen&nbsp;|&nbsp;Casper Zhang.</p>
+			</div>
+        </div> <!-- contentGrid ends -->
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+        <div id="pagePrevious" class="pageNav">
+			<div class="pageNavContent">
+				<a href="navigational-transitions.html">
+					<img src="../imgs/Arrow-left.png" alt="">
+					<span>上一页:</span>
+					<div>导航变幻</div>
+				</a>
+			</div>
+		</div>
+		<div id="pageNext" class="pageNav">
+			<div class="pageNavContent">
+				<a href="search.html">
+					<img src="../imgs/Arrow-right.png" alt="">
+					<span>下一页:</span>
+					<div>搜索</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
