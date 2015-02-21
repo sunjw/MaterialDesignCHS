@@ -37,7 +37,7 @@ var menuContent = [
 			text : "动画效果",
 			url : ""
 		}, {
-			text : "真实的动画",
+			text : "真实的运动",
 			url : "animation/authentic-motion.html"
 		}, {
 			text : "响应式交互",
