@@ -341,13 +341,16 @@ code {
 	font-size: 16px;
 	line-height: 32px;
 }
-#content .chapter .chapterToc .tocEng {
-	font-size: 12px;
-}
 
 #content .chapter .chapterToc h2 {
     color: #757575;
 }
+#content .chapter .tocEng {
+    padding-left: 4px;
+    color: #757575;
+    font-size: 18px;
+}
+
 #content .chapter .article {
 	padding-top: 50px;
 	border-bottom: 1px solid #cccccc;
