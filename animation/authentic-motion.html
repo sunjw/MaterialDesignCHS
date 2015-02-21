@@ -21,6 +21,10 @@
 	#content .chapter .chapterToc {
 		border-left-color: #e1bee7;
 	}
+	#content .chapter .tocEng {
+		color: white;
+		background-color: #9c27b0;
+	}
     #content .chapter a,#content .chapter a:hover {
 		color: #9c27b0 !important;
 	}
@@ -66,29 +70,29 @@
 				<h1 class="chapterTitle">真实的运动</h1>
 				<div class="chapterContent">
 					<div class="chapterIntro">
-						 <p>Perceiving an object's tangible form helps us understand how to manipulate it. Observing an object's motion tells us whether it is light or heavy, flexible or rigid, small or large. Motion in the world of material design is not only beautiful, it builds meaning about the spatial relationships, functionality, and intention of the system.</p>
+						 <p>我们通过物体的形态，学习如何进行操作；通过物体的运动，了解它的轻重、松紧和大小。Material design 中的运动设计不仅仅是为了漂亮的效果，还能反映出物体之间的联系和互相作用，体现其功能。</p>
 					</div>
 					<div class="chapterToc">
 						<h2>目录</h2>
 						<ul>
 							<li>
-								<a href="#massAndWeight">Mass and Weight</a>
+								<a href="#massAndWeight">重力和质量&nbsp;<span class="tocEng">Mass and weight</span></a>
 							</li>
 						</ul>
 					</div>
 					<div class="chapterArticles">
 						<div id="massAndWeight" class="article lastArticle">
-							<h2>Mass and Weight</h2>
+							<h2>重力和质量</h2>
 							<div class="section">
 								<div class="column col12">
-									<p>Physical objects have mass and move only when forces are applied to them. Consequently, objects can’t start or stop instantaneously. Animation with abrupt starts and stops or rapid changes in direction appears unnatural and can be an unexpected and unpleasant disruption for the user. </p>
+									<p>物体是有质量的，在物理定律的支配下，它受到重力的影响。同时物理定律还告诉我们，没有外力的作用，物体不会自发的运动起来。突然启动或停止的动画不符合常理，也不符合用户的期望。</p>
 								</div>
 								<br class="clear" />
 							</div>
 							<h3>最佳实践</h3>
 							<div class="section">
 								<div class="column col6">
-									<p>A critical aspect of motion for material design is to retain the feeling of physicality without sacrificing elegance, simplicity, beauty, and the magic of a seamless user experience. Here are some guidelines to help translate these concepts into animations.</p>
+									<p>对于 material design 中的动画，很重要的一个目标是在保持真实的物理特性的同时，不牺牲简洁、漂亮和无缝衔接的用户体验。以下内容即是关于如何设计动画，以达到这一目标的参考。</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
 									<div class="media goodBlock">
@@ -99,7 +103,7 @@
 									</div>
 									<div class="exampleDesc">
 										<label class="goodLabel">Do.</label>
-										<p>Motion with swift acceleration and gentle deceleration feels natural and delightful.</p>
+										<p>自然而赏心悦目的动画物体会迅速的加速但缓慢的减速。</p>
 									</div>
 									<div class="media badBlock">
 										<video class="clickPlay" loop="" height="270" width="740">
@@ -109,15 +113,15 @@
 									</div>
 									<div class="exampleDesc">
 										<label class="badLabel">Don't.</label>
-										<p>Linear motion feels mechanical. An abrupt change in velocity at both the beginning and end of the animation curve means the object instantaneously starts and stops, which is unrealistic.</p>
+										<p>线性的运动让人觉得动画十分机械。在开始和结束时，物体的突然启动和静止也让人感觉非常不自然。</p>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
-								<h3>特例: 框架切换</h3>
+								<h3>特例: 进出视野范围</h3>
 								<div class="column col6">
-									<p>When an object enters the frame, ensure it's moving at its peak velocity. This behavior emulates natural movement: a person entering the frame of vision does not begin walking at the edge of the frame but well before it. Similarly, when an object exits the frame, have it maintain its velocity, rather than slowing down as it exits the frame. Easing in when entering and slowing down when exiting draw the user's attention to that motion, which, in most cases, isn't the effect you want.</p>
+									<p>当物体进出视野范围时，它应当匀速的出现和消失。这样更符合常识，因为物体在视野之外就已处于运动状态。同样的，当物体离开视野时，也不会发生速度的变化。速度的变化会影响用户的注意力，请在合适的情况下使用这种效果。</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
 									<div class="media goodBlock">
@@ -128,7 +132,7 @@
 									</div>
 									<div class="exampleDesc">
 										<label class="goodLabel">Do.</label>
-										<p>Enter and exit frame at peak velocity. The ball enters and exits frame at peak velocity, creating a confident transition.</p>
+										<p>直接进入和离开视野范围，给人以连贯的效果。</p>
 									</div>
 									<div class="media badBlock">
 										<video class="clickPlay" loop="" height="270" width="740">
@@ -138,7 +142,7 @@
 									</div>
 									<div class="exampleDesc">
 										<label class="badLabel">Don't.</label>
-										<p>Speed up when entering or slow down when exiting. Don’t distract the user with unnecessary changes in velocity.</p>
+										<p>加速进入和减速离开会影响用户的注意力。</p>
 									</div>
 								</div>
 								<br class="clear" />
@@ -146,7 +150,7 @@
 							<div class="section">
 								<h3>做出调整</h3>
 								<div class="column col12">
-									<p>Not all objects move the same way. Lighter/smaller objects may accelerate or decelerate faster, because they have less mass and require less force to do so. Larger/heavier objects may need more time to reach peak speed and come to rest. Think about how this applies to the various UI elements in your app and consider how their motion should be represented.</p>
+									<p>不是所有的物体都以一样的模式运动。较轻的物体加速减速更快，较重的物体则需要更长的时间启动和停止，所以请仔细斟酌 UI 中元素的动画效果。</p>
 								</div>
 								<br class="clear" />
 							</div>

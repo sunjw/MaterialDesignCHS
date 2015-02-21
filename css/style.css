@@ -341,6 +341,10 @@ code {
 	font-size: 16px;
 	line-height: 32px;
 }
+#content .chapter .chapterToc .tocEng {
+	font-size: 12px;
+}
+
 #content .chapter .chapterToc h2 {
     color: #757575;
 }
