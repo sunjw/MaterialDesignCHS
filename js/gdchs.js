@@ -14,14 +14,14 @@ var responsibleHeader = true;
 // Menu Setup
 var menuContent = [
 	[{
-			text : "质感设计",
+			text : "Material design",
 			url : ""
 		}, {
 			text : "介绍",
 			url : "material-design/introduction.html"
 		}
 	], [{
-			text : "什么是质感设计？",
+			text : "什么是材质感？",
 			url : ""
 		}, {
 			text : "环境",
