@@ -66,34 +66,39 @@
 				<h1 class="chapterTitle">响应式交互</h1>
 				<div class="chapterContent">
 					<div class="chapterIntro">
-						 <p>Responsive interaction builds trust with the user and engages them. When a user interacts with an app and beautiful yet perfectly logical things happen, the user feels satisfied—even delighted. It is thoughtful and purposeful, not random, and can be gently whimsical but never distracting. It encourages deeper exploration of an app: what will happen if I touch this? And then this?</p>
-						 <p>In material design, apps are responsive to and eager for user input:</p>
-						 <ul>
-							<li>Touch, voice, mouse and keyboard are all first-class input methods</li>
-							<li>Although UI elements appear tangible, they are locked behind a layer of glass (the computer or device’s screen). Visual and motion cues help bridge that gap by immediately acknowledging input and implying direct manipulation.</li>
-						 </ul>
-						 <p>Responsive interaction elevates an app from something that delivers information to the user upon request to something that communicates with the user in a tangible way.</p>
+						 <p>对操作的响应能够提高用户的使用信心并吸引他们。用户很期待在他们做出操作后，应用能够提供合理且优雅响应。这种响应须是有意义、可重复的，如清风拂面般舒适而不恼人。这种响应使得用户更加有兴趣深入探索应用：“如果触摸一下这里，会发生什么呢？”</p>
 					</div>
 					<div class="chapterToc">
 						<h2>目录</h2>
 						<ul>
 							<li>
-								<a href="#examples">示例</a>
+								<a href="#userInput">用户输入</a>
 							</li>
 							<li>
-								<a href="#surfaceReaction">Surface Reaction</a>
+								<a href="#surfaceReaction">表面的响应</a>
 							</li>
 							<li>
-								<a href="#materialResponse">Material Response</a>
+								<a href="#materialResponse">Material 响应</a>
 							</li>
 							<li>
-								<a href="#radialAction">Radial Action</a>
+								<a href="#radialAction">放射性的操作</a>
 							</li>
 						</ul>
 					</div>
 					<div class="chapterArticles">
-						<div id="examples" class="article">
-							<h2>示例</h2>
+						<div id="userInput" class="article">
+							<h2>用户输入&nbsp;<span class="tocEng">User input</span></h2>
+							<div class="section">
+								<div class="column col12">
+									<p>在 material design 中，应用应当积极的响应用户输入：</p>
+									<ul>
+										<li>包括触摸、声音、鼠标和键盘等输入方式。</li>
+										<li>虽然 UI 元素看起来是能够操作的，但是它们仍然处于一块屏幕中。因此需要通过视觉和触觉的反馈来消解这种隔阂感。</li>
+									</ul>
+									<p>及时的响应能够提升应用的层次，使它不仅仅能够传递信息，更能够和用户进行优雅的交互。</p>
+								</div>
+								<br class="clear" />
+							</div>
 							<div class="section">
 								<div class="column col6">
 									<div class="media">
@@ -103,7 +108,7 @@
 										</video>
 									</div>
 									<div>
-										<p>Surface reaction</p>
+										<p>表面的响应</p>
 									</div>
 								</div>
 								<div class="column col6">
@@ -114,7 +119,7 @@
 										</video>
 									</div>
 									<div>
-										<p>Material response</p>
+										<p>Material 响应</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
@@ -125,25 +130,25 @@
 										</video>
 									</div>
 									<div>
-										<p>Radial action</p>
+										<p>放射性的操作</p>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
 						</div> <!-- article ends -->
 						<div id="surfaceReaction" class="article">
-							<h2>Surface Reaction</h2>
+							<h2>表面的响应&nbsp;<span class="tocEng">Surface Reaction</span></h2>
 							<div class="section">
 								<div class="column col12">
-									<p>Upon receiving an input event, the system provides an instantaneous visual confirmation at the point of contact: under the pad of a finger for touch, at the mic for voice, or in the appropriate field for a keyboard press. One way to express this acknowledgment is through the ink metaphor, the dynamic display surface that coats every sheet of paper.</p>
-									<p>The core visual mechanism to express this contact is the Touch Ripple. This device articulates the attack and duration of a touch event, as well as dynamic aspects such as the amplitude of voice or the interpreted pressure of a touch. </p>
+									<p>当收到用户的输入，系统将立即做出视觉上的确认，提示用户已经做出了正确的操作，例如: 触摸了按钮、调整了音量或者按下了按键。这种设计就像墨水滴在纸面上的感觉，提供了持续的反馈。</p>
+									<p>触摸的涟漪 (Touch Ripple) 效果是这种视觉反馈的核心，它反映了触摸的位置、力度和相应的声音效果。</p>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
 								<h3>最佳实践</h3>
 								<div class="column col6">
-									<p>Input occurs at specific points: at the contact point of a finger or at the mic icon for voice. From this point, make the visual reaction radial. </p>
+									<p>当一个输入事件发生在某个坐标时，应当从该坐标向外辐射出视觉效果。</p>
 								</div>
 								<div class="column col6">
 									<div class="media">
@@ -153,7 +158,7 @@
 										</video>
 									</div>
 									<div class="exampleDesc">
-										<p>Touch ripple - press / release </p>
+										<p>触摸涟漪 - 点击</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
@@ -164,25 +169,25 @@
 										</video>
 									</div>
 									<div class="exampleDesc">
-										<p>Touch ripple - drag in/out </p>
+										<p>触摸涟漪 - 拖入/拖出</p>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
 						</div> <!-- article ends -->
 						<div id="materialResponse" class="article">
-							<h2>Material Response </h2>
+							<h2>Material 响应&nbsp;<span class="tocEng">Material Response</span></h2>
 							<div class="section">
 								<div class="column col12">
-									<p>In addition to ink-like actions on the surface, the material itself can also respond to interaction. The material can lift up when touched or clicked, indicating an active state. The user can generate new or transform existing material upon touch or click, or directly manipulate sheets of material, dragging or flinging them. </p>
+									<p>除了墨水似的表面响应，物体本身也应当能够响应操作。物体可以在触摸或点击时弹起，表明其激活状态。用户可以生成新的物体，或者调整物体，甚至拖动、翻转它们。</p>
 								</div>
 								<br class="clear" />
 							</div>
 							<h3>最佳实践</h3>
 							<div class="section">
 								<div class="column col6">
-									<p><strong>Point of origin</strong></p>
-									<p>When new material is generated as a result of direct user interaction, the motion of surface growth should originate from the point of input.</p>
+									<p><strong>发生点</strong></p>
+									<p>当新的物体作为响应出现在用户面前时，表面的变化应当从触摸点开始发生。</p>
 								</div>
 								<div class="column col6">
 									<div class="media goodBlock">
@@ -193,7 +198,7 @@
 									</div>
 									<div class="exampleDesc">
 										<label class="goodLabel">Do.</label>
-										<p>Material appears from touch point, visually tying the element to the point of touch. </p>
+										<p>物体从触摸点逐渐出现，向用户反映其触摸操作的位置。</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
@@ -205,15 +210,15 @@
 									</div>
 									<div class="exampleDesc">
 										<label class="badLabel">Don't.</label>
-										<p>Paper appears from center of screen, breaking relationship with input. </p>
+										<p>物体从屏幕中心出现，和用户的触摸操作似乎没有什么联系。</p>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
 								<div class="column col6">
-									<p><strong>Lift on touch</strong></p>
-									<p>When a card or separable element is activated, the card should lift to indicate an active state.</p>
+									<p><strong>触摸时弹起</strong></p>
+									<p>当卡片或者互相分割的元素被激活时，它应当弹起以表明其响应操作。</p>
 								</div>
 								<div class="column col6 nomarginRight">
 									<div class="media">
@@ -223,19 +228,21 @@
 										</video>
 									</div>
 									<div class="exampleDesc">
-										<p>Lift upon touch </p>
+										<p>触摸时弹起</p>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
 						</div> <!-- article ends -->
 						<div id="radialAction" class="article lastArticle">
-							<h2>Radial Action</h2>
+							<h2>放射性的操作&nbsp;<span class="tocEng">Radial Action</span></h2>
 							<div class="section">
 								<div class="column col12">
-									<p>All user initiated actions have an epicenter; the place or places where their intent enters the system. Add clarity to user initiated events by creating strong visual connections from user input, whether from fingers on a touch screen or voice through a microphone. State changes across the screen should trigger progressively as their distance to the point of contact increases, creating a ripple of action.</p>
-									<p>Inputs have an epicenter. Touch occurs at the point of contact, voice enters through the mic icon, keyboard through the individual keys.</p>
-									<p>Actions should visually connect to their respective input epicenter. Closer actions occur sooner than more distant ones, creating a ripple of actions (movement occurs from the distance from the epicenter).</p>
+									<p>所有的输入都有一个中心，也就是操作发生的坐标。为了清晰的反应这些操作，例如用户的触摸或者语音输入，屏幕上应当显示从中心发出的放射性效果，并且这种效果可以随着用户触摸的力度或者说话声音的变化而变化。</p>
+									<ul>
+										<li>触摸的中心是触摸发生的坐标，语音输入的中心是麦克风图标，键盘输入的中心是对应的按键。</li>
+										<li>视觉反馈应当与用户的输入有联系，这些反馈均是从输入的中心发出，向外扩散，逐渐影响到周围的元素。</li>
+									</ul>
 								</div>
 								<br class="clear" />
 							</div>
