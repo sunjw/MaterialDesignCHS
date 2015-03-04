@@ -88,7 +88,7 @@
 						<img alt="" src="style-color-colorstory-01_large_mdpi.png" />
 					</div>
 					<div class="chapterIntro">
-						<p>Color is inspired by bold color statements juxtaposed with muted environments, taking cues from contemporary architecture, road signs, pavement marking tape, and sports courts. Emphasize bold shadows and highlights. Introduce unexpected and vibrant colors.</p>
+						<p>Material design 在无声的环境中突出使用大胆的色彩。这种设计受到了当代建筑、道路标志、公路设计和体育场馆的启发，突出阴影和重点，使用意想不到且充满活力的颜色。</p>
 						<div class="download">
 							<a href="http://quantum-paper.storage.googleapis.com/downloads/color_swatches.zip" target="_blank">
 								<img alt="" src="../imgs/download.png">
@@ -103,10 +103,10 @@
 						<h2>目录</h2>
 						<ul>
 							<li>
-								<a href="#uiColorPalette">UI Color Palette</a>
+								<a href="#colorPalette">调色板</a>
 							</li>
 							<li>
-								<a href="#uiColorApplication">UI Color Application</a>
+								<a href="#uiColorApplication">UI 色彩的使用</a>
 							</li>
 							<li>
 								<a href="#themes">Themes</a>
@@ -114,11 +114,11 @@
 						</ul>
 					</div>
 					<div class="chapterArticles">
-						<div id="uiColorPalette" class="article">
-							<h2>UI Color Palette</h2>
+						<div id="colorPalette" class="article">
+							<h2>UI 调色板&nbsp;<span class="tocEng">Color Palette</span></h2>
 							<div class="section">
 								<div class="column col12">
-									<p>The color palette starts with primary colors and fills in the spectrum to create a complete and usable palette for Android, Web, and iOS. The primary colors are the 500 range.</p>
+									<p>Material 调色板提供了一些主色调，并辅以合理的色谱，用以创建在 Android、Web 和 iOS 上的应用。以下调色板中的主色调标的强度为 500。</p>
 								</div>
 								<br class="clear" />
 							</div>
@@ -1142,11 +1142,11 @@
 							</div>
 						</div> <!-- article ends -->
 						<div id="uiColorApplication" class="article">
-							<h2>UI Color Application </h2>
+							<h2>UI 色彩的使用&nbsp;<span class="tocEng">UI Color Application</span></h2>
 							<div class="section">
-								<h3>选择颜料板</h3>
+								<h3>选择调色板</h3>
 								<div class="column col6">
-									<p>Limit your choice of colors by choosing three color hues in the primary and one accent color in the secondary palette. The accent color may or may not need fall back options.</p>
+									<p>首先在调色板选中一个色调，在该色调中选择三种颜色作为应用的主色调，之后再以同样的方法选择另一个色调三种颜色作为强调色调。强调色调可以有另一个备用方案。</p>
 								</div>
 								<div class="column col6">
 									<div class="media">
@@ -1161,22 +1161,28 @@
 								<br class="clear" />
 							</div>
 							<div class="section">
-								<h3>Use alpha values for grey text, icons, and dividers</h3>
+								<h3>使用不同的透明度来区分单色的文字、图标和分隔符</h3>
 								<div class="column col6">
-									<p>To effectively convey the hierarchy of information, use different shades for text. The standard alpha value for text on a white background is 87% (#000000). Secondary text, which is lower in the visual hierarchy, should have an alpha value of 54% (#000000). Text hints for users, like those in text fields and labels, have an even lower visual prominence and should have an alpha value of 26% (#000000).</p>
-									<p>Other elements, such as icons and dividers, also benefit from having an alpha value of black instead of a solid color, to make sure that they work on backgrounds of any color.</p>
-									<p>For white or black text on colored backgrounds, see these <a href="#uiColorPalette">tables of color palettes</a> for the appropriate contrast ratios and alpha values.</p>
+									<p>为了区分不同层次的信息，可以使用不同深度的灰色来显示不同的文字。标准的白底文字色彩是 87% (#000000) 的深度。二级文字需要稍微淡一些的颜色，使用 54% (#000000) 的深度。一些提示性的文字，例如文本框的示例和标签，它们不应影响用户的注意力，使用 26% (#000000) 的深度。</p>
+									<p>其它元素，例如图标和分隔符，也应当使用类似的灰色层级，而不要使用其它颜色，这样他们就能在任何背景上都显示一致。</p>
 								</div>
 								<div class="column col6">
 									<div class="media">
-										<img src="style-color-colorapplication-color_application-02_large_mdpi.png" alt="">
+										<img src="style_color_uiapplication_alpha1.png" alt="">
+									</div>
+								</div>
+                                <div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="style_color_uiapplication_alpha2.png" alt="">
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
+                                <h3>工具栏和状态栏</h3>
 								<div class="column col6">
-									<p>Bold use of color in large fields in the UI is strongly encouraged. Different elements in the UI will take on different parts of the color theme. Toolbars and larger color blocks will take on the primary 500. This is the main color of your app. The status bar should be the darker 700 tint of your primary color.</p>
+									<p>工具栏和大块的色彩应当选择强度为 500 的颜色，也就是应用的主色彩。状态栏则应当使用深一些的 700 强度色彩。</p>
+									<p>Material design 推荐在 UI 上使用大块的色彩。不同的 UI 元素可以使用您选择好的不同色彩搭配。</p>
 								</div>
 								<div class="column col6">
 									<div class="media">
@@ -1191,26 +1197,73 @@
 								<br class="clear" />
 							</div>
 							<div class="section">
-								<h3>Accent color</h3>
+								<h3>强调色调</h3>
 								<div class="column col6">
-									<p>The vibrant accent color are used for your primary action buttons as well as components such as switchers or sliders. Left aligned section icons or section titles can also take on the accent color.</p>
+									<p>强调色调用于应用的主要操作按钮之上，也可以用于界面中的开关和滑块。</p>
 								</div>
 								<div class="column col6">
 									<div class="media">
-										<img src="style-color-colorapplication-color_application-05_large_mdpi.png" alt="">
+										<img src="style_color_uiapplication_accent1.png" alt="">
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
 									<div class="media">
-										<img src="style-color-colorapplication-color_application-08_large_mdpi.png" alt="">
+										<img src="style_color_uiapplication_accent2.png" alt="">
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style_color_uiapplication_accent3.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>主要文字中，只在 web 链接上使用强调色彩。</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style_color_uiapplication_accent4.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>不要在整个主要文字上都使用强调色彩。</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style_color_uiapplication_accent5.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style_color_uiapplication_accent6.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>不要在工具栏和大块色彩上使用强调色调，也不要在背景和浮动按钮上使用强调色调。</p>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
-								<h3>Fallback accent colors</h3>
+								<h3>备用强调色调</h3>
 								<div class="column col6">
-									<p>If your accent color is too light or dark for the background color the general fallback rule is to choose a darker or lighter tint of the accent color. If your accent color doesn’t work at all, fall back to use the primary 500 color on white backgrounds. If the background color is the primary 500 color, fall back to white 100% or black 54%.</p>
+									<p>如果之前选择的强调色调在某些背景色上难以看清，可以选择深一些或者淡一些的同色调色彩作为备用的强调色调。如果强调色调不好看，那么就使用白色背景加上强度为 500 的主色彩，或者强度 500 的主色彩背景加上 100% 白色或者 54% 黑色。</p>
 								</div>
 								<div class="column col6">
 									<div class="media">
@@ -1225,11 +1278,8 @@
 							<div class="section">
 								<h3>主题</h3>
 								<div class="column col6">
-									<p>Themes are a way to apply a consistent tone to an app. The style specifies the darkness of the surfaces, level of shadow, and appropriate opacity of ink elements. To promote greater consistency between apps, two themes are available:</p>
-									<ul>
-										<li>Light</li>
-										<li>Dark</li>
-									</ul>
+									<p>主题可以保证应用色调的一致性，为应用提供了统一的明暗度、阴影和透明度。</p>
+									<p>为了保证不同应用之间的一致性，我们提供了两种主题供您选择: 浅色和深色。</p>
 									<div class="download">
 										<a href="http://material-design.storage.googleapis.com/downloads/stickersheet_uielements.ai" target="_blank">
 											<img alt="" src="../imgs/download.png">
@@ -1242,12 +1292,12 @@
 								</div>
 								<div class="column col6">
 									<div class="media">
-										<img src="Style-Color-Themes-theme-01_large_mdpi.png" alt="">
+										<img src="style_color_themes_light.png" alt="">
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
 									<div class="media">
-										<img src="Style-Color-Themes-theme-02_large_mdpi.png" alt="">
+										<img src="style_color_themes_dark.png" alt="">
 									</div>
 								</div>
 								<br class="clear" />
