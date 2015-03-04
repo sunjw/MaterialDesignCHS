@@ -46,7 +46,7 @@ var menuContent = [
 			text : "有意义的变幻",
 			url : "animation/meaningful-transitions.html"
 		}, {
-			text : "丰富的细节",
+			text : "优雅的细节",
 			url : "animation/delightful-details.html"
 		}
 	], [{
