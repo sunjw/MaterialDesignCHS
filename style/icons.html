@@ -68,23 +68,40 @@
 					<div class="chapterToc">
 						<h2>目录</h2>
 						<ul>
+                            <li>
+								<a href="#productIcons">Product icons</a>
+							</li>
 							<li>
-								<a href="#systemIcons">System Icons</a>
+								<a href="#systemIcons">System icons</a>
 							</li>
 						</ul>
 					</div>
 					<div class="chapterArticles">
-						<div id="systemIcons" class="article lastArticle">
-							<h2>System Icons</h2>
+                        <div id="productIcons" class="article">
+							<h2>Product icons</h2>
 							<div class="section">
-								<h3>Definition</h3>
 								<div class="column col6">
 									<p>A system icon, or UI icon, symbolizes a command, file, device, or directory. System icons are also used to represent common actions like trash, print, and save.</p>
 									<p>The design of system icons is simple, modern, friendly, and sometimes quirky. Each icon is reduced to its minimal form, with every idea edited to its essence. The designs ensure readability and clarity even at small sizes.</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
 									<div class="media">
-										<img src="Style-SystemIcon-icon_set_large_mdpi.png" alt="">
+										<img src="style_icons_system_intro.png" alt="">
+                                            </div>
+								</div>
+								<br class="clear" />
+							</div>
+                        </div> <!-- article ends -->
+						<div id="systemIcons" class="article lastArticle">
+							<h2>System icons</h2>
+							<div class="section">
+								<div class="column col6">
+									<p>A system icon, or UI icon, symbolizes a command, file, device, or directory. System icons are also used to represent common actions like trash, print, and save.</p>
+									<p>The design of system icons is simple, modern, friendly, and sometimes quirky. Each icon is reduced to its minimal form, with every idea edited to its essence. The designs ensure readability and clarity even at small sizes.</p>
+								</div>
+								<div class="column col12-1 nomarginRight">
+									<div class="media">
+										<img src="style_icons_system_intro.png" alt="">
 									</div>
 								</div>
 								<br class="clear" />
@@ -97,12 +114,18 @@
 								</div>
 								<div class="column col6">
 									<div class="media">
-										<img src="Style-SystemIcons-design_principlesa_large_mdpi.png" alt="">
+										<img src="style_icons_system_intro_principles_simple.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Simple</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
 									<div class="media">
-										<img src="Style-SystemIcons-design_principlesb_large_mdpi.png" alt="">
+										<img src="style_icons_system_intro_principles_intuitive.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Intuitive</p>
 									</div>
 								</div>
 								<br class="clear" />
@@ -113,12 +136,18 @@
 								</div>
 								<div class="column col6">
 									<div class="media">
-										<img src="Style-SystemIcons-design_principlesc_large_mdpi.png" alt="">
+										<img src="style_icons_system_intro_principles_actionable.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Actionable</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
 									<div class="media">
-										<img src="Style-SystemIcons-design_principlesd_large_mdpi.png" alt="">
+										<img src="style_icons_system_intro_principles_consistent.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Consistent</p>
 									</div>
 								</div>
 								<br class="clear" />
@@ -126,18 +155,95 @@
 							<div class="section">
 								<h3>Grid, Proportion, and Size</h3>
 								<div class="column col6">
-									<p>The icon grid is a flexible grid based on key components and proportions shared by the icons. The form of the icon is constructed by flat geometric shapes that align to the grid.</p>
-									<p>Four basic geometric shapes are used in the grid, with specific sizes to ensure a consistent visual weight and proportion across all shapes.</p>
-									<p>Two sets of shapes with varying sizes are available for you to use for icons in your app: The Status Bar and Contextual Icon set and the Action Bar and Desktop icon set.</p>
+									<p><strong>DP unit grid</strong></p>
+									<p>System icons are displayed at 24dp. When creating icons, it’s important to design at 100% scale for pixel-accuracy, while zooming in for precision.</p>
 								</div>
 								<div class="column col6">
 									<div class="media">
-										<img src="Style-SystemIcons-grid_proportion_sizesa_large_mdpi.png" alt="">
+										<img src="style_icons_system_grid_unitgrid_100.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>100% scale</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
 									<div class="media">
-										<img src="Style-SystemIcons-grid_proportion_sizesb_large_mdpi.png" alt="">
+										<img src="style_icons_system_grid_icongrid_800.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>800% scale</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Icon grid</strong></p>
+									<p>The icon grid has been developed to facilitate consistency and establish a clear set of rules for the positioning of graphic elements. This standardization results in a flexible but coherent system.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="style_icons_system_grid_icongrid_grid.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Grid</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="style_icons_system_grid_icongrid_keylines.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Keylines</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Content area</strong></p>
+									<p>The content of an icon should remain inside of the live area. Content should only extend into the trim area if additional visual weight is needed. Do not place any part of the icon outside of the trim area.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="style_icons_system_grid_area_live.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Live area</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="style_icons_system_grid_area_trim.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Trim area</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>Keyline shapes</strong></p>
+									<p>Keyline shapes are the foundation of the grid. By using these core shapes as guidelines, you can maintain a consistent visual proportion throughout the system icons.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="style_icons_system_grid_shapes_square.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Square</p>
+                                        <p>Height: 18px<br/>
+                                        Width: 18px</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="style_icons_system_grid_shapes_circle.png" alt="">
+									</div>
+                                    <div class="exampleDesc">
+										<p>Circle</p>
+                                        <p>Diameter: 20px</p>
 									</div>
 								</div>
 								<br class="clear" />
@@ -148,118 +254,347 @@
 								</div>
 								<div class="column col6">
 									<div class="media">
-										<img src="Style-SystemIcons-grid_proportion_sizesc_large_mdpi.png" alt="">
+										<img src="style_icons_system_grid_shapes_vert_rectangle.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Vertical rectangle</p>
+                                        <p>Height: 20px<br/>
+                                        Width: 16px</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
 									<div class="media">
-										<img src="Style-SystemIcons-grid_proportion_sizesd_large_mdpi.png" alt="">
+										<img src="style_icons_system_grid_shapes_hori_rectangle.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Horizontal rectangle</p>
+                                        <p>Height: 16px<br/>
+                                        Width: 20px</p>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
+								<div class="column col6">
+									<p><strong>Geometry</strong></p>
+									<p>Preset standards have been determined for specific keylines: circle, square, rectangle, orthogonals, and diagonals. This small palette of universal and simple elements has been developed to unify Google system icons and systemize their placement on the icon grid.</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="style_icons_system_grid_geometry1.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Construction</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="style_icons_system_grid_geometry2.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Composition</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+							<div class="section">
+								<div class="column col6">
+									<p><strong>System icon anatomy</strong></p>
+									<p>1. Stroke terminal<br/>
+                                    2. Corner<br/>
+                                    3. Counter area<br/>
+                                    4. Stroke<br/>
+                                    5. Counter stroke<br/>
+                                    6. Bounding area</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="style_icons_system_anatomy.png" alt="">
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									&nbsp;
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Corners</strong></p>
+									<p>Consistent corner radiuses are key to unifying the overall system icon family. A 2px corner radius is used on the silhouette form of the icon. Do not round the corners of strokes (shapes 2px wide or less). </p>
+                                    <p>Interior corners should be square. Do not round the corners of interior shapes. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="style_icons_system_anatomy_corner_exterior.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Exterior corners</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="style_icons_system_anatomy_corner_interior.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Interior corners</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									<p><strong>Strokes</strong></p>
+									<p>Consistent stroke weights are key to unifying the overall system icon family. Maintain a 2px width for all stroke instances, including curves, angles, and both interior and exterior strokes. </p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="style_icons_system_anatomy_strokes_consistency.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Consistency</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="style_icons_system_anatomy_strokes_curves.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Curves and angles</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
 								<div class="column col6">
 									&nbsp;
 								</div>
 								<div class="column col6">
 									<div class="media">
-										<img src="Style-SystemIcons-grid_proportion_sizese_large_mdpi.png" alt="">
+										<img src="style_icons_system_anatomy_strokes_terminal.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Stroke terminal</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
 									<div class="media">
-										<img src="Style-SystemIcons-grid_proportion_sizesf_large_mdpi.png" alt="">
+										<img src="style_icons_system_anatomy_strokes_counter.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Counter stroke</p>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
-							<div class="section">
-								<h3>Round Corners</h3>
+                            <div class="section">
 								<div class="column col6">
-									<p>Apply round corners to square and rectangular whole shapes. A play on round corner and sharp corners can be applied to square and rectangular shapes that have a protrusion or indentation. All stroked icons have sharp corners.</p>
+									<p><strong>Optical corrections</strong></p>
+									<p>Extreme scenarios that call for subtle tweaks add to the legibility of an icon. Instances where complex details are unavoidable require adjusting metrics.</p>
+                                    <p>If optical corrections are necessary, only use the consistent geometric forms all other icons are based upon. Don’t skew or distort the forms.</p>
 								</div>
 								<div class="column col6">
 									<div class="media">
-										<img src="Style-SystemIcons-round_cornersa_large_mdpi.png" alt="">
+										<img src="style_icons_system_anatomy_optical_complex.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Complex</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
 									<div class="media">
-										<img src="Style-SystemIcons-round_cornersb_large_mdpi.png" alt="">
+										<img src="style_icons_system_anatomy_optical_small.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Small scale</p>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
-							<div class="section">
+                            <div class="section">
 								<div class="column col6">
-									&nbsp;
+									<p><strong>Clearance</strong></p>
+									<p>Adequate space around the icon is needed to allow for legibility and touch.</p>
 								</div>
 								<div class="column col6">
 									<div class="media">
-										<img src="Style-SystemIcons-round_cornersc_large_mdpi.png" alt="">
+										<img src="style_icons_system_anatomy_clearance_area.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Clearance area</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
 									<div class="media">
-										<img src="Style-SystemIcons-round_cornersd_large_mdpi.png" alt="">
+										<img src="style_icons_system_anatomy_clearance_placement.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<p>Placement</p>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
-							<div class="section">
+                            <div class="section">
+                                <h3>最佳做法</h3>
 								<div class="column col6">
-									<p>Each system icon size set requires a different round corner for optical consistency.</p>
-								</div>
-								<div class="column col6">
-									<div class="media">
-										<img src="style-systemicons-stroke-weighta_large_mdpi.png" alt="">
-									</div>
-								</div>
-								<div class="column col6 nomarginRight">
-									<div class="media">
-										<img src="style-systemicons-stroke-weightb_large_mdpi.png" alt="">
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<h3>Consistency</h3>
-								<div class="column col6">
-									<p>Consistency is important. Use the existing system icons whenever possible and across different apps.</p>
+									<p>Consistency aids user comprehension of icons. Use the existing system icons whenever possible and across different applications.</p>
 								</div>
 								<div class="column col6">
 									<div class="media goodBlock">
-										<img src="style-systemicons-do_large_mdpi.png" alt="">
-									</div>
-									<div class="exampleDesc">
+										<img src="style_icons_system_best_do1.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
 										<label class="goodLabel">Do.</label>
+										<p>Do use consistent stroke weights and squared stroke terminals.</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
 									<div class="media badBlock">
-										<img src="style-systemicons-dont_large_mdpi.png" alt="">
-									</div>
-									<div class="exampleDesc">
+										<img src="style_icons_system_best_dont1.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
 										<label class="badLabel">Don't.</label>
+										<p>Don’t use inconsistent stroke weights or rounded stroke terminals.</p>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
-							<div class="section">
-								<h3>Icons in Context and Application</h3>
+                            <div class="section">
 								<div class="column col6">
-									<p>Icons are nestled in the 24 dps bounding box determined by the grid.</p>
+									&nbsp;
 								</div>
 								<div class="column col6">
-									<div class="media">
-										<img src="Style-SystemIcons-icons_incontexta_large_mdpi.png" alt="">
+									<div class="media goodBlock">
+										<img src="style_icons_system_best_do2.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Do make icons appear front-facing and sturdy.</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
-									<div class="media">
-										<img src="Style-SystemIcons-icons_incontextb_large_mdpi.png" alt="">
+									<div class="media badBlock">
+										<img src="style_icons_system_best_dont2.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Don’t tilt, rotate, or make icons appear dimensional.</p>
 									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style_icons_system_best_do3.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Do simplify icons for greater clarity and legibility.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style_icons_system_best_dont3.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Don’t be overly literal and avoid complex icons.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style_icons_system_best_do4.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Do make icons graphic and bold.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style_icons_system_best_dont4.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Don’t use delicate, thin stroke weights.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style_icons_system_best_do5.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Do use geometric, consistent shapes.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style_icons_system_best_dont5.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Don’t use gestural or loose organic shapes.</p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+								<div class="column col6">
+									&nbsp;
+								</div>
+								<div class="column col6">
+									<div class="media goodBlock">
+										<img src="style_icons_system_best_do6.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<label class="goodLabel">Do.</label>
+										<p>Do position icons “on pixel”—meaning the X and Y coordinates are integers and do not contain decimals. </p>
+                                        <p>Icons should have equal width and height (e.g. 24x24) to avoid distorting the icon.</p>
+									</div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media badBlock">
+										<img src="style_icons_system_best_dont6.png" alt="">
+                                    </div>
+                                    <div class="exampleDesc">
+										<label class="badLabel">Don't.</label>
+										<p>Don’t place the icon on coordinate that is not “on pixel”.</p>
+                                        <p>Don’t distort the icon by having unequal width and height values. </p>
+									</div>
+								</div>
+								<br class="clear" />
+							</div>
+                            <div class="section">
+                                <h3>色彩</h3>
+								<div class="column col6">
+									<p>The standard opacity for an active icon on a light background is 54% (#000000). An inactive icon, which is lower in the visual hierarchy, should have an opacity of 26% (#000000).</p>
+                                    <p>The standard opacity for an active icon on a dark background is 100% (#FFFFFF). An inactive icon, which is lower in the visual hierarchy, should have an opacity of 30% (#FFFFFF).</p>
+								</div>
+								<div class="column col6">
+									<div class="media">
+										<img src="style_icons_system_color1.png" alt="">
+                                    </div>
+								</div>
+								<div class="column col6 nomarginRight">
+									<div class="media">
+										<img src="style_icons_system_color2.png" alt="">
+                                    </div>
 								</div>
 								<br class="clear" />
 							</div>
