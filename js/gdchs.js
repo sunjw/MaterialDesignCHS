@@ -56,14 +56,14 @@ var menuContent = [
 			text : "色彩",
 			url : "style/color.html"
 		}, {
-			text : "字体",
-			url : "style/typography.html"
-		}, {
 			text : "图标",
 			url : "style/icons.html"
 		}, {
 			text : "图像化",
 			url : "style/imagery.html"
+		}, {
+			text : "字体",
+			url : "style/typography.html"
 		}
 	], [{
 			text : "布局",
