@@ -66,38 +66,32 @@
 				<h1 class="chapterTitle">基本原则</h1>
 				<div class="chapterContent">
 					<div class="chapterIntro">
-						 <p>Material design utilizes fundamental tools that have come from the world of print design, like baseline grids and a common set of structural grids that works across various pages. The layout is designed to scale across different screen sizes and will help facilitate UI development and ultimately help you make scalable apps.</p>
-						 <p>The layout guidelines also encourage apps to have a consistent look and feel by using the same visual elements, structural grids, and general spacing rules across platforms and screen sizes. Structural and visual consistency creates an environment for the user that is recognizable across products, which facilitates usage by providing users with a high level of familiarity and comfort.</p>
-						 <p>Before delving into layout details, consider again what material design is: a design based on the qualities of paper. Understanding the rules of how paper behaves and is crafted is important.</p>
+						 <p>Material design 利用了许多印刷出版行业的成熟技术，例如基线、栅格和页面布局。布局指导将帮助您设计适合各种平台和屏幕尺寸的应用，并且为您的 UI 开发提供基础和扩展性。</p>
+						 <p>通过参考布局指导，也能使不同的应用通过使用类似的视觉元素、栅格和留白，保持应用的一致性，这样也能使用户获得一致的舒适体验。</p>
+						 <p>因此在考虑布局的实现之前，请先阅读以下的设计指导，使得您的应用符合 material design 的风格。</p>
 					</div>
 					<div class="chapterToc">
 						<h2>目录</h2>
 						<ul>
 							<li>
-								<a href="#paperCraft">Paper Craft</a>
-							</li>
-							<li>
-								<a href="#responsivePrinciples">Responsive Principles</a>
-							</li>
-							<li>
-								<a href="#dimensionality">Dimensionality</a>
+								<a href="#paperCraft">设计模型</a>
 							</li>
 						</ul>
 					</div>
 					<div class="chapterArticles">
-						<div id="paperCraft" class="article">
-							<h2>Paper Craft</h2>
+						<div id="paperCraft" class="article lastArticle">
+							<h2>设计模型&nbsp;<span class="tocEng">Paper craft</span></h2>
 							<div class="section">
 								<div class="column col12">
-									<p><strong>In material design, every pixel drawn by an application resides on a sheet of paper.</strong> Paper has a flat background color and can be sized to serve a variety of purposes. A typical layout is composed of multiple sheets of paper.</p>
-									<p>The system may draw pixels for elements such as status or system bars, which don’t reside on paper. It’s helpful to think of such system elements as being printed on the back side of the display’s glass, on a surface that is separate from the app content beneath.</p>
+									<p>Material design 的基本思想中，应用的整体界面就是由一系列的带有样式的纸张组合而成的。纸张都由单一的背景颜色，并且可以被折叠或者剪裁，以符合需求。常见的布局思想就是类似于将几张纸按照一定的形式进行组合。</p>
+									<p>系统会绘制状态栏和系统栏，这些元素并不是被印刷在应用的纸面上的。您可以认为这些系统元素是出现在屏幕玻璃的反面，浮于应用程序的界面之上。</p>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
-								<h3>Arranging Paper</h3>
+								<h3>排列</h3>
 								<div class="column col6">
-									<p><strong>Seams</strong> are created when two sheets of paper share the full length of a common side. Two sheets of paper joined by a seam will generally move together.</p>
+									<p><strong>严丝合缝</strong> 的排列方式将两张纸的边界紧贴在一起，使得两张纸一起移动。</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
 									<div class="media">
@@ -108,7 +102,7 @@
 							</div>
 							<div class="section">
 								<div class="column col6">
-									<p><strong>Steps</strong> are created when two sheets of paper with different z-order positions overlap and thus typically move independently of each other.</p>
+									<p><strong>覆盖</strong> 的排列方式使得一张纸覆盖在另外一张纸之上，它们在 z 轴上位于不同的坐标，两张纸可以互相独立的移动。</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
 									<div class="media">
@@ -118,9 +112,9 @@
 								<br class="clear" />
 							</div>
 							<div class="section">
-								<h3>Paper Toolbars</h3>
+								<h3>纸张化的工具栏</h3>
 								<div class="column col6">
-									<p>A <strong>toolbar</strong> is a strip of paper focused on presenting actions. These actions usually cluster at the left and right edges of the toolbar. Actions related to navigation (a drawer menu, an up arrow) appear at the left, while actions that apply to the current context are at the right.</p>
+                                    <p>类似纸条的工具栏用于显示操作按钮，操作按钮应当分布于其两边。例如导航抽屉按钮和向上箭头等导航功能应当处于工具栏左边，与上下文相关的按钮则应当处于工具栏右边。</p>
 								</div>
 								<div class="column col6">
 									<div class="media">
@@ -131,7 +125,7 @@
 							</div>
 							<div class="section">
 								<div class="column col6">
-									<p>The left and right actions in a toolbar are never split by another sheet of paper. However, a toolbar can constrain its width to less than the full length of its paper.</p>
+									<p>不要用其它纸张分割工具栏的左右侧按钮，不过工具栏可以不是整个纸面宽度，您可以在旁边放置其它元素。</p>
 								</div>
 								<div class="column col6">
 									<div class="media goodBlock">
@@ -139,7 +133,7 @@
 									</div>
 									<div class="exampleDesc">
 										<label class="goodLabel">Do.</label>
-										<p>Constrain width to less than the full length of its paper. </p>
+										<p>工具栏不占据整个纸张宽度。</p>
 									</div>
 								</div>
 								<div class="column col6 nomarginRight">
@@ -148,14 +142,14 @@
 									</div>
 									<div class="exampleDesc">
 										<label class="badLabel">Don't.</label>
-										<p>Never allow a sheet of paper to be split by another sheet of paper. </p>
+										<p>不要用其它纸张分割工具栏</p>
 									</div>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
 								<div class="column col6">
-									<p>Toolbars frequently form a step above another sheet of paper that displays the content the toolbar’s actions relate to. As that paper scrolls beneath the toolbar, the toolbar clips that paper at the point of entry, preventing it from passing through to the opposite side.</p>
+									<p>工具栏一般都在呈现主要内容的纸张之上，因此下面的内容可以独立的滚动，工具栏则始终处于界面顶部。</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
 									<div class="media">
@@ -166,7 +160,7 @@
 							</div>
 							<div class="section">
 								<div class="column col6">
-									<p>A toolbar can also be initially presented as seamed with a second paper, but then lift to form a step. This variant of clipping is called <strong>waterfall</strong>.</p>
+									<p>有时工具栏也可以在一开始和主要内容处于同一平面，随着主要内容向下滚动，工具栏浮起到主要内容之上，这种方式称之为<strong>瀑布</strong>式的设计。</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
 									<div class="media">
@@ -177,7 +171,7 @@
 							</div>
 							<div class="section">
 								<div class="column col6">
-									<p>Alternately, the toolbar can maintain its seam, <strong>pushing</strong> off the screen as the two papers move together.</p>
+                                    <p>当然，根据需要您也可以将工具栏始终放置在主要内容的同一平面，随着主要内容的滚动而移出屏幕。</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
 									<div class="media">
@@ -188,7 +182,7 @@
 							</div>
 							<div class="section">
 								<div class="column col6">
-									<p>Finally, the second paper can cover the toolbar as it moves.</p>
+									<p>甚至您还可以设计成主要内容浮于工具栏之上的形式。</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
 									<div class="media">
@@ -199,7 +193,7 @@
 							</div>
 							<div class="section">
 								<div class="column col6">
-									<p>Toolbars have a standard height, but can be taller. When taller, the actions can pin to either the top or the bottom of the toolbar.</p>
+                                    <p>工具栏都有统一的高度设计，在移动设备上时 56dp 在桌面屏幕上是 64dp。根据需要，您也可以设计更高一些的工具栏，这种工具栏中，按钮可以靠上或者靠下对齐。</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
 									<div class="media">
@@ -210,7 +204,7 @@
 							</div>
 							<div class="section">
 								<div class="column col6">
-									<p>Toolbars can change height dynamically once they become pinned. When resizing, they snap (thresholding with hysterisis) between their maximum and minimum (standard) heights.</p>
+                                    <p>如果工具栏是固定于顶部的，那么在缩小到一定高度之前，其高度都是可变的。</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
 									<div class="media">
@@ -220,10 +214,10 @@
 								<br class="clear" />
 							</div>
 							<div class="section">
-								<h3>Floating Actions</h3>
+								<h3>浮动操作</h3>
 								<div class="column col6">
-									<p>A <strong>floating action</strong> is a circular paper separate from a toolbar.</p>
-									<p>A floating action represents a single promoted action for its context. A floating action can straddle a step if it relates to the content of the paper creating that step.</p>
+									<p><strong>浮动操作</strong>是另一张不同于工具栏的纸张。</p>
+									<p>浮动操作显示当前上下文相关的某项单一操作，其 z 轴坐标可以处于工具栏和主要功能之间。</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
 									<div class="media">
@@ -234,196 +228,12 @@
 							</div>
 							<div class="section">
 								<div class="column col6">
-									<p>A floating action can straddle a seam if it relates to the content of both of the papers creating that seam.</p>
-									<p>Never introduce a decorative seam merely to provide an anchoring point for an action.</p>
+									<p>浮动操作也可以和主要内容处于同一平面。</p>
+									<p>不过请不要利用这样的设计来仅仅放置操作按钮。</p>
 								</div>
 								<div class="column col12-1 nomarginRight">
 									<div class="media">
 										<img alt="" src="layout-principles-papercraft-papercraft-12a_large_mdpi.png" />
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-						</div> <!-- article ends -->
-						<div id="responsivePrinciples" class="article">
-							<h2>Responsive Principles</h2>
-							<div class="section">
-								<div class="column col6">
-									<p>When building layouts across devices, we combine fixed, sticky, and fluid strategies for grid behavior.</p>
-									<p>Here are a few simple guidelines to follow:</p>
-									<ol start="1">								
-										<li>Respect Human Constants.</li>
-										<li>Larger Screen ≠  Larger cognitive capacity.</li>
-										<li>Line lengths should be digestible.</li>
-										<li>Account for angular distance.</li>
-										<li>Pull the furniture off the walls: allow whitespace, and don't restrict yourself to anchored toolbars.</li>
-									</ol>
-									<p>Use strategies at multiple levels of hierarchy, like at screen level and card level.</p>
-									<p>The Desktop Template demonstrates a few responsive screens with all of the grid rules applied.</p>
-									<div class="download">
-										<a href="http://material-design.storage.googleapis.com/downloads/Layout_Desktop_Whiteframe.ai" target="_blank">
-											<img alt="" src="../imgs/download.png">
-											<div class="info">
-												<div class="title">Desktop Template</div>
-												<span class="subtitle">100 MB (.ai)</span>
-											</div>
-										</a>
-									</div>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="layout-principles-responsive-responsive-01_large_mdpi.png" />
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-						</div> <!-- article ends -->
-						<div id="dimensionality" class="article lastArticle">
-							<h2>Dimensionality</h2>
-							<div class="section">
-								<div class="column col12">
-									<p>Depth in is measured in dps, just like the X- and Y-axis. However, it is more useful to think of the priority of elements within Z-space rather than in terms of absolute, fixed positions.</p>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<h3>A conceptual model</h3>
-								<div class="column col6">
-									<p>At a high level, each app can be considered to live in a distinct space or container.</p>
-									<p>This means that pieces of paper in one app do not interleave in z-space with paper in another app.</p>
-									<p>It also means that actions and items are isolated to an app: for example, swiping to dismiss a list item in one app will not cause that list item to traverse the space of another unrelated app.</p>
-									<p>Containers allow multiple apps to be in view simultaneously, for example, in multiple browser tabs.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="layout-principles-dimensionality-dimensionality-01_large_mdpi.png" />
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									<p>Within a specific app, most elements are relatively positioned according to major and minor steps along the Z-axis. For example, a button’s focus state is a minor step, while its pressed state is a major step.</p>
-									<p>Other elements have a fixed priority within the app’s z-space, meaning they always appear above or below other elements, regardless of those items’ relative position along the z-axis. For example, the floating action button always appears above content and toolbars, regardless of how many sheets of paper may be in use by the app.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="layout-principles-dimensionality-dimensionality-02_large_mdpi.png" />
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									<p>System elements, such as the status bar and system dialogs, exist in a separate system space above and below all app containers.</p>
-									<p>Depending on context, system elements may not be present in an app (for example, in Lights Out mode), but the system space establishes the relative priority of system elements when they do exist. This ensures, for example, that a system dialog box always appears above the current app.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="layout-principles-dimensionality-dimensionality-03_large_mdpi.png" />
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<h3>Layout considerations</h3>
-								<div class="column col6">
-									<p>Depth is not ornament.</p>
-									<p>Think in terms of element priority within z-space, not absolute position.</p>
-									<p>Depth within an app should communicate hierarchy and importance, and help focus users’ attention to the task at hand.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="layout-principles-dimensionality-dimensionality-04_large_mdpi.png" />
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<h3>Shadows</h3>
-								<div class="column col6">
-									<p>Shadows consist of two layers: a top shadow for depth and a bottom shadow for definition.</p>
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="layout-principles-dimensionality-shadows-01_large_mdpi.png" />
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									&nbsp;
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="layout-principles-dimensionality-shadows-02_large_mdpi.png" />
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									&nbsp;
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="layout-principles-dimensionality-shadows-03_large_mdpi.png" />
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									&nbsp;
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="layout-principles-dimensionality-shadows-04_large_mdpi.png" />
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									&nbsp;
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="layout-principles-dimensionality-shadows-05_large_mdpi.png" />
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									&nbsp;
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="layout-principles-dimensionality-shadows-06_large_mdpi.png" />
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									&nbsp;
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="layout-principles-dimensionality-shadows-07_large_mdpi.png" />
-									</div>
-								</div>
-								<br class="clear" />
-							</div>
-							<div class="section">
-								<div class="column col6">
-									&nbsp;
-								</div>
-								<div class="column col12-1 nomarginRight">
-									<div class="media">
-										<img alt="" src="layout-principles-dimensionality-shadows-08_large_mdpi.png" />
 									</div>
 								</div>
 								<br class="clear" />
