@@ -69,19 +69,19 @@
 						<h2>目录</h2>
 						<ul>
 							<li>
-								<a href="#uiRegionsAndGuidance">UI regions and guidance</a>
+								<a href="#uiRegionsAndGuidance">UI 结构和设计指导</a>
 							</li>
 							<li>
-								<a href="#toolbars">Toolbars</a>
+								<a href="#toolbars">工具栏</a>
 							</li>
 							<li>
-								<a href="#appBar">App bar</a>
+								<a href="#appBar">应用栏</a>
 							</li>
 							<li>
-								<a href="#systemBars">System bars</a>
+								<a href="#systemBars">系统栏</a>
 							</li>
 							<li>
-								<a href="#sideNav">Side nav</a>
+								<a href="#sideNav">导航抽屉</a>
 							</li>
 							<li>
 								<a href="#whiteframes">Whiteframes</a>
@@ -90,60 +90,59 @@
 					</div>
 					<div class="chapterArticles">
 						<div id="uiRegionsAndGuidance" class="article">
-							<h2>UI regions and guidance</h2>
+							<h2>UI 结构和设计指导&nbsp;<span class="tocEng">UI regions and guidance</span></h2>
 							<div class="section">
 								<div class="column col12">
-									<p>This section covers the high level structure of our apps ranging from mobile to desktop and contains guidance.</p>
-									<p>Note: For guidance on arranging elements in z-space to achieve the correct behavior and shadows, see the <a href="../what-is-material/environment.html">Environment</a> and <a href="../what-is-material/objects-in-3d-space.html">Objects in 3D</a> space sections.</p>
-									<p>Apps come in many varieties that address very different needs. For example:</p>
+									<p>本节将指导您您设计横跨多个平台的应用。</p>
+									<p>注意: 如何在 z 轴上合理的分布元素的详细指导，请参考 <a href="../what-is-material/environment.html">环境</a> 和 <a href="../what-is-material/objects-in-3d-space.html">3维世界的物体</a> 。</p>
+									<p>不同的应用设计可以满足用户不同的需求，例如:</p>
 									<ul>
-										<li>Apps built around a single focused activity handled from a single screen (such as a calculator, a camera, and many games)</li>
-										<li>Apps whose main purpose is to switch between different activities without deeper navigation (such as a phone dialer offering favorites, recents, and contacts)</li>
-										<li>Apps that combine a broad set of data views with deep navigation (such as different folders for a mail app or product categories in a shopping app)</li>
+										<li>有的应用只提供一个核心的 activity 来处理所有的操作，例如计算器、相机和游戏。</li>
+										<li>有的应用主要满足用户在不同的分类之间切换的需求，用户使用它们时不太会进入很深入的页面，例如拨号器提供了快速拨号、最近和联系人三个标签页。</li>
+										<li>有的应用则结合了复杂的数据视图和较深的导航层次，例如邮件应用提供了多个层级的目录，有例如在线购物应用的复杂商品分类。</li>
 									</ul>
-									<p>Your app's structure will depend largely on the content and tasks you want to surface for your users. </p>
+									<p>所以您应用提供的功能真正决定了其层次结构。</p>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
-								<h3>Starting from the top</h3>
+								<h3>自顶向下进行设计</h3>
 								<div class="column col12">
-									<p>The layout of your start screen requires special attention. This is the first screen people see after launching your app, so it should be an equally rewarding experience for new and frequent visitors alike.</p>
-									<p>Ask yourself: "What will typical users most likely want to do in my app?", and structure your start screen experience accordingly.</p>
-									<p><strong>Put content forward</strong>. Many apps focus on the content display. Avoid navigation-only screens and instead let people get to the core experience of your app right away by making content the centerpiece of your start screen. Choose layouts that are visually engaging and appropriate for the data type and screen size.</p>
-									<p><strong>Anchor navigation and actions</strong>. Like any toolbar, the app bar can organize important actions. Its position at the top of a screen makes it ideal for presenting navigation controls, including switching between tabs or opening the left navigation bar. If your content is searchable, include the Search action in the app bar so people can cut through the navigation hierarchy.</p>
-									<p><strong>Be opinionated about functionality</strong>. When your app has a large amount of content or capabilities, direct the user’s focus to the most critical aspects of your product. Highlight navigation to important destinations within the content area. Promote the most characterful action as a floating action button. De-emphasize less frequently traveled paths in your app.</p>
+									<p>请仔细斟酌您应用的首屏界面，用户打开应用后第一眼看到的就是这个屏幕。所以无论用户是第一次启动，还是经常启动您的应用，都请给予绝佳的体验。</p>
+                                    <p>设计首屏界面时，请先自问: “用户打开我的应用主要是为了干什么？”</p>
+									<p><strong>突出内容</strong>。很多应用主要用于显示内容，所以不要把首屏设计成仅仅提供导航功能，而是将重要的内容显示出来，这样用户就可以立即开始使用。仔细设计布局和视觉元素，更好的展现数据和内容。</p>
+									<p><strong>锚定导航和操作</strong>。就像其它的工具栏一样，应用栏可以用于放置各种操作。应用栏始终处于应用屏幕顶部，所以很适合放置导航控件，例如标签切换和导航抽屉开关。如果应用的内容可以搜索，您还可以将搜索按钮放置于应用栏，为用户进入较深的层级提供捷径。</p>
+									<p><strong>引导用户使用</strong>。如果您的应用现实很多内容或者有很多功能，请考虑如何引导用户的注意力，突出您应用的重要功能。在内容区高亮跳转链接，使用浮动按钮突出功能，弱化不经常使用的操作线路。</p>
 								</div>
 								<br class="clear" />
 							</div>
 							<div class="section">
-								<h3>Top-level view strategies</h3>
+								<h3>顶层视图设计</h3>
 								<div class="column col12">
-									<p>The top level communicates your app’s capabilities by introducing the user to the major functional areas. Some apps will be very focused and have modest navigation needs. In other apps, the top level will consist of multiple views, and you'll want to make sure that the user can navigate between them efficiently.</p>
-									<p>Select the approach that best matches your app's navigation needs.</p>
-									<p><strong>Focus on a single view with embedded navigation</strong>. By putting all the necessary navigation directly inline with other app content, you make it extremely visible to the user. This can be appropriate when the app’s navigation model is very simple. However, presenting a large number of navigation paths in this manner can reduce the space available to display content. These pathways could be distributed throughout the screen rather than co-located in a predictable and convenient location.</p>
-									<p>Use in-context navigation if:</p>
+									<p>顶层视图向用户展示应用的主要功能，有的应用功能单一，有的应用则比较复杂，需要有效地在不同功能之间导航。</p>
+									<p><strong>在单一视图上整合导航</strong>。您可以将所有导航和部分内容放置在同一个视图中，使用户一目了然。不过如果您的应用有很多导航路径，过于复杂的选择会迷惑用户，这时需要使用合适的导航路径引导用户。</p>
+									<p>何时整合上下文和导航:</p>
 									<ul>
-										<li>Your app has a strong primary view, and no or few alternate ones.</li>
-										<li>Your users can complete the most common tasks easily within the main view.</li>
-										<li>You expect users will use your app very infrequently and will appreciate well-exposed paths.</li>
+										<li>您的应用有一个主要的视图，只有少量其它视图。</li>
+										<li>用户在您应用的主视图中就可以完成大部分操作。</li>
+										<li>您的用户不怎么打开应用，所以需要及时展示功能路径。</li>
 									</ul>
-									<p><strong>Use tabs to switch between a small number of equally important views</strong>. If your app has only a handful of functional areas, each with shallow hierarchies, using tabs increases the awareness of these peer top-level views. It also accelerates switching between them, bringing them into view with just a click or a swipe. However, displaying the tabs takes up significant space on smaller displays, and is efficient only for a small number of peers with succinct labels.</p>
-									<p>Use tabs if:</p>
+									<p><strong>使用标签在少量的重要视图之间导航</strong>。如果您的应用只有少量功能区域，且导航层级较浅，那么标签可以更好的展示出各种功能，并且只需要点击和滑动就能快速导航。不过标签需要占用大量的空间，且仅仅适合较少的功能切换导航。</p>
+									<p>何时使用标签:</p>
 									<ul>
-										<li>You expect your app's users to switch views frequently.</li>
-										<li>You have a limited number of top-level views.</li>
-										<li>You want the user to be highly aware of the alternate views.</li>
+										<li>用户需要频繁的切换视图。</li>
+										<li>应用只有少量的顶层视图。</li>
+										<li>您希望用户很容易找到其它顶层视图。</li>
 									</ul>
-									<p><strong>Manage more complex structure through a left navigation drawer</strong>. The left nav panel can display large numbers of navigation targets concurrently. It is particularly useful when your app has a single, natural “home”, and the drawer can then act as an index of less frequently visited destinations. If your app requires cross-navigation directly from a lower-level screen to other important sections of your app, the ability to swipe in the side nav panel from any point in your app can make that context switch more efficient for the user. However, because it is a less obvious affordance, it may take the user time to familiarize themselves with the contents.</p>
-									<p>Use a navigation drawer if:</p>
+									<p><strong>使用左侧导航抽屉管理更加复杂的应用结构</strong>。左侧的导航抽屉可以显示大量的导航目的地。如果您的应用有某个天然的“主屏幕”，那么很适合使用导航抽屉来展示其余位置。如果用户需要在应用的较深层级直接切换功能，导航抽屉也很适合。不过导航抽屉隐藏了许多功能，所以用户探索您的应用需要一段时间。</p>
+									<p>何时使用导航抽屉:</p>
 									<ul>
-										<li>Your app has a large number of top-level views.</li>
-										<li>You want to enable quick cross-navigation between views which aren’t directly related.</li>
-										<li>You have particularly deep navigation branches and want to accelerate returning to the top of the app.</li>
-										<li>You want to reduce the visibility and user awareness of less frequently visited destinations.</li>
+										<li>您的应用有大量的顶层视图。</li>
+										<li>您需要提供快速的功能切换。</li>
+										<li>您的应用有较深的导航层级，需要提供快速向上返回的方法。</li>
+										<li>您希望用户不被其它不太相关的功能所打扰。</li>
 									</ul>
-									<p>Regardless of the top-level view strategy you select, in-context navigation is always a powerful tactic for moving between related sets of data. Some examples are providing direct links between one song and other from that artist, between recent items and a complete history, or between one post from a user and their overall profile. These direct paths make it natural to extend from a main task into a related one.</p>
+									<p>不过无论您选择何种导航结构，整合于内容之中的导航仍然是很重要的，例如在音乐视图中提供歌手的链接，用于显示该歌手的其它歌曲，或者是在最近操作中提供显示所有历史记录的功能，再或者帖子上提供跳转到发布者个人资料的链接。这些功能使用户在相关的数据之间跳转变得更加容易。</p>
 								</div>
 								<br class="clear" />
 							</div>
@@ -256,7 +255,7 @@
 							</div>
 						</div> <!-- article ends -->
 						<div id="toolbars" class="article">
-							<h2>Toolbars</h2>
+							<h2>工具栏&nbsp;<span class="tocEng">Toolbars</span></h2>
 							<div class="section">
 								<div class="column col6">
 									<p>Toolbars are versatile and can be used in many different ways. Here are some examples.</p>
@@ -315,7 +314,7 @@
 							</div>
 						</div> <!-- article ends -->
 						<div id="appBar" class="article">
-							<h2>App bar</h2>
+							<h2>应用栏&nbsp;<span class="tocEng">App bar</span></h2>
 							<div class="section">
 								<div class="column col6">
 									<p>The app bar, formerly known as the action bar in Android, is a special kind of toolbar that’s used for branding, navigation, search, and actions.</p>
@@ -505,7 +504,7 @@
 							</div>
 						</div> <!-- article ends -->
 						<div id="systemBars" class="article">
-							<h2>System bars</h2>
+							<h2>系统栏&nbsp;<span class="tocEng">System bars</span></h2>
 							<div class="section">
 								<h3>Status bar/window bar</h3>
 								<div class="column col6">
@@ -744,7 +743,7 @@
 							</div>
 						</div> <!-- article ends -->
 						<div id="sideNav" class="article">
-							<h2>Side nav</h2>
+							<h2>导航抽屉&nbsp;<span class="tocEng">Side nav</span></h2>
 							<div class="section">
 								<div class="column col6">
 									<p>If present, the left and right nav bars can be pinned for permanent display or they can float temporarily as overlays. </p>
